@@ -1,0 +1,266 @@
+{
+  "slug": "05-engine-failures",
+  "title": "Engine Failures",
+  "orderIndex": 5,
+  "description": "What happens when an engine fails: yaw, roll, drag effects, and the critical engine concept.",
+  "estimatedMinutes": 21,
+  "subsections": [
+    {
+      "title": "What Happens When an Engine Fails",
+      "objective": "Identify the two immediate aerodynamic responses to an engine failure in a twin-engine airplane",
+      "pageRange": "9-15",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "When an engine fails in a twin, two things happen almost simultaneously: the airplane yaws and it rolls. Both motions are toward the dead engine. Understanding exactly why this happens -- and how these forces interact -- is the foundation of everything you'll do in multi-engine emergency procedures."
+        },
+        {
+          "type": "concept",
+          "title": "Yaw from Asymmetric Thrust",
+          "content": "With one engine producing thrust and the other producing none, the thrust is no longer centered. The operating engine pushes its side of the airplane forward while the dead side creates drag. This creates a yawing moment around the center of gravity toward the inoperative engine."
+        },
+        {
+          "type": "analogy",
+          "content": "Imagine you're rowing a canoe with a paddle on each side. Pull one paddle out of the water while still pushing hard with the other. The canoe immediately starts to spin toward the side where you stopped paddling. That's exactly what happens to your airplane."
+        },
+        {
+          "type": "keypoint",
+          "content": "When an engine fails, the airplane yaws toward the dead engine and rolls toward the dead engine. Both effects happen together and reinforce each other."
+        }
+      ]
+    },
+    {
+      "title": "The Roll Effect",
+      "objective": "Understand the two distinct causes of roll following an engine failure",
+      "pageRange": "9-15",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The roll toward the dead engine comes from two separate sources, and they both work against you at the same time."
+        },
+        {
+          "type": "concept",
+          "title": "Roll from Yaw (Differential Airspeed)",
+          "content": "As the airplane yaws toward the dead engine, the wing with the operating engine swings forward and moves faster through the air. Faster air over that wing means more lift on that side. The result? The airplane rolls toward the dead engine -- the slow-wing side."
+        },
+        {
+          "type": "concept",
+          "title": "Roll from Asymmetric Induced Flow",
+          "content": "The operating engine's propeller continues to blast accelerated air over its wing, producing extra lift. Meanwhile, the dead engine's propeller stops producing that slipstream, and its wing loses the lift boost. This asymmetric lift creates a direct rolling moment toward the inoperative engine."
+        },
+        {
+          "type": "figure",
+          "caption": "Diagram showing asymmetric thrust creating yaw toward the dead engine, and the resulting differential airspeed and asymmetric induced flow creating roll toward the dead engine."
+        },
+        {
+          "type": "check",
+          "question": "Name the two causes of roll following an engine failure.",
+          "answer": "First, the yaw-induced roll: as the airplane yaws, the wing on the operating-engine side moves faster, generating more lift and causing a roll toward the dead engine. Second, asymmetric induced flow: the operating engine's slipstream boosts lift on its wing while the dead engine's wing loses that boost, adding to the rolling moment."
+        }
+      ]
+    },
+    {
+      "title": "The Critical Engine",
+      "objective": "Define the critical engine and explain why one engine failure is worse than the other on a conventional twin",
+      "pageRange": "9-15",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Not all engine failures are created equal. On a conventional twin, losing one specific engine is worse than losing the other. That worse-case engine is called the critical engine."
+        },
+        {
+          "type": "concept",
+          "title": "Critical Engine",
+          "content": "The critical engine is the engine whose failure would most adversely affect the airplane's performance or handling. On a conventional twin like the DA42-VI (with clockwise-rotating propellers), the left engine is the critical engine."
+        },
+        {
+          "type": "concept",
+          "title": "Counter-Rotating Twins: No Critical Engine",
+          "content": "On a counter-rotating twin, where the propellers spin in opposite directions, the yawing and rolling effects are identical regardless of which engine fails. Therefore, there is no critical engine -- losing either one produces the same handling challenges."
+        },
+        {
+          "type": "list",
+          "title": "Three factors that determine the critical engine:",
+          "items": [
+            "P-Factor -- the descending propeller blade creates more thrust than the ascending blade",
+            "Accelerated Slipstream -- the propeller wash creates more lift on one wing than the other",
+            "Torque -- Newton's third law creates a rotational reaction opposite to propeller spin"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "On the DA42-VI (a conventional twin), which engine is the critical engine?",
+          "answer": "The left engine is the critical engine. Losing the left engine produces greater yawing and rolling moments than losing the right engine, due to P-factor, accelerated slipstream, and torque effects."
+        }
+      ]
+    },
+    {
+      "title": "P-Factor and the Critical Engine",
+      "objective": "Explain how P-factor creates asymmetric thrust arms that make one engine failure worse than the other",
+      "pageRange": "9-15",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "P-factor is the first and most significant reason why the left engine is critical on a conventional twin. To understand it, you need to think about where the thrust is actually acting on each propeller disc."
+        },
+        {
+          "type": "concept",
+          "title": "P-Factor in a Twin",
+          "content": "P-factor means the descending propeller blade produces more thrust than the ascending blade. On both engines of a conventional twin (both rotating clockwise from the pilot's view), the descending blade is on the right side of each propeller disc. This shifts the center of thrust to the right on each engine."
+        },
+        {
+          "type": "formula",
+          "label": "Yawing Moment",
+          "formula": "THRUST x ARM = MOMENT",
+          "explanation": "The yawing moment depends on how far the thrust is from the center of gravity. A longer arm means a greater yawing moment for the same amount of thrust."
+        },
+        {
+          "type": "text",
+          "content": "Here's the key insight: because both propellers spin the same direction, the center of thrust on the right engine is shifted further outboard (further from the CG) than on the left engine. The right engine has a longer thrust arm (A2) than the left engine (A1)."
+        },
+        {
+          "type": "example",
+          "title": "Why Left Engine Failure Is Worse",
+          "content": "When the left engine fails, you're left with only the right engine -- the one with the longer thrust arm (A2). A longer arm means a bigger yawing moment to the left. When the right engine fails, you're left with the left engine -- the one with the shorter arm (A1). Same thrust, but a smaller yawing moment. That's why losing the left engine is worse."
+        },
+        {
+          "type": "figure",
+          "caption": "Conventional twin showing thrust arms A1 (left engine, shorter) and A2 (right engine, longer) due to P-factor shifting the center of thrust to the right on both engines."
+        },
+        {
+          "type": "keypoint",
+          "content": "On a conventional twin, the right engine has a longer P-factor thrust arm than the left engine. Losing the left engine leaves you with the longer-armed right engine, creating a larger yawing moment. That's why the left engine is critical."
+        },
+        {
+          "type": "text",
+          "content": "On a counter-rotating twin, the descending blades point in opposite directions, so the thrust arms (A1 and A2) are the same length. The yawing moment is identical regardless of which engine fails. No critical engine."
+        },
+        {
+          "type": "check",
+          "question": "Why does P-factor cause the left engine to be critical on a conventional twin?",
+          "answer": "P-factor shifts the center of thrust toward the descending blade (right side) on both engines. This gives the right engine a longer arm from the CG. When the left engine fails, the remaining right engine's longer arm produces a larger yawing moment than would occur if the right engine failed (leaving the shorter-armed left engine)."
+        }
+      ]
+    },
+    {
+      "title": "Accelerated Slipstream and the Critical Engine",
+      "objective": "Explain how accelerated slipstream creates asymmetric lift arms that reinforce the P-factor effect",
+      "pageRange": "9-15",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "P-factor isn't the only reason the left engine is critical. The accelerated slipstream from each propeller also creates an asymmetric effect, and it works in exactly the same direction."
+        },
+        {
+          "type": "text",
+          "content": "Just as P-factor shifts the center of thrust to one side, it also shifts the center of the accelerated airflow behind each propeller. The descending blade accelerates more air, producing more lift on that side of the wing."
+        },
+        {
+          "type": "formula",
+          "label": "Rolling Moment",
+          "formula": "LIFT x ARM = MOMENT",
+          "explanation": "The rolling moment depends on how far the extra lift is from the center of gravity. A longer arm from CG to the lift boost means a bigger rolling tendency."
+        },
+        {
+          "type": "text",
+          "content": "On a conventional twin, the extra lift from accelerated slipstream is shifted to the right on both wings (toward the descending blade). The arm from the CG to the right engine's extra lift is longer than the arm to the left engine's extra lift."
+        },
+        {
+          "type": "keypoint",
+          "content": "When the left engine fails, the remaining right engine produces extra lift at a longer arm, creating a larger roll moment to the left. This reinforces the P-factor effect, making the left engine the critical engine for both yaw and roll."
+        },
+        {
+          "type": "check",
+          "question": "How does accelerated slipstream reinforce the P-factor effect in determining the critical engine?",
+          "answer": "Accelerated slipstream creates extra lift shifted toward the descending blade on each wing. On a conventional twin, the right engine's extra lift has a longer arm from the CG than the left engine's. When the left engine fails, the right engine's longer lift arm produces a larger rolling moment, reinforcing the larger yawing moment from P-factor."
+        }
+      ]
+    },
+    {
+      "title": "Torque and the Critical Engine",
+      "objective": "Explain how engine torque adds to the yaw and roll effects of an engine failure",
+      "pageRange": "9-15",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The third factor in critical engine determination is torque -- Newton's third law at work. As each engine and propeller spin in one direction, they try to rotate the airplane in the opposite direction."
+        },
+        {
+          "type": "concept",
+          "title": "Torque Effect",
+          "content": "Torque is the reaction force from engine and propeller rotation. On a conventional twin with clockwise-spinning propellers (pilot's view), both engines produce a torque reaction that tries to roll the airplane to the left."
+        },
+        {
+          "type": "text",
+          "content": "When both engines are running, the torque from each engine is balanced. But when one engine fails, only the operating engine's torque remains. Which direction that torque pushes matters a lot."
+        },
+        {
+          "type": "example",
+          "title": "Left Engine Failure -- Torque Reinforces Yaw",
+          "content": "If the left engine fails, the right engine's thrust yaws the airplane to the left. The remaining torque from the right engine also tries to roll the airplane to the left. Torque and asymmetric thrust are working together -- making the situation worse."
+        },
+        {
+          "type": "example",
+          "title": "Right Engine Failure -- Torque Opposes Yaw",
+          "content": "If the right engine fails, the left engine's thrust yaws the airplane to the right. But the remaining torque from the left engine still tries to roll the airplane to the left -- partially opposing the yaw. The situation is still bad, but not quite as bad as losing the left engine."
+        },
+        {
+          "type": "keypoint",
+          "content": "On a conventional twin, torque reinforces the yaw when the left engine fails but partially opposes it when the right engine fails. This is the third reason why the left engine is the critical engine."
+        },
+        {
+          "type": "text",
+          "content": "On a counter-rotating twin, the torque from each engine acts in opposite directions. When one engine fails, the remaining engine's torque always opposes the yaw from asymmetric thrust. The effect is symmetrical regardless of which engine fails -- so again, no critical engine."
+        },
+        {
+          "type": "check",
+          "question": "On a conventional twin, does torque make a left engine failure better or worse compared to a right engine failure? Why?",
+          "answer": "Worse. When the left engine fails, the right engine's torque rolls the airplane to the left, reinforcing the yaw from asymmetric thrust. When the right engine fails, the left engine's torque rolls to the left, which partially opposes the rightward yaw. Torque and thrust work together with a left engine failure but partially cancel with a right engine failure."
+        }
+      ]
+    },
+    {
+      "title": "Spiraling Slipstream",
+      "objective": "Understand the minor but real effect of spiraling slipstream on the critical engine determination",
+      "pageRange": "9-15",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "There's one more factor worth mentioning, though its effect is small enough that some instructors skip it entirely. The spiraling slipstream is a corkscrew-shaped rotation of air trailing behind each propeller."
+        },
+        {
+          "type": "concept",
+          "title": "Spiraling Slipstream",
+          "content": "The high-speed rotation of the propeller imparts a corkscrew or spiral to the air flowing behind it. At high propeller speeds and low forward speeds (like during takeoff), this spiral is tight and compact, exerting a noticeable sideward force on the vertical tail. As forward speed increases, the spiral stretches out and becomes less significant."
+        },
+        {
+          "type": "text",
+          "content": "On a conventional twin with both engines running, the spiraling slipstream from each engine interacts differently with the vertical tail depending on the relative wind direction. The key question is: when one engine fails, does the remaining engine's spiral slipstream help or hurt?"
+        },
+        {
+          "type": "example",
+          "title": "Left Engine Fails",
+          "content": "When the left engine fails, the spiraling slipstream from the left engine disappears entirely -- it no longer reaches the tail. The right engine's spiral slipstream doesn't significantly strike the tail in this configuration. There's no helpful or harmful tail force. Nothing helps you."
+        },
+        {
+          "type": "example",
+          "title": "Right Engine Fails",
+          "content": "When the right engine fails, the left engine's spiraling slipstream strikes the left side of the vertical tail, creating a small yaw to the left. Since the airplane is already yawing to the right from losing the right engine, this leftward push from the spiral slipstream actually helps oppose the yaw. The left engine's slipstream works in your favor."
+        },
+        {
+          "type": "keypoint",
+          "content": "Spiraling slipstream provides a small helping force when the right engine fails (opposing the yaw) but no help when the left engine fails. This is yet another reason -- albeit a minor one -- why the left engine is the critical engine on a conventional twin."
+        },
+        {
+          "type": "text",
+          "content": "The effect of spiraling slipstream is typically quite small, and many pilots and textbooks consider it the least significant of the four factors. But it does nudge the equation further in the direction of the left engine being critical."
+        },
+        {
+          "type": "check",
+          "question": "Summarize all the factors that make the left engine the critical engine on a conventional twin.",
+          "answer": "Three main factors plus one minor one: (1) P-factor gives the right engine a longer thrust arm, creating more yaw when the left fails. (2) Accelerated slipstream gives the right engine a longer lift arm, creating more roll when the left fails. (3) Torque reinforces the yaw/roll when the left fails but opposes it when the right fails. (4) Spiraling slipstream provides a small helping force when the right engine fails but none when the left fails. All four factors make losing the left engine worse."
+        }
+      ]
+    }
+  ]
+}

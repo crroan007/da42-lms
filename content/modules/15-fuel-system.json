@@ -1,0 +1,141 @@
+{
+  "slug": "15-fuel-system",
+  "title": "Fuel System",
+  "orderIndex": 15,
+  "description": "Fuel tanks, fuel transfer, common rail injection system, and fuel system operation.",
+  "estimatedMinutes": 15,
+  "subsections": [
+    {
+      "title": "Fuel Tanks and Fuel Supply",
+      "objective": "Understand the fuel tank construction, capacity, venting system, and normal fuel routing.",
+      "pageRange": "111-115",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The DA42 burns Jet-A fuel -- the same fuel that goes into airliners and turboprops. This is one of the aircraft's biggest operational advantages, as Jet-A is cheaper and more widely available than avgas. But the fuel system that delivers that Jet-A to the engines has some unique features you need to understand."
+        },
+        {
+          "type": "concept",
+          "title": "Tank Construction",
+          "content": "Each wing holds fuel in a tank made of three aluminum chambers connected with flexible hoses. The flexible connections allow the wings to flex during flight without damaging the fuel tanks -- an important design consideration for a composite aircraft."
+        },
+        {
+          "type": "list",
+          "title": "Fuel Capacity:",
+          "items": [
+            "Total: 52 US gallons (26 gallons per side)",
+            "Usable: 50 US gallons (1 gallon unusable per side)",
+            "Fuel weight: Jet-A weighs 7.01 lbs/gallon",
+            "No auxiliary fuel tanks installed on ERAU DA42-VI aircraft"
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Fuel Properties",
+          "content": "Jet-A freezes at -40 degrees C, while Jet-A1 freezes at -47 degrees C. Both types have a flash point above 38 degrees C. The lower freeze point of Jet-A1 makes it the preferred fuel for operations in extremely cold conditions."
+        },
+        {
+          "type": "concept",
+          "title": "Tank Venting System",
+          "content": "Each tank has two vents with different functions. One vent includes a check valve with a capillary -- it allows air to enter the tank (preventing a vacuum as fuel is consumed) but prevents fuel from flowing out. The capillary equalizes air pressure during climbs. The second vent has a relief pressure valve that protects the tank against high pressure, such as if the tank was overfilled during a fuel transfer failure."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of the tank vents like the small hole in a travel coffee mug lid. Without it, liquid won't flow smoothly because a vacuum builds up inside. The check valve vent lets air in so fuel can flow out to the engine, while the relief valve acts like a safety release if pressure builds too high."
+        },
+        {
+          "type": "concept",
+          "title": "Normal Fuel Routing",
+          "content": "Under normal operations, the right engine draws fuel from the right wing tank and the left engine draws from the left wing tank. Crossfeed may be used to maintain less than a 5-gallon fuel imbalance between sides."
+        },
+        {
+          "type": "keypoint",
+          "content": "There are 2 fuel sumps on each side of the airplane: one at the main tank and one at the lowest point in the fuel system at the filter. Check all four sumps during preflight."
+        },
+        {
+          "type": "concept",
+          "title": "Fuel Pump Redundancy",
+          "content": "Each engine has two independent electrically driven fuel pumps, one associated with ECU A and one with ECU B. Switching between ECUs also switches which fuel pump is active. In an emergency, both pumps can be activated simultaneously using the fuel pump switch."
+        },
+        {
+          "type": "check",
+          "question": "How much usable fuel does the DA42-VI carry, and how is it distributed?",
+          "answer": "50 US gallons usable (25 gallons usable per side, with 1 gallon unusable in each wing tank). Total capacity is 52 US gallons."
+        },
+        {
+          "type": "check",
+          "question": "What is the purpose of crossfeed, and when should you use it?",
+          "answer": "Crossfeed is used to maintain less than a 5-gallon fuel imbalance between the left and right wing tanks. It allows one engine to draw fuel from the opposite side's tank."
+        }
+      ]
+    },
+    {
+      "title": "Common Rail Fuel Injection",
+      "objective": "Explain how the common rail injection system delivers fuel to the engine cylinders.",
+      "pageRange": "111-115",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The common rail fuel injection system is what makes the DA42's diesel engines so efficient and precise. If you've heard of 'common rail diesel' in modern trucks and cars, this is the same technology adapted for aviation. It's more complex than a traditional carburetor or port injection system, but the ECU handles all the complexity for you."
+        },
+        {
+          "type": "concept",
+          "title": "Common Rail Concept",
+          "content": "The common rail is a high-pressure reservoir of fuel that feeds all four injectors simultaneously. Each cylinder has one injector nozzle supplied from this shared rail. The critical factors -- droplet size, spray pattern, and injection timing -- must all be precisely controlled for efficient combustion."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of the common rail like a pressurized water main that feeds multiple sprinkler heads. All the sprinklers share the same high-pressure source, and each one opens independently when it's time to spray. The 'rail' maintains constant pressure so each injector gets a consistent, precise fuel delivery."
+        },
+        {
+          "type": "concept",
+          "title": "Fuel Flow Path",
+          "content": "Two independent low-pressure electric fuel pumps draw fuel from the tank and deliver it to a high-pressure fuel pump. This pump pressurizes the common rail. The ECU controls an electric valve that regulates rail pressure based on the power setting. Fuel that is not injected into the cylinders passes through a cooler and is returned to the appropriate wing tank."
+        },
+        {
+          "type": "keypoint",
+          "content": "Rail pressure is controlled by the ECU through an electric valve, varying automatically with your power lever setting. Higher power demands higher rail pressure for more fuel delivery."
+        },
+        {
+          "type": "check",
+          "question": "What is the 'common rail' and why is it called that?",
+          "answer": "The common rail is a high-pressure fuel reservoir that is 'common' to (shared by) all four fuel injectors. It maintains consistent pressure so each injector receives precise, uniform fuel delivery."
+        }
+      ]
+    },
+    {
+      "title": "Fuel Cooler",
+      "objective": "Understand why unused fuel must be cooled before returning to the tanks.",
+      "pageRange": "111-115",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Here's something that might surprise you: most of the fuel that gets pressurized in the common rail is NOT injected into the engine. It circulates back to the tanks. But you can't just dump hot, high-pressure fuel back into the wing tanks -- that would be a safety hazard. That's where the fuel cooler comes in."
+        },
+        {
+          "type": "concept",
+          "title": "Why Fuel Cooling Is Needed",
+          "content": "The common rail operates at very high pressure, which heats the fuel significantly. Since most of this fuel is returned to the wing tanks without being injected, it must be cooled first. Hot fuel returned to the tanks could cause vapor issues and increase fuel temperature beyond safe limits."
+        },
+        {
+          "type": "concept",
+          "title": "Fuel Cooler Design",
+          "content": "The fuel cooler is a heat exchanger located on the bottom front of each engine. Its air intake is located next to the radiator. Cool outside air flows over the heat exchanger to remove heat from the returning fuel before it goes back to the wing tanks."
+        },
+        {
+          "type": "analogy",
+          "content": "The fuel cooler works like the oil cooler on a traditional aircraft engine -- ambient air flows over a heat exchanger to bring the fluid temperature down to a safe level before it recirculates."
+        },
+        {
+          "type": "figure",
+          "caption": "Fuel system diagram showing fuel tanks, low-pressure pumps, high-pressure pump, common rail, injectors, fuel cooler, and return path to wing tanks."
+        },
+        {
+          "type": "check",
+          "question": "Why does unused fuel from the common rail need to be cooled before returning to the wing tanks?",
+          "answer": "Because the high pressure in the common rail heats the fuel significantly. Returning hot fuel directly to the wing tanks could cause vapor issues and unsafe temperature increases in the fuel supply."
+        }
+      ]
+    }
+  ]
+}

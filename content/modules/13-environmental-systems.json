@@ -1,0 +1,104 @@
+{
+  "slug": "13-environmental-systems",
+  "title": "Environmental Systems",
+  "orderIndex": 13,
+  "description": "Cabin heating, defrost, and the Recirculating Air Cabin Cooling (RACC) system.",
+  "estimatedMinutes": 21,
+  "subsections": [
+    {
+      "title": "Recirculating Air Cabin Cooling (RACC) System",
+      "objective": "Understand the RACC system components, power source, operation, and limitations.",
+      "pageRange": "88-94",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Flying in Florida means you'll be using the air conditioning system a lot. The DA42's cooling system has a unique power source and some important limitations that can catch you off guard if you're not prepared. Let's break down how it works and when you can -- and can't -- use it."
+        },
+        {
+          "type": "concept",
+          "title": "RACC System Overview",
+          "content": "The Recirculating Air Cabin Cooling (RACC) system provides cool air to the cabin. It's installed behind the short baggage extension and consists of a central unit, a control panel on the left sidewall, and an additional alternator on the left engine."
+        },
+        {
+          "type": "warning",
+          "content": "The RACC is NOT connected to the main electrical system of the airplane. It has its own dedicated alternator on the left engine. This means it has no impact on your main electrical bus, but it also means the AUX POWER switch must be set to ON separately to provide power."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of the RACC like a portable generator powering a window AC unit -- it has its own power source completely separate from your house wiring. If you don't turn on that generator (AUX POWER switch), the AC has no juice."
+        },
+        {
+          "type": "concept",
+          "title": "RACC Controls",
+          "content": "To operate the system, press the ON/OFF button once and wait for the display to illuminate permanently. Fan speed has three settings controlled by UP and DOWN buttons to the left of the temperature display. Temperature presets are to the right of the display. The preset cabin air temperature is shown in degrees Fahrenheit (or degrees Celsius if OAM 42-193/d or later is installed)."
+        },
+        {
+          "type": "concept",
+          "title": "RACC Limitations",
+          "content": "The AUX POWER switch MUST be OFF in all emergencies, during abnormal operating procedures, below 10 degrees Celsius OAT, and above 10,000 feet MSL. These restrictions exist because the additional alternator load on the left engine could be problematic during emergencies, and the system isn't designed for cold temperatures or high-altitude operations."
+        },
+        {
+          "type": "keypoint",
+          "content": "RACC performance impact: climb rate reduces 70 ft/min with RACC ON, cruise speed reduced 2% with RACC OFF (due to the alternator drag), and cruise speed reduced 5% with RACC ON. The RACC can be used during takeoff, landing, and go-arounds, but expect degraded performance."
+        },
+        {
+          "type": "example",
+          "title": "RACC Decision Making",
+          "content": "You're departing on a hot summer day with a density altitude of 3,500 feet. Your climb performance is already marginal. Leaving the RACC on will cost you 70 ft/min of climb rate. On a day like this, you might choose to turn the RACC off during the climb phase and turn it back on once you're at cruise altitude and the workload drops."
+        },
+        {
+          "type": "check",
+          "question": "Why is the RACC not connected to the aircraft's main electrical system?",
+          "answer": "The RACC has its own dedicated additional alternator on the left engine that provides its power. This keeps the RACC load separate from the main electrical bus and avionics."
+        },
+        {
+          "type": "check",
+          "question": "Under what conditions must the AUX POWER switch be turned OFF?",
+          "answer": "In all emergencies, during abnormal operating procedures, below 10 degrees Celsius OAT, and above 10,000 feet MSL."
+        }
+      ]
+    },
+    {
+      "title": "Cabin Heat and Defrost",
+      "objective": "Explain how the DA42 provides cabin heating and windshield defrost using engine coolant.",
+      "pageRange": "88-94",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Unlike piston aircraft that use exhaust muffler heat (with the associated carbon monoxide risk), the DA42 uses a much safer heat source. The cabin heat and defrost systems tap into the engine coolant -- the same liquid that keeps the diesel engines at operating temperature."
+        },
+        {
+          "type": "concept",
+          "title": "Heat Source",
+          "content": "Cabin heat and defrost are provided by heat exchangers connected to the engine coolant system. Outside air flows over these heat exchangers and gets warmed by the engine coolant. The heated air is then ducted into the cabin."
+        },
+        {
+          "type": "keypoint",
+          "content": "The right engine provides warm air for cabin heat, while the left engine provides the warm air for the defroster. If you lose the left engine, you lose defrost capability. If you lose the right engine, you lose cabin heat."
+        },
+        {
+          "type": "analogy",
+          "content": "This works just like the heater in your car -- hot engine coolant flows through a small radiator (the heat exchanger), and a fan blows air across it into the cabin. No combustion gases ever enter the cabin, so there's no carbon monoxide risk from the heating system."
+        },
+        {
+          "type": "warning",
+          "content": "Remember which engine powers which system: RIGHT engine = cabin HEAT, LEFT engine = DEFROST. During single-engine operations, you may lose one of these functions depending on which engine is inoperative."
+        },
+        {
+          "type": "example",
+          "title": "Single-Engine Heating Scenario",
+          "content": "You've secured the left engine during a single-engine approach on a cold, humid day. You notice the windshield is fogging up. Since the left engine provides defrost air, you've lost that capability. You'll need to crack the side window or use other means to maintain visibility while the right engine still provides cabin heat."
+        },
+        {
+          "type": "figure",
+          "caption": "Cabin Heat and Defroster Controls and associated ductwork diagram showing the right engine heat exchanger for cabin heat and left engine heat exchanger for defrost."
+        },
+        {
+          "type": "check",
+          "question": "Which engine provides cabin heat and which provides defrost?",
+          "answer": "The right engine provides cabin heat, and the left engine provides defrost. Each uses a heat exchanger connected to that engine's coolant system."
+        }
+      ]
+    }
+  ]
+}

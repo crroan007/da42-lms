@@ -1,0 +1,121 @@
+{
+  "slug": "19-autopilot",
+  "title": "Autopilot",
+  "orderIndex": 19,
+  "description": "Three-axis autopilot integrated with the Garmin G1000, modes, and operation.",
+  "estimatedMinutes": 9,
+  "subsections": [
+    {
+      "title": "Autopilot System Architecture",
+      "objective": "Understand the autopilot hardware components, integration with the G1000, and system requirements.",
+      "pageRange": "120-122",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The DA42's autopilot isn't a bolt-on accessory -- it's deeply integrated into the Garmin G1000 avionics suite. Understanding the system architecture helps you appreciate what it can do, what it depends on, and what happens when components fail."
+        },
+        {
+          "type": "concept",
+          "title": "System Overview",
+          "content": "The DA42 has a 3-axis autopilot (pitch, roll, and yaw) with a flight director, all integrated into the Multi-Function Display (MFD). The GDU 1045 (the MFD unit) consolidates many functions that older systems spread across multiple boxes, resulting in fewer Line Replaceable Units (LRUs)."
+        },
+        {
+          "type": "concept",
+          "title": "System Dependencies",
+          "content": "The autopilot requires BOTH GIA 63 units (the integrated avionics computers) to operate. GIA #1 specifically handles flight director computations. If either GIA 63 fails, the autopilot cannot function."
+        },
+        {
+          "type": "warning",
+          "content": "Altitude capture below 1,200 feet AGL is prohibited. This limitation exists because the autopilot's altitude capture mode could command abrupt pitch changes at low altitudes where recovery margins are small."
+        },
+        {
+          "type": "concept",
+          "title": "Dual Sensor / Dual Processor Servos",
+          "content": "The autopilot servos use dual sensor inputs and dual processors. This redundancy allows the system to detect failures in the autopilot before the aircraft can physically respond to a bad command. If the flight director fails, however, an undesired flight path will result -- so monitor the autopilot at all times."
+        },
+        {
+          "type": "list",
+          "title": "Key Hardware Components:",
+          "items": [
+            "GDU 1040 (PFD) -- Displays mode annunciations and flight director command bars",
+            "GDU 1045 (MFD) -- Contains the autopilot mode selection buttons",
+            "GIA 63 (x2) -- Computes AFCS modes and sends commands to autopilot servos",
+            "GSA 80/81 -- Servo actuators for pitch, roll, trim, and yaw damper; also monitor servo health",
+            "GSM 85 -- Connects autopilot servos to aircraft control cables; contains the clutches"
+          ]
+        },
+        {
+          "type": "keypoint",
+          "content": "Both GIA 63 units are required for autopilot operation. The autopilot buttons are on the MFD (GDU 1045), but the mode annunciations appear on the PFD (GDU 1040)."
+        },
+        {
+          "type": "check",
+          "question": "What happens if one of the two GIA 63 units fails?",
+          "answer": "The autopilot cannot operate. Both GIA 63 units are required for autopilot function."
+        }
+      ]
+    },
+    {
+      "title": "Autopilot Modes and Controls",
+      "objective": "Identify each autopilot mode button and understand what it controls.",
+      "pageRange": "120-122",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The autopilot mode buttons on the MFD give you a wide range of options for how the aircraft flies itself. Each button selects or deselects a specific mode. Let's walk through them so you know exactly what each one does."
+        },
+        {
+          "type": "concept",
+          "title": "Autopilot (AP) Button",
+          "content": "Engages or disengages the entire autopilot system. When engaged, the autopilot will follow whatever lateral and vertical modes are active. When disengaged, you're flying by hand (but the flight director can still be active)."
+        },
+        {
+          "type": "concept",
+          "title": "Flight Director (FD) Button",
+          "content": "Activates or deactivates the flight director independently of the autopilot. Pressing once activates the flight director in its default pitch and roll mode, displaying command bars on the PFD. Pressing again deactivates the flight director and removes the command bars."
+        },
+        {
+          "type": "list",
+          "title": "Lateral (Roll) Modes:",
+          "items": [
+            "HDG -- Heading Mode: follows the heading bug",
+            "NAV -- Navigation Mode: tracks the active flight plan or navigation source",
+            "APR -- Approach Mode: tracks an approach course (ILS, GPS, VOR)",
+            "BC -- Back Course: tracks a localizer back course (reversed sensing)"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Vertical (Pitch) Modes:",
+          "items": [
+            "ALT -- Altitude Hold: maintains the current altitude",
+            "VS -- Vertical Speed: maintains a selected vertical speed (fpm)",
+            "FLC -- Flight Level Change: maintains a selected airspeed during climbs and descents",
+            "VNAV -- Vertical Navigation: follows a programmed vertical path",
+            "Nose Up / Nose Down -- Adjusts the reference value in Pitch Hold, VS, and FLC modes"
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Yaw Damper (YD)",
+          "content": "Engages or disengages the yaw damper, which smooths out Dutch roll oscillations. The yaw damper can operate independently of the autopilot -- you can use it during hand-flying for a smoother ride."
+        },
+        {
+          "type": "example",
+          "title": "Typical Climb Sequence",
+          "content": "After takeoff and gear retraction, you press FD to activate the flight director, then AP to engage the autopilot. You press HDG to follow your departure heading, then FLC to maintain your target climb speed. The autopilot pitches the nose to hold your selected airspeed while tracking your heading. When you reach cruise altitude, you press ALT to level off and hold altitude."
+        },
+        {
+          "type": "check",
+          "question": "What is the difference between pressing the FD button and the AP button?",
+          "answer": "FD activates only the flight director, which shows command bars on the PFD for guidance while you hand-fly. AP engages the autopilot servos to actually control the aircraft. You can have FD without AP (guidance only), but AP always includes FD."
+        },
+        {
+          "type": "check",
+          "question": "Which mode would you use for a constant-airspeed climb to a new altitude?",
+          "answer": "FLC (Flight Level Change) mode. It maintains a selected airspeed by adjusting pitch while you climb or descend to a new altitude."
+        }
+      ]
+    }
+  ]
+}

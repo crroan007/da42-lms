@@ -1,0 +1,145 @@
+{
+  "totalModules": 20,
+  "modules": [
+    {
+      "slug": "01-introduction",
+      "title": "Introduction to Multi-Engine Aircraft",
+      "orderIndex": 1,
+      "estimatedMinutes": 5,
+      "pageCount": 1
+    },
+    {
+      "slug": "02-v-speeds",
+      "title": "V-Speeds",
+      "orderIndex": 2,
+      "estimatedMinutes": 6,
+      "pageCount": 2
+    },
+    {
+      "slug": "03-performance-and-limitations",
+      "title": "Performance and Limitations",
+      "orderIndex": 3,
+      "estimatedMinutes": 6,
+      "pageCount": 2
+    },
+    {
+      "slug": "04-multi-engine-aerodynamics",
+      "title": "Multi-Engine Aerodynamics",
+      "orderIndex": 4,
+      "estimatedMinutes": 9,
+      "pageCount": 3
+    },
+    {
+      "slug": "05-engine-failures",
+      "title": "Engine Failures",
+      "orderIndex": 5,
+      "estimatedMinutes": 21,
+      "pageCount": 7
+    },
+    {
+      "slug": "06-vmc",
+      "title": "VMC",
+      "orderIndex": 6,
+      "estimatedMinutes": 60,
+      "pageCount": 20
+    },
+    {
+      "slug": "07-da42-vi-systems-overview",
+      "title": "DA42-VI Systems Overview",
+      "orderIndex": 7,
+      "estimatedMinutes": 6,
+      "pageCount": 2
+    },
+    {
+      "slug": "08-limitations",
+      "title": "Limitations",
+      "orderIndex": 8,
+      "estimatedMinutes": 12,
+      "pageCount": 4
+    },
+    {
+      "slug": "09-airframe",
+      "title": "Airframe",
+      "orderIndex": 9,
+      "estimatedMinutes": 15,
+      "pageCount": 5
+    },
+    {
+      "slug": "10-flight-controls",
+      "title": "Flight Controls",
+      "orderIndex": 10,
+      "estimatedMinutes": 45,
+      "pageCount": 15
+    },
+    {
+      "slug": "11-landing-gear",
+      "title": "Landing Gear",
+      "orderIndex": 11,
+      "estimatedMinutes": 69,
+      "pageCount": 23
+    },
+    {
+      "slug": "12-brakes",
+      "title": "Brakes",
+      "orderIndex": 12,
+      "estimatedMinutes": 6,
+      "pageCount": 2
+    },
+    {
+      "slug": "13-environmental-systems",
+      "title": "Environmental Systems",
+      "orderIndex": 13,
+      "estimatedMinutes": 21,
+      "pageCount": 7
+    },
+    {
+      "slug": "14-powerplant",
+      "title": "Powerplant",
+      "orderIndex": 14,
+      "estimatedMinutes": 48,
+      "pageCount": 16
+    },
+    {
+      "slug": "15-fuel-system",
+      "title": "Fuel System",
+      "orderIndex": 15,
+      "estimatedMinutes": 15,
+      "pageCount": 5
+    },
+    {
+      "slug": "16-propeller",
+      "title": "Propeller",
+      "orderIndex": 16,
+      "estimatedMinutes": 6,
+      "pageCount": 2
+    },
+    {
+      "slug": "17-electrical-system",
+      "title": "Electrical System",
+      "orderIndex": 17,
+      "estimatedMinutes": 5,
+      "pageCount": 1
+    },
+    {
+      "slug": "18-pitot-static-and-stall-warning",
+      "title": "Pitot-Static and Stall Warning",
+      "orderIndex": 18,
+      "estimatedMinutes": 5,
+      "pageCount": 1
+    },
+    {
+      "slug": "19-autopilot",
+      "title": "Autopilot",
+      "orderIndex": 19,
+      "estimatedMinutes": 9,
+      "pageCount": 3
+    },
+    {
+      "slug": "20-flight-director-and-esp",
+      "title": "Flight Director and ESP",
+      "orderIndex": 20,
+      "estimatedMinutes": 6,
+      "pageCount": 2
+    }
+  ]
+}

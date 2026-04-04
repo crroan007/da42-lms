@@ -1,0 +1,407 @@
+{
+  "slug": "11-landing-gear",
+  "title": "Landing Gear",
+  "orderIndex": 11,
+  "description": "Retractable tricycle landing gear system, hydraulic operation, indicators, and emergency extension.",
+  "estimatedMinutes": 69,
+  "subsections": [
+    {
+      "title": "Flaps Overview",
+      "objective": "Understand the DA42-VI flap system design, positions, and speed limitations.",
+      "pageRange": "63-85",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Before we dive into the landing gear itself, let's cover the flap system -- because flaps and gear work together during every approach and landing you'll fly in the DA42. Understanding how the flaps are built and operated helps you see the bigger picture of the airplane's slow-flight configuration."
+        },
+        {
+          "type": "concept",
+          "title": "Flap Construction",
+          "content": "The flaps are made of a GFRP/CFRP composite sandwich -- that's glass fiber and carbon fiber reinforced plastic. Each wing's flap is divided into two sections: an inner flap (split flap design) and an outer flap (plain flap design). The inner flap attaches with 4 hinges, and the outer flap with 6 hinges, all using roll pins identical to the aileron hinges."
+        },
+        {
+          "type": "concept",
+          "title": "Tongue Slot Connection",
+          "content": "The inner and outer flap sections are connected by a tongue slot. This mechanical connection ensures both sections always move as one uniform flap. It's also a fail-safe feature: if one push rod malfunctions, the tongue slot keeps the entire flap moving together."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of the tongue slot like the interlocking teeth on a zipper -- even if one side has a problem, the connection forces both halves to stay together and move in unison."
+        },
+        {
+          "type": "concept",
+          "title": "Flap Drive System",
+          "content": "An electric motor located under the rear seats drives the flaps. Each flap is moved by two push rods, one to each flap section. The UP and LDG (landing) positions are additionally protected by limit switches to prevent the motor from over-running the end positions."
+        },
+        {
+          "type": "keypoint",
+          "content": "The flaps have three positions: UP (0 degrees), Approach (20 degrees) with VFE 133 KIAS, and Landing (42 degrees) with VFE 113 KIAS."
+        },
+        {
+          "type": "figure",
+          "caption": "Flap Motor and Push Rods Diagram showing the electric motor under the rear seats and push rod connections to inner and outer flap sections."
+        },
+        {
+          "type": "check",
+          "question": "If one push rod to the flap system malfunctions, what prevents asymmetric flap deployment?",
+          "answer": "The tongue slot connecting the inner and outer flap sections ensures the entire flap moves together, even if one push rod fails."
+        }
+      ]
+    },
+    {
+      "title": "Landing Gear System Overview",
+      "objective": "Understand the DA42-VI landing gear type, power source, and operating limitations.",
+      "pageRange": "63-85",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The landing gear is one of the most critical systems on any retractable aircraft. A gear malfunction can turn a routine landing into an emergency, so you need to thoroughly understand how this system works, what drives it, and what to do when things go wrong."
+        },
+        {
+          "type": "concept",
+          "title": "System Type",
+          "content": "The DA42-VI uses a fully retractable tricycle gear that is electrically powered and hydraulically actuated. In plain terms, an electric motor drives a hydraulic pump, and hydraulic fluid does the actual work of moving the gear legs."
+        },
+        {
+          "type": "concept",
+          "title": "Power Pack",
+          "content": "The power pack is located behind the passenger seat in the baggage compartment on the left side of the fuselage. It contains the electric motor, hydraulic pump, hydraulic reservoir, pressure switch, and emergency accumulator -- essentially everything needed to operate the gear in one compact unit."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of the power pack like the engine compartment of a car's power steering system -- an electric motor spins a hydraulic pump, and the pressurized fluid does the heavy lifting of moving the gear."
+        },
+        {
+          "type": "keypoint",
+          "content": "Landing gear speed limitations: VLO (retract) = 152 KIAS, VLO (extend) = 188 KIAS, VLE = 188 KIAS, Emergency extension = 152 KIAS max, Cold air emergency extension = 110 KIAS max."
+        },
+        {
+          "type": "warning",
+          "content": "The extend speed (188 KIAS) is higher than the retract speed (152 KIAS). This is because the aerodynamic loads during extension are different than during retraction. Always verify your airspeed before operating the gear."
+        },
+        {
+          "type": "check",
+          "question": "Where is the landing gear power pack located, and what are its main components?",
+          "answer": "Behind the passenger seat in the baggage compartment on the left side. It contains the electric motor, hydraulic pump, hydraulic reservoir, pressure switch, and emergency accumulator."
+        }
+      ]
+    },
+    {
+      "title": "Main Gear and Nose Gear Design",
+      "objective": "Describe the physical construction and features of the main gear and nose gear assemblies.",
+      "pageRange": "63-85",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Now that you know the system overview, let's look at the actual gear legs themselves. The main gear and nose gear have distinctly different designs because they serve different purposes -- the mains absorb most of the landing loads, while the nose gear handles steering and a smaller share of the weight."
+        },
+        {
+          "type": "concept",
+          "title": "Main Gear Construction",
+          "content": "Each main gear uses a tubular strut with the wheel connected to a trailing link at the bottom. The trailing link incorporates air-oil dampers that compress quickly and extend slowly. This quick compression / slow extension design is what gives the DA42 its smooth landing feel."
+        },
+        {
+          "type": "keypoint",
+          "content": "The main gear damper strut (the silver part) should be extended 1.6 inches during preflight inspection. If it's not, the shock absorber may need servicing."
+        },
+        {
+          "type": "concept",
+          "title": "Nose Gear Construction",
+          "content": "The nose gear is a steel strut with an air-oil damper to absorb shock, similar in concept to a Cessna 172 nose strut. The nose strut should be extended 5.9 inches."
+        },
+        {
+          "type": "concept",
+          "title": "Nose Wheel Steering",
+          "content": "Steering is accomplished through the nose wheel via rudder pedals. Steering limits are 30 degrees in each direction, with steering stops to limit nose wheel travel. When the nose gear retracts, it disconnects from the universal joint and steering mechanism."
+        },
+        {
+          "type": "concept",
+          "title": "Centering Mechanism",
+          "content": "A centering mechanism on the right side of the nose strut automatically centers the nose wheel when the gear retracts. This ensures the wheel fits properly into the nose compartment. As a bonus, this mechanism also helps prevent nose wheel shimmy during ground operations."
+        },
+        {
+          "type": "analogy",
+          "content": "The centering mechanism works like a spring-loaded shopping cart wheel that snaps back to center when you lift it off the ground -- as soon as weight is off the nose wheel, it centers itself for clean retraction."
+        },
+        {
+          "type": "figure",
+          "caption": "Nose Wheel and Centering Mechanism diagram showing the strut, universal joint, and centering spring assembly."
+        },
+        {
+          "type": "check",
+          "question": "What are the correct damper extension measurements for the main gear and nose gear during preflight?",
+          "answer": "Main gear damper strut: 1.6 inches extended. Nose gear strut: 5.9 inches extended."
+        },
+        {
+          "type": "check",
+          "question": "What happens to the nose wheel steering when the gear is retracted?",
+          "answer": "The nose gear disconnects from the universal joint and steering mechanism, and the centering mechanism automatically centers the nose wheel for proper stowage in the nose compartment."
+        }
+      ]
+    },
+    {
+      "title": "Gear Position Indicating System",
+      "objective": "Identify all gear position lights, switches, and their functions for each gear leg.",
+      "pageRange": "63-85",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Knowing where your gear is at all times is absolutely critical. The DA42 provides you with a straightforward indication system, but there are some important details about the switches on each gear leg that you need to know -- especially because they do more than just turn on lights."
+        },
+        {
+          "type": "concept",
+          "title": "Indicator Lights",
+          "content": "The system uses 3 green lights and 1 red light. Each green light corresponds to one gear leg (left main, right main, nose) and illuminates when that gear is down and locked. The single red 'Unsafe' light illuminates whenever any gear is neither fully retracted nor fully extended -- in other words, in transit."
+        },
+        {
+          "type": "warning",
+          "content": "All gear position lights use non-interchangeable bulbs. If a bulb burns out, it cannot be replaced in flight. A Gear/Fire Test button lets you verify all 4 lights are working at any time -- use it during preflight."
+        },
+        {
+          "type": "concept",
+          "title": "Gear Switches - Left Main",
+          "content": "The left main gear has three switches: an Up Limit switch (indicates fully retracted), a Down Limit switch (indicates fully extended), and a Squat Switch that detects when weight is on the left main gear. The squat switch prevents accidental gear retraction on the ground."
+        },
+        {
+          "type": "concept",
+          "title": "Gear Switches - Right Main",
+          "content": "The right main gear also has Up Limit, Down Limit, and Squat switches. Additionally, the right main squat switch serves two extra functions: it de-rates the stall warning heat to 50% (when on the ground), and it starts the time counter on the G1000 -- similar to 'tach' time recording."
+        },
+        {
+          "type": "concept",
+          "title": "Gear Switches - Nose",
+          "content": "The nose gear has an Up Limit switch, two Down Limit switches (one on the rear of the nose wheel folding stay and one on the side), and a Full Pressure Switch that energizes the Extend Solenoid during gear retraction."
+        },
+        {
+          "type": "keypoint",
+          "content": "The nose gear has TWO down limit switches (rear and side of the folding stay), while each main gear has only one. The nose gear also has the unique Full Pressure Switch."
+        },
+        {
+          "type": "figure",
+          "caption": "Right Main Gear switch locations showing Up Limit Switch, Down Limit Switch, and Downlock Hook as viewed from the right wingtip."
+        },
+        {
+          "type": "figure",
+          "caption": "Nose Wheel switch locations as seen looking up into the nose wheel compartment, showing Up Limit Switch, Actuator, Folding Stay, Full Pressure Switch, Down Limit Switches, and Downlock Hook."
+        },
+        {
+          "type": "check",
+          "question": "What extra functions does the right main gear squat switch perform beyond preventing gear retraction?",
+          "answer": "It de-rates the stall warning heat to 50% when on the ground, and it starts the time counter on the G1000 (similar to tach time)."
+        },
+        {
+          "type": "check",
+          "question": "Why does the nose gear have two down limit switches while each main gear has only one?",
+          "answer": "The nose gear has down limit switches on both the rear and side of the folding stay for redundant positive indication of the down-and-locked position. The nose gear folding geometry requires verification from two different angles."
+        }
+      ]
+    },
+    {
+      "title": "Normal Gear Extension and Retraction",
+      "objective": "Explain the hydraulic sequence for both normal gear retraction and extension.",
+      "pageRange": "63-85",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "This is where it all comes together. Understanding the actual hydraulic sequence of gear movement helps you troubleshoot problems and makes the emergency procedures make sense. Let's walk through what happens inside the system each time you move that gear handle."
+        },
+        {
+          "type": "keypoint",
+          "content": "The landing gear system is ALWAYS pressurized with hydraulic fluid, whether the gear is extended or retracted. You may hear the pump run briefly when the Electric Master is turned ON -- this is normal, restoring pressure lost while unpowered."
+        },
+        {
+          "type": "concept",
+          "title": "System Components",
+          "content": "The system uses a one-way electric pump to move hydraulic fluid to and from actuators. Electric solenoid valves change fluid direction. An accumulator stores hydraulic pressure to dampen normal pressure fluctuations, reducing how often the pump cycles on and off."
+        },
+        {
+          "type": "concept",
+          "title": "Gear Retraction Sequence",
+          "content": "When you select gear UP, the pump activates along with the retraction solenoid, sending fluid to BOTH sides of the gear actuators simultaneously. Here's the clever part: the retraction side of the piston has a larger effective surface area than the extension side. Same fluid pressure, but more area means more force -- this creates differential pressure that pulls the folding stay, releases the downlock hook, and starts retraction."
+        },
+        {
+          "type": "analogy",
+          "content": "Imagine two people pushing on opposite sides of a door, but one person has both hands flat on the door while the other only uses one finger. Same push force, but the person with more surface contact wins. That's how differential pressure retracts the gear."
+        },
+        {
+          "type": "list",
+          "title": "Retraction Sequence Step by Step:",
+          "items": [
+            "Gear handle placed UP -- pump and retraction solenoid activate",
+            "Fluid pressurizes both sides of actuator -- differential pressure begins retraction",
+            "Downlock hooks release, gear legs begin folding -- green lights extinguish, red Unsafe light illuminates",
+            "Nose wheel disconnects from steering and centers itself",
+            "Full pressure switch (nose gear) energizes extend solenoid to drain extension-side fluid",
+            "All three up-limit switches depress -- red Unsafe light extinguishes",
+            "Pump runs until pressure switch confirms adequate system pressure, then shuts off",
+            "Gear held in retracted position by hydraulic pressure only"
+          ]
+        },
+        {
+          "type": "warning",
+          "content": "The landing gear is held UP by hydraulic pressure ONLY. There are no mechanical uplocks. This is why a hydraulic failure or loss of pressure will cause the gear to want to extend -- which is actually a safety feature."
+        },
+        {
+          "type": "concept",
+          "title": "Gear Extension Sequence",
+          "content": "When you select gear DOWN, both the extend and retract solenoids de-energize. This is an important safety feature: both solenoids also de-energize during an electrical failure, meaning the system defaults to the extension configuration. The pump moves fluid from the retract side to the reservoir and from the reservoir to the extend side. Gravity and springs assist extension."
+        },
+        {
+          "type": "list",
+          "title": "Extension Sequence Step by Step:",
+          "items": [
+            "Gear handle placed DOWN -- both solenoids de-energize",
+            "Pump redirects fluid to extend side of actuators",
+            "Gear begins extending -- up-limit switches release, red Unsafe light illuminates",
+            "Gravity and springs assist gear to fully extend",
+            "Downlock hooks engage -- springs maintain force to keep hooks locked",
+            "Down-limit switches depress -- green lights illuminate",
+            "Pump runs until system pressure is sufficient",
+            "Gear held down by hydraulic pressure, downlock hooks, AND spring pressure"
+          ]
+        },
+        {
+          "type": "keypoint",
+          "content": "Normal gear extension takes 6 to 10 seconds. The gear is held DOWN by three things: hydraulic pressure, downlock hooks, and spring pressure. Compare this to the retracted position, which relies on hydraulic pressure alone."
+        },
+        {
+          "type": "check",
+          "question": "How does the gear system create the force needed to retract the gear when fluid goes to both sides of the actuator?",
+          "answer": "The retraction side of the piston has a larger effective surface area than the extension side. With equal fluid pressure on both sides, the larger area produces more force, creating a differential pressure that drives retraction."
+        },
+        {
+          "type": "check",
+          "question": "What holds the gear in the UP position versus the DOWN position?",
+          "answer": "UP: Hydraulic pressure only (no mechanical uplocks). DOWN: Hydraulic pressure, downlock hooks, and spring pressure -- three independent methods."
+        }
+      ]
+    },
+    {
+      "title": "Emergency Gear Extension",
+      "objective": "Describe the emergency gear extension procedure and the mechanical sequence it initiates.",
+      "pageRange": "63-85",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Every retractable gear aircraft needs a backup plan, and the DA42 is no exception. The emergency extension system is designed to get the gear down when the normal hydraulic system can't do the job. You need to know this procedure cold because when you need it, you'll be dealing with a stressful situation."
+        },
+        {
+          "type": "warning",
+          "content": "Emergency extension must be accomplished below 188 KIAS. The extension may take up to 20 seconds -- significantly longer than the normal 6-10 seconds."
+        },
+        {
+          "type": "concept",
+          "title": "Emergency Extension Lever",
+          "content": "The emergency gear extension lever connects to an emergency gear extension valve via a flexible cable. When you pull the lever, it initiates a mechanical sequence that bypasses the normal electrical and hydraulic system entirely."
+        },
+        {
+          "type": "list",
+          "title": "What Happens When You Pull the Emergency Lever:",
+          "items": [
+            "A micro-switch deactivates the landing gear pump so it cannot run",
+            "Gravity causes the landing gear to begin extending",
+            "The actuators push fluid from the retract side through a non-return (one-way) valve to the extend side, bypassing both solenoid valves",
+            "Tension springs ensure the gear folding stays fully extend to help lock the gear down",
+            "Green lights illuminate once the down-limit switches are depressed"
+          ]
+        },
+        {
+          "type": "analogy",
+          "content": "Think of the emergency extension like pulling the emergency brake on a roller coaster. The normal powered system is bypassed, and gravity plus mechanical springs do the work of getting everything into a safe position."
+        },
+        {
+          "type": "concept",
+          "title": "If Green Lights Don't Illuminate",
+          "content": "If one or more gear indicator lights don't show down-and-locked after emergency extension, you need to reduce airspeed below 110 KIAS and then apply moderate yawing and pitching motions. These maneuvers use inertia to help nudge a stubborn gear leg into the locked position."
+        },
+        {
+          "type": "warning",
+          "content": "The 110 KIAS speed limit for the yaw/pitch assist technique is different from the normal emergency extension limit of 188 KIAS. Slowing down reduces aerodynamic loads and gives gravity and springs the best chance of completing the extension."
+        },
+        {
+          "type": "example",
+          "title": "Emergency Extension Scenario",
+          "content": "You're on a visual approach and select gear down, but only two green lights illuminate -- the nose gear light remains dark. You follow the emergency extension procedure and pull the lever. After 20 seconds, you still see only two greens. You slow to below 110 KIAS and apply moderate rudder inputs to yaw the aircraft. The third green light illuminates. You continue the approach with three green and land normally."
+        },
+        {
+          "type": "check",
+          "question": "During emergency gear extension, how does hydraulic fluid get from the retract side to the extend side of the actuators without the pump running?",
+          "answer": "The actuators push fluid from the retract side through a non-return (one-way) valve to the extend side, bypassing both solenoid valves entirely. Gravity and springs drive this process."
+        },
+        {
+          "type": "check",
+          "question": "If a gear leg won't lock down after emergency extension, what should you do?",
+          "answer": "Reduce airspeed below 110 KIAS and apply moderate yawing and pitching motions to help position the gear into the down-and-locked position using inertia."
+        }
+      ]
+    },
+    {
+      "title": "Gear Warning System",
+      "objective": "Identify the conditions that trigger the gear warning horn and understand the mute function.",
+      "pageRange": "63-85",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The gear warning system is your last line of defense against a gear-up landing. It's designed to alert you when the airplane's configuration doesn't match what you'd expect for the phase of flight. Understanding when it sounds -- and when it can be silenced -- is essential knowledge for every DA42 pilot."
+        },
+        {
+          "type": "concept",
+          "title": "Warning System Components",
+          "content": "The gear warning system consists of a warning horn and a 'CHECK GEAR' caution message on the PFD. When the warning activates, the Gear Unsafe light also illuminates."
+        },
+        {
+          "type": "list",
+          "title": "The Gear Warning Horn Sounds When:",
+          "items": [
+            "The airplane is airborne, the gear is not fully down, AND one power lever is below 20%",
+            "The flaps are moved to the LDG (landing) position with the landing gear up"
+          ]
+        },
+        {
+          "type": "keypoint",
+          "content": "The horn will NOT sound when you place the gear handle UP while on the ground. The squat switches prevent this unnecessary alert."
+        },
+        {
+          "type": "concept",
+          "title": "Gear Warning Mute Button",
+          "content": "You can mute the horn and extinguish the PFD caution by pressing the mute button, but ONLY when one power lever is below 20% with the gear up. This is designed for situations like single-engine operations where you've intentionally secured an engine."
+        },
+        {
+          "type": "list",
+          "title": "The Horn Will Sound Again After Muting If:",
+          "items": [
+            "The power lever is brought above 20% and then back below",
+            "The OTHER power lever is brought below 20%",
+            "Flaps are extended to the landing position"
+          ]
+        },
+        {
+          "type": "warning",
+          "content": "The mute button will NOT function if BOTH engines are below 20% or if the flaps are set to the landing position. This ensures you always get a warning during the most critical configurations."
+        },
+        {
+          "type": "example",
+          "title": "Single-Engine Scenario",
+          "content": "You've shut down the left engine and are flying single-engine. The left power lever is at idle (below 20%), triggering the gear warning horn even though you're cruising at altitude with the gear intentionally up. You press the mute button to silence the horn. Later, when you reduce the right engine to begin your descent and approach, the horn sounds again -- reminding you to extend the gear before landing."
+        },
+        {
+          "type": "check",
+          "question": "Under what conditions does the gear warning mute button NOT work?",
+          "answer": "The mute will not function if both engines are below 20% power or if the flaps are set to the landing position."
+        },
+        {
+          "type": "figure",
+          "caption": "Main Gear Actuator showing tension spring and folding stay assembly."
+        },
+        {
+          "type": "figure",
+          "caption": "Nose Gear Actuator showing tension spring and folding stay assembly."
+        },
+        {
+          "type": "figure",
+          "caption": "Landing Gear system hydraulic diagrams showing retraction (differential pressure), retraction (full pressure), normal extension, and emergency extension fluid flow paths."
+        }
+      ]
+    }
+  ]
+}

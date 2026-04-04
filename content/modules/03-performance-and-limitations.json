@@ -1,0 +1,144 @@
+{
+  "slug": "03-performance-and-limitations",
+  "title": "Performance and Limitations",
+  "orderIndex": 3,
+  "description": "Accelerate-stop and accelerate-go distances, and single-engine climb performance requirements.",
+  "estimatedMinutes": 6,
+  "subsections": [
+    {
+      "title": "Accelerate-Stop and Accelerate-Go Distances",
+      "objective": "Understand the two critical takeoff distance calculations and how they shape your go/no-go decisions",
+      "pageRange": "4-5",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Every time you line up on the runway in a twin, you need to think about two distances: how much runway you need to stop if an engine fails during the takeoff roll, and how much distance you need to get airborne and clear obstacles if you decide to continue. These are the accelerate-stop and accelerate-go distances."
+        },
+        {
+          "type": "concept",
+          "title": "Accelerate-Stop Distance",
+          "content": "The total runway length required to accelerate to VR or VLOF (as specified by the manufacturer), experience an engine failure at that point, and bring the airplane to a complete stop on the remaining runway."
+        },
+        {
+          "type": "concept",
+          "title": "Accelerate-Go Distance",
+          "content": "The total horizontal distance required to accelerate to VR or VLOF, experience an engine failure, and continue the takeoff -- climbing to 50 feet AGL on the remaining engine."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of it like a highway on-ramp with a decision point. If something goes wrong before you merge, you need enough ramp to brake to a stop. If you're already committed, you need enough room to get up to speed and merge safely on reduced power."
+        },
+        {
+          "type": "text",
+          "content": "The FARs do not specifically require that your available runway be equal to or greater than the accelerate-stop distance. Most AFMs and POHs publish this data as advisory information only. However, it can become a binding limitation if it appears in the Limitations section of your POH."
+        },
+        {
+          "type": "warning",
+          "content": "Even though the regulations may not require it, using runway lengths of at least the accelerate-stop distance is always a best practice. Operating without this margin means an engine failure during the takeoff roll could end in a runway overrun."
+        },
+        {
+          "type": "check",
+          "question": "What is the difference between accelerate-stop distance and accelerate-go distance?",
+          "answer": "Accelerate-stop distance is the runway needed to accelerate to rotation speed and then stop after an engine failure. Accelerate-go distance is the horizontal distance needed to accelerate, lose an engine, and continue the takeoff to 50 feet AGL on one engine."
+        }
+      ]
+    },
+    {
+      "title": "Engine Ceilings",
+      "objective": "Distinguish between the four types of engine-related service ceilings and understand the concept of drift-down",
+      "pageRange": "4-5",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "How high can your airplane go? That depends on how many engines are running. Multi-engine pilots need to understand four different ceiling values, because losing an engine at cruise altitude has very real consequences for how high you can stay."
+        },
+        {
+          "type": "concept",
+          "title": "All-Engine Service Ceiling",
+          "content": "The highest altitude where your airplane can still maintain a steady climb of 100 feet per minute with both engines producing full power. Above this altitude, you can still fly, but you can no longer achieve a meaningful climb."
+        },
+        {
+          "type": "concept",
+          "title": "All-Engine Absolute Ceiling",
+          "content": "The altitude where climb is no longer possible at all with both engines operating at full power. This is the airplane's hard upper limit with everything working."
+        },
+        {
+          "type": "concept",
+          "title": "Single-Engine Service Ceiling",
+          "content": "The highest altitude where the airplane can maintain a steady climb of 50 feet per minute with one engine at full power and the other engine's propeller feathered. Notice this standard is less demanding -- just 50 fpm compared to 100 fpm for all-engine."
+        },
+        {
+          "type": "concept",
+          "title": "Single-Engine Absolute Ceiling",
+          "content": "The altitude where climb is no longer possible with one engine at full power and the dead engine's propeller feathered. This is your hard ceiling on a single engine."
+        },
+        {
+          "type": "example",
+          "title": "Drift-Down Scenario",
+          "content": "Imagine you're cruising at 9,000 feet and your single-engine absolute ceiling is 5,000 feet. If you lose an engine, you cannot maintain 9,000 feet. The airplane will gradually descend -- or 'drift down' -- until it levels off at 5,000 feet, the highest altitude it can sustain on one engine."
+        },
+        {
+          "type": "keypoint",
+          "content": "Above the single-engine absolute ceiling, VYSE gives you the minimum rate of descent rather than a climb. Fly blue line to lose altitude as slowly as possible."
+        },
+        {
+          "type": "check",
+          "question": "You're cruising at 12,000 feet and your single-engine absolute ceiling is 7,000 feet. What happens if you lose an engine?",
+          "answer": "The airplane will drift down from 12,000 feet to 7,000 feet, which is the highest altitude it can sustain on one engine. During the descent, flying VYSE will minimize your rate of descent."
+        }
+      ]
+    },
+    {
+      "title": "Single-Engine Climb Performance Requirements",
+      "objective": "Understand the FAA certification requirements for single-engine climb performance in light twins",
+      "pageRange": "4-5",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Here's something that surprises a lot of new multi-engine students: the FAA does not require light twins to be able to climb on one engine. Let that sink in. Your airplane may be perfectly legal to fly and still be incapable of maintaining altitude with an engine out under certain conditions."
+        },
+        {
+          "type": "text",
+          "content": "14 CFR Part 23.67 sets the one-engine-inoperative climb performance requirements for aircraft with a maximum weight of 6,000 pounds or less, and a VSO of 61 knots or less. The regulation only requires that the climb rate be 'determined' -- not that it be positive."
+        },
+        {
+          "type": "list",
+          "title": "Conditions for determining OEI climb performance:",
+          "items": [
+            "Critical engine inoperative, propeller in minimum drag position (feathered)",
+            "Remaining engine(s) at no more than maximum continuous power",
+            "Landing gear retracted",
+            "Wing flaps retracted",
+            "Climb speed not less than 1.2 VS1"
+          ]
+        },
+        {
+          "type": "warning",
+          "content": "For light twins (6,000 lbs or less), the one-engine-inoperative rate of climb can be a NEGATIVE number. This means the airplane may actually descend even in the clean configuration at best single-engine speed. Know your airplane's actual OEI performance."
+        },
+        {
+          "type": "text",
+          "content": "For aircraft certified after February 4, 1991, the rules are slightly more demanding: the airplane must maintain a steady climb gradient of at least 1.5 percent at a pressure altitude of 5,000 feet under the same conditions listed above. For aircraft certified before that date, the OEI climb rate at 5,000 feet MSL must be at least 0.027 times VSO in feet per minute."
+        },
+        {
+          "type": "keypoint",
+          "content": "Do not confuse the date of type certification with the airplane's model year. A 2024-model airplane could still be built under a type certificate issued before 1991."
+        },
+        {
+          "type": "concept",
+          "title": "Rate of Climb vs. Climb Gradient",
+          "content": "Rate of climb measures altitude gain per unit of time (feet per minute). Climb gradient measures altitude gained per horizontal distance traveled, expressed as a percentage. A 1.5% gradient means you gain 1.5 feet for every 100 feet of forward travel, or 15 feet per 1,000 feet, or 150 feet per 10,000 feet."
+        },
+        {
+          "type": "text",
+          "content": "Climb gradient can also be expressed as altitude gain per nautical mile or as a ratio like 50:1. One important distinction: unlike rate of climb, climb gradient is affected by wind. A headwind improves your gradient (you cover less ground distance for the same altitude gain), while a tailwind degrades it."
+        },
+        {
+          "type": "check",
+          "question": "Does the FAA require light twins to have a positive rate of climb with one engine inoperative?",
+          "answer": "No. For aircraft with a maximum weight of 6,000 lbs or less and VSO of 61 knots or less, the regulation only requires the OEI climb rate to be determined, not that it be positive. The airplane could legally have a negative single-engine climb rate."
+        }
+      ]
+    }
+  ]
+}

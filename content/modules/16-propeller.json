@@ -1,0 +1,101 @@
+{
+  "slug": "16-propeller",
+  "title": "Propeller",
+  "orderIndex": 16,
+  "description": "MT constant-speed feathering propeller, governor operation, and unfeathering accumulator.",
+  "estimatedMinutes": 6,
+  "subsections": [
+    {
+      "title": "Propeller Construction and Gear Reduction",
+      "objective": "Identify the propeller type, construction materials, and the purpose of the reduction gearbox.",
+      "pageRange": "116-117",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The DA42's propellers are quite different from the metal props you've seen on most training aircraft. Understanding their construction, how they change pitch, and especially how they feather is essential knowledge -- particularly for single-engine operations."
+        },
+        {
+          "type": "concept",
+          "title": "Propeller Construction",
+          "content": "The MT propeller is a wooden, 3-blade, constant-speed feathering propeller covered with a fiber-reinforced plastic coating. The wood is finished with an acrylic lacquer paint. The outboard leading edges are protected from erosion by stainless-steel cladding, and the inboard leading edges have a self-adhesive rubber strip (PU tape). The propeller diameter is 190 cm (74.8 inches)."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of the propeller construction like a high-end wooden tennis racket -- the wood core provides strength and vibration damping, the plastic coating protects it from the elements, and the steel edge guard handles the wear from the hardest impacts."
+        },
+        {
+          "type": "concept",
+          "title": "Reduction Gearbox",
+          "content": "The propeller is geared down with a ratio of 1.69:1 because the diesel engine turns at a higher RPM than is optimal for the propeller. For every 1.69 turns of the engine crankshaft, the propeller makes one rotation. As you set a power percentage with the power lever, the ECU adjusts propeller RPM accordingly."
+        },
+        {
+          "type": "concept",
+          "title": "Torsion Vibration Dampening",
+          "content": "The propeller system includes torsion vibration dampening. This reduces vibration during normal operations and, importantly, decouples the rotating mass of the propeller from the crankshaft during engine start and shutdown. This protects the crankshaft and engine from the high loads that would otherwise occur as the heavy propeller speeds up or slows down."
+        },
+        {
+          "type": "check",
+          "question": "Why does the DA42 need a reduction gearbox between the engine and propeller?",
+          "answer": "The diesel engine turns at a higher RPM than is efficient for the propeller. The 1.69:1 reduction gearbox converts the high engine RPM to a lower, more efficient propeller RPM."
+        }
+      ]
+    },
+    {
+      "title": "Propeller Pitch Control and Feathering",
+      "objective": "Explain how blade pitch is changed, what drives feathering, and how the unfeathering accumulator works.",
+      "pageRange": "116-117",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The ability to feather the propeller is one of the most important safety features on any multi-engine aircraft. A windmilling propeller on a dead engine creates enormous drag -- feathering it is what makes the DA42 actually flyable on one engine. Let's look at how the pitch control and feathering systems work."
+        },
+        {
+          "type": "concept",
+          "title": "Pitch Control Mechanism",
+          "content": "The propeller uses three forces to change blade angle: a hub spring, counterweights, and an electric governor valve that controls oil flow. Oil from the gearbox is added to the hub to move the blades toward LOW pitch (fine pitch, high RPM). Oil is removed from the hub -- combined with the hub spring and counterweights -- to move the blades toward HIGH pitch (coarse pitch, low RPM) or the feathered position."
+        },
+        {
+          "type": "keypoint",
+          "content": "Oil IN the hub = low pitch / high RPM. Oil OUT of the hub = high pitch / low RPM / feather. The natural tendency of the springs and counterweights is to drive the blades toward feather."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of the propeller hub like a hydraulic cylinder fighting against a spring. Oil pressure pushes the blades to flat (low pitch), while the spring and counterweights want to twist them to feather. When oil is drained, the spring wins and the blades feather. This is a safety feature -- loss of oil pressure results in feathering, not flat pitch."
+        },
+        {
+          "type": "concept",
+          "title": "Coarse Pitch Stop",
+          "content": "A coarse pitch stop prevents feathering from occurring when propeller RPM is below 1300 RPM. This prevents accidental feathering while on the ground, where feathering is neither needed nor desired."
+        },
+        {
+          "type": "concept",
+          "title": "Feathering Procedure",
+          "content": "To feather a propeller, bring the power lever to idle and place the appropriate engine master switch to OFF. This opens the electric governor valve, allowing all the oil to flow out of the propeller hub. With no oil pressure opposing them, the hub spring and counterweights drive the blades to the full feather position."
+        },
+        {
+          "type": "concept",
+          "title": "Unfeathering Accumulator",
+          "content": "The unfeathering accumulator stores oil pressure under a charge. When you need to restart a feathered engine and place the engine master switch back to ON, the accumulator provides the initial burst of oil pressure needed to push the blades back out of feather and get the propeller turning again."
+        },
+        {
+          "type": "warning",
+          "content": "Feathering requires the engine master switch to be OFF. Simply pulling the power lever to idle is not enough to feather -- you must also turn off the engine master switch to open the governor valve and drain the hub oil."
+        },
+        {
+          "type": "figure",
+          "caption": "Propeller system diagram showing the hub, governor valve, oil flow paths, hub spring, counterweights, coarse pitch stop, and unfeathering accumulator."
+        },
+        {
+          "type": "check",
+          "question": "What happens to the propeller blades if oil pressure is lost in the propeller hub?",
+          "answer": "The hub spring and counterweights drive the blades toward the feathered position. This is a safety feature -- loss of oil pressure results in feathering, which reduces drag on a dead engine."
+        },
+        {
+          "type": "check",
+          "question": "What is the purpose of the unfeathering accumulator?",
+          "answer": "It stores oil pressure under a charge so that when the engine master switch is turned back ON, it can provide the initial oil pressure needed to push the blades out of feather and allow the engine to restart."
+        }
+      ]
+    }
+  ]
+}

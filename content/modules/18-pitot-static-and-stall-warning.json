@@ -1,0 +1,92 @@
+{
+  "slug": "18-pitot-static-and-stall-warning",
+  "title": "Pitot-Static and Stall Warning",
+  "orderIndex": 18,
+  "description": "Pitot-static system and electrically-powered stall warning system.",
+  "estimatedMinutes": 5,
+  "subsections": [
+    {
+      "title": "Stall Warning System",
+      "objective": "Understand the stall warning system components, heat de-rating, and the relationship to pitot heat.",
+      "pageRange": "119-119",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The stall warning system is your last alert before the wing stops flying. In the DA42, it's an electrically powered system with built-in anti-ice protection -- but there's a quirk with the ground indication that can confuse new pilots if they don't understand why it happens."
+        },
+        {
+          "type": "concept",
+          "title": "Stall Warning Components",
+          "content": "The stall warning system is located on the front edge (leading edge) of the left wing, below the chord line. It uses a lift detector vane -- a small movable tab that deflects upward as the angle of attack increases. When the angle of attack approaches critical, the vane triggers a continuous aural tone to warn you."
+        },
+        {
+          "type": "concept",
+          "title": "Stall Warning Heat",
+          "content": "The lift detector vane, its mounting plate, and the housing are all heated to prevent ice from jamming the mechanism. The stall warning heat is controlled by the same switch that powers the pitot heat -- one switch, both systems."
+        },
+        {
+          "type": "concept",
+          "title": "Ground De-Rating",
+          "content": "When the airplane is on the ground and stall heat is turned on, the heat is de-rated to 50% power. This is controlled by the squat switch on the right main gear. At 50% heat, the G1000 will display a 'STALL HT FAIL' message."
+        },
+        {
+          "type": "warning",
+          "content": "The 'STALL HT FAIL' indication on the ground with pitot heat ON is NORMAL. It appears because the system is deliberately de-rated to 50% while on the ground. Once airborne, the squat switch releases, full power is restored, and the message should extinguish."
+        },
+        {
+          "type": "keypoint",
+          "content": "Pitot heat and stall warning heat share the same switch. On the ground, stall heat runs at 50% and triggers a 'STALL HT FAIL' message -- this is normal ground behavior."
+        },
+        {
+          "type": "check",
+          "question": "Why does the G1000 show 'STALL HT FAIL' when you turn on pitot heat on the ground?",
+          "answer": "Because the stall warning heat is de-rated to 50% when the squat switch detects the aircraft is on the ground. The system interprets the reduced heat output as a 'failure' even though it's intentional. The message should clear once airborne."
+        }
+      ]
+    },
+    {
+      "title": "Pitot-Static System",
+      "objective": "Describe the pitot probe, static port locations, heating, and the alternate static source.",
+      "pageRange": "119-119",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The pitot-static system feeds your airspeed indicator, altimeter, and vertical speed indicator. If these instruments give you bad data, you can't fly safely -- especially in IMC. Knowing where the ports are, how they're protected, and what your backup options are could save your life."
+        },
+        {
+          "type": "concept",
+          "title": "Pitot Probe",
+          "content": "The pitot probe measures total pressure (ram air plus static pressure) to calculate airspeed. There are several static pressure orifices on the bottom of the pitot probe, but they are NOT used by the system. The pitot tube is electrically heated to prevent icing."
+        },
+        {
+          "type": "concept",
+          "title": "Static Ports",
+          "content": "The static ports for the entire pitot-static system -- including the Air Data Computer (ADC) and integrated autopilot -- are located on the left and right sides of the rear fuselage. Having ports on both sides helps cancel out any errors from sideslip. The system is filtered to protect against dirt and condensation."
+        },
+        {
+          "type": "concept",
+          "title": "Alternate Static Source",
+          "content": "An alternate static vent is located under the left side of the instrument panel. Opening this valve allows cabin air to be used as the static pressure source if the normal static ports become blocked. Remember that cabin pressure is slightly different from outside static pressure, so expect minor instrument errors when using alternate static."
+        },
+        {
+          "type": "analogy",
+          "content": "The alternate static source is like using a backup thermometer when your primary one breaks. It gives you a reading, but it might be slightly off because it's measuring from a different location. In this case, cabin air pressure is close to, but not exactly, the same as outside static pressure."
+        },
+        {
+          "type": "keypoint",
+          "content": "Static ports are on the rear fuselage (left and right sides). Alternate static source is under the left instrument panel. The pitot probe's built-in static ports are NOT used."
+        },
+        {
+          "type": "check",
+          "question": "Where are the primary static ports located on the DA42?",
+          "answer": "On the left and right sides of the rear fuselage. They serve the entire pitot-static system including the ADC and autopilot."
+        },
+        {
+          "type": "check",
+          "question": "Where is the alternate static source, and what does it use for pressure?",
+          "answer": "Under the left side of the instrument panel. It uses cabin air pressure as a substitute static source when the normal static ports are blocked."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "slug": "02-v-speeds",
+  "title": "V-Speeds",
+  "orderIndex": 2,
+  "description": "V-speeds specific to multi-engine operations including VMC, VYSE, VXSE, and VSSE.",
+  "estimatedMinutes": 6,
+  "subsections": [
+    {
+      "title": "V-Speeds for Multi-Engine Aircraft",
+      "objective": "Learn the additional V-speeds unique to multi-engine operations and why they exist",
+      "pageRange": "2-3",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "You already know your V-speeds from single-engine training -- VX, VY, VR, and the rest. Good news: those all still apply in a twin. But multi-engine airplanes introduce several new V-speeds that relate specifically to what happens when one engine quits."
+        },
+        {
+          "type": "text",
+          "content": "These speeds aren't just numbers to memorize for a checkride. They're the boundaries that separate a manageable situation from an unrecoverable one. Understanding each one could genuinely save your life."
+        },
+        {
+          "type": "keypoint",
+          "content": "Unless otherwise noted, V-speeds in the AFM/POH apply to sea level pressure, standard day conditions, and maximum certificated takeoff weight. Performance speeds vary with weight, configuration, and atmospheric conditions."
+        }
+      ]
+    },
+    {
+      "title": "Takeoff V-Speeds",
+      "objective": "Understand the V-speeds associated with the takeoff phase of flight",
+      "pageRange": "2-3",
+      "blocks": [
+        {
+          "type": "concept",
+          "title": "VR -- Rotation Speed",
+          "content": "The speed at which you apply back-pressure to rotate the airplane to a takeoff attitude. This is your cue to start pulling back on the yoke."
+        },
+        {
+          "type": "concept",
+          "title": "VLOF -- Lift-Off Speed",
+          "content": "The speed at which the airplane actually leaves the runway surface. Depending on the manufacturer, takeoff performance data may reference either VR or VLOF."
+        },
+        {
+          "type": "concept",
+          "title": "VX -- Best Angle of Climb Speed",
+          "content": "The speed that gives you the greatest altitude gain for a given horizontal distance. Use this when you need to clear an obstacle right after takeoff."
+        },
+        {
+          "type": "concept",
+          "title": "VXSE -- Best Angle of Climb Speed (One Engine Inoperative)",
+          "content": "The single-engine version of VX. This speed gives you the steepest climb gradient possible when you're flying on just one engine. You'll need every foot of altitude you can get."
+        },
+        {
+          "type": "concept",
+          "title": "VY -- Best Rate of Climb Speed",
+          "content": "The speed that gives you the greatest altitude gain per unit of time. This is your go-to speed for climbing efficiently with both engines running."
+        },
+        {
+          "type": "concept",
+          "title": "VYSE -- Best Rate of Climb Speed (One Engine Inoperative)",
+          "content": "The single-engine version of VY. This speed gives you the best possible climb rate (or the least rate of descent) when one engine is out. Marked with a blue radial line on most airspeed indicators -- the famous 'blue line' you'll hear about constantly in multi-engine training."
+        },
+        {
+          "type": "keypoint",
+          "content": "VYSE is marked with a blue radial line on the airspeed indicator. In multi-engine flying, 'fly the blue line' is practically a mantra when you lose an engine."
+        },
+        {
+          "type": "check",
+          "question": "What does the blue radial line on a multi-engine airspeed indicator represent?",
+          "answer": "VYSE -- the best rate-of-climb speed with one engine inoperative. It gives you the best climb rate (or minimum sink rate) on a single engine."
+        }
+      ]
+    },
+    {
+      "title": "Critical Safety Speeds",
+      "objective": "Understand VSSE and VMC and their critical role in multi-engine safety",
+      "pageRange": "2-3",
+      "blocks": [
+        {
+          "type": "concept",
+          "title": "VSSE -- Safe, Intentional One-Engine-Inoperative Speed",
+          "content": "Originally called 'safe single-engine speed,' VSSE is the minimum speed at which you should intentionally shut down an engine (such as during training). It provides a safety buffer above VMC, giving you adequate control authority if something goes wrong during the exercise."
+        },
+        {
+          "type": "text",
+          "content": "VSSE is required by 14 CFR Part 23 (Airworthiness Standards) and must be published in the AFM/POH. Never intentionally fail an engine below this speed."
+        },
+        {
+          "type": "concept",
+          "title": "VMC -- Minimum Control Speed (Critical Engine Inoperative)",
+          "content": "VMC is the minimum speed at which you can maintain directional control when the critical engine suddenly fails under a very specific set of worst-case conditions defined by 14 CFR Part 23. It's marked with a red radial line on most airspeed indicators."
+        },
+        {
+          "type": "warning",
+          "content": "VMC only addresses directional control. There is absolutely no requirement that the airplane can climb at VMC. You might be able to keep it straight, but you could still be descending."
+        },
+        {
+          "type": "figure",
+          "caption": "DA42-VI standby airspeed indicator showing the red radial line (VMC) and blue radial line (VYSE). These two markings are unique to multi-engine airspeed indicators."
+        },
+        {
+          "type": "check",
+          "question": "What is the difference between what VMC guarantees and what it does NOT guarantee?",
+          "answer": "VMC guarantees that you can maintain directional control of the airplane. It does NOT guarantee that the airplane can climb or even maintain altitude. You might hold heading but still be descending."
+        }
+      ]
+    },
+    {
+      "title": "VMC and Takeoff Decisions",
+      "objective": "Apply VMC knowledge to make critical go/no-go decisions during the takeoff phase",
+      "pageRange": "2-3",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "VMC is not just a number on your airspeed indicator -- it's a decision point. What you do when an engine fails depends entirely on your speed relative to VMC and whether you're on the ground or in the air."
+        },
+        {
+          "type": "warning",
+          "content": "If an engine failure occurs below VMC while you are still on the ground, you MUST reject the takeoff immediately. Close both throttles and use rudder and brakes to stop. There is no safe way to continue."
+        },
+        {
+          "type": "warning",
+          "content": "If an engine fails below VMC while you are airborne, directional control is not possible with the remaining engine at takeoff power. For this reason, you should never be airborne during takeoff before your airspeed reaches and exceeds VMC."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of VMC as a 'control line' on your airspeed indicator. Above it, you have the rudder authority to fight the yaw from asymmetric thrust. Below it, the rudder simply can't keep up -- and no amount of pilot skill changes that. The airplane will yaw uncontrollably."
+        },
+        {
+          "type": "text",
+          "content": "After liftoff, your priority is altitude. Gain it as rapidly as possible. Altitude gives you time to think and react if an engine fails. Establish and maintain VY until you reach a safe single-engine maneuvering altitude, typically at least 400 to 500 feet AGL depending on terrain and obstructions."
+        },
+        {
+          "type": "keypoint",
+          "content": "After liftoff, altitude is more important than excess airspeed. Climb at VY to reach a safe single-engine maneuvering altitude (typically 400-500 feet AGL) as quickly as possible."
+        },
+        {
+          "type": "check",
+          "question": "You're on the takeoff roll at 65 knots when the left engine fails. VMC for your airplane is 72 knots. What should you do?",
+          "answer": "Reject the takeoff immediately. You are below VMC and still on the ground. Close both throttles and use rudder and brakes to bring the airplane to a stop. Do not attempt to continue the takeoff."
+        }
+      ]
+    }
+  ]
+}

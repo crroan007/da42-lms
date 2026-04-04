@@ -1,0 +1,480 @@
+{
+  "slug": "06-vmc",
+  "title": "VMC",
+  "orderIndex": 6,
+  "description": "Minimum controllable airspeed (VMC), factors affecting VMC, and demonstration procedures.",
+  "estimatedMinutes": 60,
+  "lessons": [
+    {
+      "title": "What Is VMC?",
+      "objective": "Define VMC and explain why it is the single most important speed concept in multi-engine flying.",
+      "pageRange": "16-35",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "If there is one speed that defines multi-engine flying, it's VMC. Understanding this speed -- what it means, what affects it, and what happens when you get below it -- is the difference between a manageable emergency and a catastrophic loss of control."
+        },
+        {
+          "type": "concept",
+          "title": "The Engine-Out Problem",
+          "content": "When a multi-engine airplane loses an engine, the remaining engine creates an asymmetric thrust condition. The operating engine pushes on one side while the dead engine produces nothing (or worse, drag). This imbalance creates a powerful yaw toward the dead engine, and that yaw also produces a roll."
+        },
+        {
+          "type": "concept",
+          "title": "The Rudder Solution -- and Its Limits",
+          "content": "You counter the yaw with rudder. But here's the problem: as airspeed decreases, the rudder becomes less effective. You need progressively more rudder deflection to hold heading. Eventually, you reach an airspeed where you're standing on the rudder pedal at full deflection and it's barely enough. Any slower, and you lose directional control."
+        },
+        {
+          "type": "concept",
+          "title": "VMC Defined",
+          "content": "VMC is the minimum control speed with the critical engine inoperative. More precisely, it's the minimum speed at which you can maintain directional control under a very specific set of conditions defined by 14 CFR Part 23. It is the airspeed at which full rudder deflection is just enough to maintain heading."
+        },
+        {
+          "type": "warning",
+          "content": "VMC addresses ONLY directional control -- not performance. You might be able to hold heading at VMC but still be descending. Being above VMC means you can keep the airplane pointed straight; it does NOT mean you can climb or even maintain altitude."
+        },
+        {
+          "type": "analogy",
+          "content": "Imagine riding a bicycle with a strong crosswind pushing you to the left. You can lean into the wind to stay upright, but only up to a point. If the wind gets too strong -- or you go too slowly -- you lose balance and fall. VMC is the cycling speed below which the wind wins."
+        },
+        {
+          "type": "keypoint",
+          "content": "VMC is the minimum airspeed at which directional control can be maintained with the critical engine inoperative. Below VMC, full rudder is not enough to stop the yaw. VMC deals only with directional control, not performance."
+        },
+        {
+          "type": "check",
+          "question": "Does VMC guarantee you can climb, maintain altitude, or even avoid descending?",
+          "answer": "No. VMC addresses only directional control. You may be able to hold heading at VMC but still be unable to climb or maintain altitude. Performance is a separate consideration."
+        }
+      ]
+    },
+    {
+      "title": "VMC Certification -- 14 CFR Part 23.149",
+      "objective": "List the specific conditions under which VMC is determined during aircraft certification and explain why published VMC may differ from actual VMC.",
+      "pageRange": "16-35",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Every multi-engine airplane goes through a certification process that includes determining a VMC speed. But here's what trips up many pilots: the published VMC is only valid for one very specific set of conditions. Change any of those conditions, and the actual VMC changes too."
+        },
+        {
+          "type": "concept",
+          "title": "The Certification Standard",
+          "content": "Under 14 CFR 23.149, VMC is the calibrated airspeed at which -- when the critical engine is suddenly made inoperative -- it's possible to maintain control of the airplane and maintain straight flight with no more than 5 degrees of bank."
+        },
+        {
+          "type": "list",
+          "title": "VMC certification conditions (FAR 23.149):",
+          "items": [
+            "Most unfavorable weight (not necessarily max gross weight)",
+            "Most unfavorable center of gravity position",
+            "Airplane airborne, ground effect negligible",
+            "Maximum available takeoff power on each engine initially",
+            "Airplane trimmed for takeoff",
+            "Flaps in the takeoff position",
+            "Landing gear retracted",
+            "All propeller controls in the recommended takeoff position"
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Recovery Requirements",
+          "content": "The certification also requires that during VMC recovery, the rudder pedal force must not exceed 150 pounds, it must not be necessary to reduce power on the operating engine, the airplane must not assume any dangerous attitude, and it must be possible to prevent a heading change of more than 20 degrees."
+        },
+        {
+          "type": "concept",
+          "title": "VSSE -- Safe Intentional OEI Speed",
+          "content": "14 CFR 23.149 also requires a minimum speed for intentionally shutting down the critical engine, called VSSE (safe, intentional, one-engine-inoperative speed). You should never intentionally cut an engine below VSSE during training or flight testing."
+        },
+        {
+          "type": "formula",
+          "label": "VMC Upper Limit",
+          "formula": "VMC must not exceed 1.2 * VS1",
+          "explanation": "VMC must not exceed 1.2 times the stall speed in the takeoff configuration (VS1) at maximum takeoff weight. This ensures there is a usable speed range between stall and loss of directional control."
+        },
+        {
+          "type": "keypoint",
+          "content": "Published VMC and actual VMC are two different speeds. The published number is only valid for the exact certification conditions. In real flight, many factors will cause the actual VMC to be higher or lower than published."
+        },
+        {
+          "type": "check",
+          "question": "What is the maximum bank angle allowed during VMC certification testing?",
+          "answer": "5 degrees of bank. The airplane must be able to maintain straight flight with no more than 5 degrees of bank with the critical engine inoperative."
+        }
+      ]
+    },
+    {
+      "title": "Recognizing and Recovering From VMC",
+      "objective": "Identify the four warning signs of approaching VMC and execute the correct two-step recovery procedure.",
+      "pageRange": "16-35",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Knowing the definition of VMC is academic. Recognizing it in the airplane and recovering before you lose control is what keeps you alive. There are four warning signs, and the recovery requires two simultaneous actions."
+        },
+        {
+          "type": "concept",
+          "title": "Four Warning Signs of VMC",
+          "content": "As you approach VMC, you'll notice these signs in order of increasing urgency. Any one of them should trigger an immediate recovery."
+        },
+        {
+          "type": "list",
+          "title": "VMC warning signs:",
+          "items": [
+            "Full rudder deflection with the airplane still yawing toward the inoperative engine -- you're out of rudder authority",
+            "Stall warning horn -- a single-engine stall can be just as deadly as VMC and could result in a spin",
+            "Buffeting before the stall -- same concern as the stall warning, the wing is about to quit flying",
+            "Rapid decay of control effectiveness -- any loss of control effectiveness could lead to complete loss of control"
+          ]
+        },
+        {
+          "type": "warning",
+          "content": "Do not wait for all four warning signs. Any ONE of these should trigger an immediate VMC recovery. Hesitation at low altitude can be fatal."
+        },
+        {
+          "type": "concept",
+          "title": "Two-Step VMC Recovery",
+          "content": "The recovery requires two simultaneous actions. First, reduce power on the operating engine -- this reduces the asymmetric thrust that's causing the problem. Second, pitch down -- lowering the nose increases airspeed, which makes the rudder more effective."
+        },
+        {
+          "type": "example",
+          "title": "VMC Recovery in Practice",
+          "content": "You're practicing slow flight with a simulated engine failure. You notice the rudder pedal is at full deflection and the airplane is still yawing left. Immediately: reduce the right (operating) engine power to decrease the yaw, AND push the nose down to gain airspeed. Once you have airspeed and directional control back, smoothly advance the operating engine to full power and pitch for VYSE (blue line, 85 KIAS) to climb away."
+        },
+        {
+          "type": "keypoint",
+          "content": "VMC recovery: simultaneously reduce power on the operating engine AND pitch down. Do not reduce power all the way to idle if possible -- the resulting speed loss could lead to a stall. Once recovered, set full power on the good engine and climb at VYSE."
+        },
+        {
+          "type": "check",
+          "question": "Why must you pitch down during a VMC recovery, not just reduce power?",
+          "answer": "Pitching down increases forward airspeed, which makes the rudder more effective and helps you regain directional control. Reducing power alone would stop the yaw but could cost you precious airspeed and altitude."
+        }
+      ]
+    },
+    {
+      "title": "VMC vs. Stall Speed and the Big Picture",
+      "objective": "Explain how VMC and stall speed change differently with altitude and why their relationship matters.",
+      "pageRange": "16-35",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Here's a critical concept that confuses many multi-engine students: VMC and stall speed don't respond the same way to changes in altitude. Understanding their different behaviors helps you predict which speed you'll encounter first as you slow down."
+        },
+        {
+          "type": "concept",
+          "title": "VMC Decreases with Altitude",
+          "content": "As density altitude increases, engine power decreases. Less power means less asymmetric thrust from the operating engine, which means less yaw to counteract. Since you need less rudder authority, VMC decreases. At very high density altitudes, VMC can be significantly lower than the published value."
+        },
+        {
+          "type": "concept",
+          "title": "Stall Speed Stays Constant (Indicated)",
+          "content": "Stall speed as an indicated airspeed does not change with altitude. Your stall indicated airspeed is the same at sea level as it is at 10,000 feet. This is a fundamental aerodynamic principle."
+        },
+        {
+          "type": "concept",
+          "title": "The Crossover Danger",
+          "content": "At low altitudes with high engine power, VMC is typically higher than stall speed. As you slow down, you hit VMC first and lose directional control while the wing is still flying. But at high density altitudes, VMC drops below stall speed. Now as you slow down, you stall BEFORE reaching VMC. A single-engine stall can lead to a spin -- an equally dangerous situation."
+        },
+        {
+          "type": "keypoint",
+          "content": "At low density altitudes, VMC is typically above stall speed (you lose directional control first). At high density altitudes, stall speed may be higher than VMC (you stall first). Both situations are dangerous -- maintain airspeed above both limits."
+        },
+        {
+          "type": "check",
+          "question": "At a high density altitude airport on a hot day, which are you more likely to encounter first as you slow down after an engine failure -- VMC or a stall?",
+          "answer": "A stall. At high density altitudes, engine power is reduced, which lowers VMC. Stall speed (indicated) remains the same. So VMC drops below stall speed, and you'll stall before losing directional control."
+        }
+      ]
+    },
+    {
+      "title": "Factors Affecting VMC -- Power and Density Altitude",
+      "objective": "Predict how changes in power and density altitude affect actual VMC speed.",
+      "pageRange": "16-35",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Published VMC is a fixed number for certification conditions only. In the real world, many factors push actual VMC higher or lower. The key principle is simple: anything that increases asymmetric yaw raises VMC. Anything that gives you more rudder authority or reduces yaw lowers VMC."
+        },
+        {
+          "type": "concept",
+          "title": "The Rudder Authority Framework",
+          "content": "There are only two ways VMC changes. Either something makes you need MORE rudder (raising VMC because less is available to the pilot), or something makes the rudder MORE EFFECTIVE or gives you help from other forces (lowering VMC because you have more control authority). Every factor comes back to this framework."
+        },
+        {
+          "type": "concept",
+          "title": "Power -- More Power Means Higher VMC",
+          "content": "The more power the operating engine produces, the greater the asymmetric thrust and the more rudder you need to counteract the yaw. More rudder used means less available, which raises VMC. However, more power also increases aircraft performance (climb rate), so there's a tradeoff."
+        },
+        {
+          "type": "concept",
+          "title": "Density Altitude -- Higher Altitude Means Lower VMC",
+          "content": "As density altitude increases (higher temperature, lower pressure, or higher humidity), engine output decreases. Less thrust means less asymmetric yaw, which means less rudder needed. VMC decreases. But performance also decreases because both the engines and the wings become less efficient in thinner air."
+        },
+        {
+          "type": "keypoint",
+          "content": "Power up = VMC up (more yaw, need more rudder). Density altitude up = VMC down (less power, less yaw, need less rudder). Remember: VMC down is GOOD (you can go slower before losing control). VMC up is BAD (you lose control at a higher speed)."
+        },
+        {
+          "type": "check",
+          "question": "On a hot summer day at a high-elevation airport, would you expect actual VMC to be higher or lower than published VMC? Why?",
+          "answer": "Lower. High temperature and high elevation both increase density altitude, which reduces engine power output. Less power means less asymmetric thrust and less yaw, so less rudder is needed, lowering VMC."
+        }
+      ]
+    },
+    {
+      "title": "Factors Affecting VMC -- CG, Gear, and Propeller",
+      "objective": "Predict how center of gravity position, landing gear configuration, and propeller state affect actual VMC.",
+      "pageRange": "16-35",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The next group of VMC factors all relate to mechanical and configuration changes. CG position changes the rudder's leverage, gear position affects both CG and aerodynamic stability, and whether a dead engine's propeller is windmilling or feathered makes a huge difference in drag."
+        },
+        {
+          "type": "concept",
+          "title": "CG Location and Rudder Effectiveness",
+          "content": "The distance from the CG to the rudder determines the rudder's moment arm. A longer arm means the rudder is more effective at creating a yawing force. As the CG moves forward, the arm to the rudder gets longer, making the rudder more effective and lowering VMC. As the CG moves aft, the arm shortens, the rudder becomes less effective, and VMC increases."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of a wrench on a bolt. A longer wrench gives you more leverage with less effort. The rudder is the wrench, and the CG-to-rudder distance is the handle length. A forward CG gives you a longer handle -- more leverage with the same rudder deflection."
+        },
+        {
+          "type": "concept",
+          "title": "CG Effects on Performance",
+          "content": "CG position also affects performance, but in the opposite direction of VMC. A forward CG requires more tail-down force, which means the wing must fly at a higher angle of attack. This creates more induced drag and reduces performance. An aft CG reduces the tail-down force requirement, reducing drag and improving cruise performance."
+        },
+        {
+          "type": "concept",
+          "title": "Landing Gear Position",
+          "content": "When the gear retracts on the DA42-VI, the nose wheel moves forward, shifting the CG forward slightly. This increases the rudder arm and lowers VMC. Additionally, when the gear is extended (down), it acts like the keel of a boat, creating a stabilizing effect that resists turning. This keel effect also helps lower VMC. However, extended gear always increases parasite drag and decreases performance."
+        },
+        {
+          "type": "concept",
+          "title": "Windmilling vs. Feathered Propeller",
+          "content": "A windmilling propeller on the dead engine creates significantly more drag than a feathered propeller. This extra drag adds to the yaw caused by the engine failure, requiring more rudder to maintain heading. More rudder used means less available, raising VMC. Feathering the propeller reduces drag and yaw, lowering VMC."
+        },
+        {
+          "type": "keypoint",
+          "content": "Forward CG = lower VMC (longer rudder arm). Aft CG = higher VMC (shorter arm). Gear down = keel effect helps lower VMC but hurts performance. Windmilling prop = more drag, higher VMC. Feathered prop = less drag, lower VMC."
+        },
+        {
+          "type": "check",
+          "question": "After an engine failure, you feather the inoperative engine's propeller. How does this affect VMC and why?",
+          "answer": "Feathering lowers VMC. A windmilling propeller creates significant drag that adds to the yaw toward the dead engine, requiring more rudder. Feathering reduces that drag, reducing the total yaw, which means less rudder is needed -- leaving more available to the pilot."
+        }
+      ]
+    },
+    {
+      "title": "Factors Affecting VMC -- Weight and Flaps",
+      "objective": "Explain how aircraft weight and flap configuration affect VMC through the horizontal component of lift and drag changes.",
+      "pageRange": "16-35",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Weight and flap configuration affect VMC in ways that aren't immediately obvious. Both work through a mechanism involving the horizontal component of lift, and understanding this mechanism is key to predicting VMC changes."
+        },
+        {
+          "type": "concept",
+          "title": "Weight and the Horizontal Component of Lift",
+          "content": "When the airplane is banked (even the standard 5 degrees used in VMC situations), total lift splits into vertical and horizontal components. The horizontal component of lift acts as a turning force. A heavier airplane requires more total lift, which means a larger horizontal component when banked."
+        },
+        {
+          "type": "concept",
+          "title": "How Weight Lowers VMC",
+          "content": "That larger horizontal component of lift can be used to help oppose the yaw from the dead engine. When more horizontal lift is available to fight the yaw, less rudder is needed. Less rudder used means more is available, which lowers VMC. So as weight increases, VMC decreases."
+        },
+        {
+          "type": "warning",
+          "content": "Don't confuse VMC with performance. Heavier weight LOWERS VMC (good for directional control) but also DECREASES performance (bad for climbing on one engine). As you burn fuel during flight, your weight decreases, which means VMC actually increases over the course of a flight."
+        },
+        {
+          "type": "concept",
+          "title": "Flaps Down -- The Complex Picture",
+          "content": "When flaps are extended, the wings create more lift. The operating engine side creates even more lift because accelerated propwash flows over that wing's flap. The drag from this extra lift on the operating engine side actually opposes the yaw from the dead engine, helping the pilot use less rudder. Less rudder used means more available, so VMC decreases with flaps down."
+        },
+        {
+          "type": "concept",
+          "title": "Flaps and the Adverse Aileron Complication",
+          "content": "There's a catch with flaps. The extra lift on the operating engine's wing causes a roll toward the dead engine. If you use ailerons to correct that roll, the adverse aileron yaw can actually increase the yaw toward the inoperative engine. This is why flap configuration effects on VMC are more complex than they first appear. Overall performance decreases with flaps extended due to the additional drag."
+        },
+        {
+          "type": "keypoint",
+          "content": "Heavier weight = lower VMC (more horizontal lift to fight yaw) but worse performance. Flaps down = lower VMC (drag from extra lift opposes yaw) but worse performance. As fuel burns off, VMC increases throughout the flight."
+        },
+        {
+          "type": "check",
+          "question": "You've been flying for two hours and have burned significant fuel. How has this affected your actual VMC compared to when you took off?",
+          "answer": "Your actual VMC has increased. Burning fuel reduces weight, which means less total lift and therefore less horizontal component of lift available to oppose the yaw. With less help from horizontal lift, more rudder is needed, raising VMC."
+        }
+      ]
+    },
+    {
+      "title": "Bank Angle and VMC -- Zero Sideslip",
+      "objective": "Explain how different bank angles affect VMC, drag, and performance, and identify the zero-sideslip condition as the optimal bank angle.",
+      "pageRange": "16-35",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Bank angle is one of the most nuanced factors affecting VMC because it changes several things simultaneously: the horizontal component of lift, the angle of attack on the rudder, the sideslip condition, and even the amount of fuselage lift. Let's break down what happens at different bank angles after a left engine failure."
+        },
+        {
+          "type": "concept",
+          "title": "The Three Effects of Bank Angle",
+          "content": "Bank angle influences VMC through three simultaneous mechanisms. First, it changes the horizontal component of lift (banking creates a turning force). Second, it changes the angle of the relative wind on the rudder (affecting rudder effectiveness). Third, it changes the sideslip angle (affecting fuselage drag)."
+        },
+        {
+          "type": "formula",
+          "label": "Components of Lift in a Bank",
+          "formula": "Vertical Lift = cos(bank angle) x Weight; Horizontal Lift = sin(bank angle) x Weight",
+          "explanation": "Even a small bank produces meaningful horizontal lift. At just 5 degrees of bank in a 3,600 lb airplane, you get 314 lbs of horizontal force with only 14 lbs of vertical lift lost."
+        },
+        {
+          "type": "concept",
+          "title": "0 Degrees Bank -- Wings Level",
+          "content": "With wings level after an engine failure, only the rudder fights the yaw. The relative wind comes from the side, putting the airplane in a slip. This creates a small angle of attack on the rudder (less effective), and you need a large amount of rudder to hold heading. VMC is moderately high, and the slipping condition creates moderate drag."
+        },
+        {
+          "type": "concept",
+          "title": "2-3 Degrees Bank Toward Operating Engine -- Zero Sideslip",
+          "content": "This is the sweet spot. A small bank toward the good engine aligns the relative wind parallel to the airplane's longitudinal axis -- the zero sideslip condition. The rudder has a larger angle of attack (more effective), horizontal lift helps oppose the yaw, and drag is minimized. VMC is low, and performance is at its best. This is where you want to be."
+        },
+        {
+          "type": "concept",
+          "title": "8 Degrees Bank Toward Operating Engine",
+          "content": "More bank toward the good engine gives even more horizontal lift and makes the rudder very effective, resulting in a lower VMC than zero sideslip. However, the steep angle of the relative wind creates a slipping condition that produces high drag, significantly hurting performance. You gain directional control at the expense of climb ability."
+        },
+        {
+          "type": "concept",
+          "title": "5 Degrees Bank Toward Inoperative Engine",
+          "content": "This is the worst case. Banking toward the dead engine means horizontal lift ADDS to the yaw instead of opposing it. The rudder angle of attack becomes small (less effective), and you need a massive amount of rudder. VMC increases significantly. Drag is also high due to the slip. Never bank toward the dead engine."
+        },
+        {
+          "type": "warning",
+          "content": "Always bank toward the operating engine (2-3 degrees for zero sideslip). Banking toward the inoperative engine dramatically increases VMC and can lead to loss of directional control at an airspeed that would otherwise be safe."
+        },
+        {
+          "type": "list",
+          "title": "Bank angle summary (left engine failed):",
+          "items": [
+            "5 degrees toward dead engine: VMC HIGH, drag MODERATE -- worst case, never do this",
+            "0 degrees (wings level): VMC MODERATE, drag MODERATE",
+            "2-3 degrees toward operating engine (zero sideslip): VMC LOW, drag MINIMUM -- optimal",
+            "8 degrees toward operating engine: VMC LOWER, drag HIGH -- better control but worse performance"
+          ]
+        },
+        {
+          "type": "keypoint",
+          "content": "The zero sideslip condition (2-3 degrees bank toward the operating engine) provides the best combination of low VMC and minimum drag. This gives you the best directional control AND the best single-engine performance."
+        },
+        {
+          "type": "check",
+          "question": "After a left engine failure, you bank 2-3 degrees to the right (toward the operating engine). Why does this give you both the lowest practical VMC and the best performance?",
+          "answer": "Zero sideslip aligns the relative wind parallel to the fuselage, minimizing drag. The bank gives you horizontal lift to help fight the yaw (less rudder needed), and the relative wind angle on the rudder is optimal for effectiveness. The combination of minimal drag and efficient yaw control gives you the best of both worlds."
+        }
+      ]
+    },
+    {
+      "title": "Critical Engine and Ground Effect",
+      "objective": "Explain why a critical engine failure is worse than a non-critical engine failure, and how ground effect increases VMC.",
+      "pageRange": "16-35",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Two more factors can catch you off guard: which engine fails and whether you're in ground effect. Both situations increase VMC, and they're both most likely to occur during the most critical phase of flight -- takeoff."
+        },
+        {
+          "type": "concept",
+          "title": "Critical Engine Failure",
+          "content": "The critical engine is the one whose failure produces the most adverse effects on handling and performance. When the critical engine fails, the resulting yaw and roll are worse than if the non-critical engine had failed. Greater yaw requires more rudder deflection and more control surface input, leaving less rudder available. This raises VMC."
+        },
+        {
+          "type": "concept",
+          "title": "Why One Engine Is Worse Than the Other",
+          "content": "The critical engine produces more adverse yaw when it fails due to P-factor, accelerated slipstream, and torque effects. These asymmetric forces mean the thrust line of one engine is farther from the aircraft centerline than the other. When that engine quits, the remaining engine's offset thrust creates a larger yawing moment."
+        },
+        {
+          "type": "concept",
+          "title": "Ground Effect and VMC",
+          "content": "Ground effect occurs when the airplane is flying close to the surface, typically within one wingspan of the ground. In ground effect, induced drag on the wings and propellers is reduced. This reduction means the operating engine produces MORE effective thrust than it would at the same power setting out of ground effect."
+        },
+        {
+          "type": "concept",
+          "title": "Why Ground Effect Raises VMC",
+          "content": "More effective thrust from the operating engine means more asymmetric yaw, which requires more rudder. More rudder used equals less available to the pilot, raising VMC. This is particularly dangerous during takeoff, when you're in ground effect, at full power, and at relatively low airspeed."
+        },
+        {
+          "type": "warning",
+          "content": "The takeoff phase combines several VMC-increasing factors: maximum power, in ground effect, low weight (not always), and windmilling propeller. This is exactly when VMC is at its highest and when an engine failure is most dangerous."
+        },
+        {
+          "type": "keypoint",
+          "content": "Critical engine failure: worse yaw and roll, higher VMC, lower performance. Ground effect: reduces drag, increases effective thrust, increases asymmetric yaw, raises VMC. Both factors are most relevant during takeoff."
+        },
+        {
+          "type": "check",
+          "question": "Why does ground effect increase VMC even though it generally improves aircraft performance?",
+          "answer": "Ground effect reduces induced drag, which means the operating engine produces more effective thrust at the same power setting. More thrust creates more asymmetric yaw, requiring more rudder to counteract. More rudder used means less available to the pilot, raising VMC."
+        }
+      ]
+    },
+    {
+      "title": "VMC Factors Master Summary",
+      "objective": "Consolidate all VMC factors into a single mental framework for predicting how actual VMC will differ from published VMC.",
+      "pageRange": "16-35",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "You've now covered every major factor that affects VMC. This lesson brings it all together into one reference you can use to quickly predict whether actual VMC is higher or lower than published in any given situation. Remember the core principle: VMC down (slower) is good because you have more margin. VMC up (faster) is bad because you lose control sooner."
+        },
+        {
+          "type": "list",
+          "title": "Factors that DECREASE VMC (good -- more margin):",
+          "items": [
+            "Decreased power on operating engine -- less asymmetric thrust",
+            "Higher density altitude -- less engine power, less yaw",
+            "Forward CG -- longer rudder arm, more effective rudder",
+            "Gear down -- keel effect and forward CG shift",
+            "Feathered propeller -- less drag on dead engine side",
+            "Flaps down -- drag from extra lift opposes yaw",
+            "Heavier weight -- more horizontal lift component in bank",
+            "Bank toward operating engine -- horizontal lift fights yaw, better rudder angle"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Factors that INCREASE VMC (bad -- less margin):",
+          "items": [
+            "Increased power on operating engine -- more asymmetric thrust",
+            "Lower density altitude -- more engine power, more yaw",
+            "Aft CG -- shorter rudder arm, less effective rudder",
+            "Windmilling propeller -- more drag adds to yaw",
+            "Lighter weight -- less horizontal lift to oppose yaw",
+            "Bank toward inoperative engine -- horizontal lift adds to yaw",
+            "Critical engine failure -- greater asymmetric yaw",
+            "In ground effect -- more effective thrust, more yaw"
+          ]
+        },
+        {
+          "type": "warning",
+          "content": "VMC and performance often move in opposite directions. Something that lowers VMC (like extending gear or adding flaps) typically hurts single-engine climb performance. The zero sideslip condition (2-3 degrees bank toward the operating engine) is the only configuration that optimizes BOTH VMC and performance simultaneously."
+        },
+        {
+          "type": "keypoint",
+          "content": "The two guiding questions for VMC: (1) Does this factor increase or decrease the yaw from asymmetric thrust? (2) Does this factor make the rudder more or less effective? If yaw increases or rudder effectiveness decreases, VMC goes up. If yaw decreases or rudder effectiveness increases, VMC goes down."
+        },
+        {
+          "type": "check",
+          "question": "You're departing from a high-elevation airport on a cool morning with a heavy load, flaps in takeoff position, and the propeller auto-feather system armed. Compared to a sea-level departure at max gross weight on a hot day, how would you expect your actual VMC to differ?",
+          "answer": "Your actual VMC would be lower in the high-elevation scenario due to reduced engine power (higher density altitude), but the cool temperature partially offsets the altitude effect. The heavy load provides more horizontal lift to oppose yaw. The auto-feather system would quickly reduce drag from a windmilling prop if an engine failed. All factors point to a lower actual VMC compared to the sea-level, hot-day scenario where engines produce maximum power and create maximum asymmetric yaw."
+        },
+        {
+          "type": "check",
+          "question": "A factor that lowers VMC but decreases performance -- is that a net positive or negative in an engine-out scenario?",
+          "answer": "It depends on the situation. Lower VMC gives you more directional control margin, which is critical. But decreased performance may mean you can't climb or even maintain altitude. The ideal is the zero sideslip condition, which optimizes both. In general, maintaining directional control (staying above VMC) is the first priority -- you can't climb if you've lost control of the airplane."
+        }
+      ]
+    }
+  ]
+}

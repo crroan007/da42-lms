@@ -1,0 +1,156 @@
+{
+  "slug": "20-flight-director-and-esp",
+  "title": "Flight Director and ESP",
+  "orderIndex": 20,
+  "description": "Flight Director pitch and roll guidance, and Electronic Stability and Protection (ESP) system.",
+  "estimatedMinutes": 6,
+  "subsections": [
+    {
+      "title": "Flight Director Operation",
+      "objective": "Understand flight director pitch and roll limits, activation methods, and command bar behavior.",
+      "pageRange": "123-124",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The flight director is the brain behind the autopilot's guidance commands. Even when you're hand-flying, the flight director shows you exactly where to point the aircraft to achieve your selected mode. Understanding its limits and behavior helps you interpret the command bars correctly and know when they might disappear."
+        },
+        {
+          "type": "concept",
+          "title": "Flight Director Function",
+          "content": "The Flight Director calculates the pitch and roll attitudes needed to fly the aircraft along the selected path. It sends these commands to two places: the autopilot servos (for automatic flight) and the PFD as command bars (for hand-flying reference). The purple bars on the PFD are the command bars (where the FD wants you to fly), and the yellow bars represent the aircraft symbol (where you actually are)."
+        },
+        {
+          "type": "keypoint",
+          "content": "Flight Director maximum commanded pitch: +20 degrees nose up / -15 degrees nose down. Maximum commanded bank: 22 degrees. The FD will never command you beyond these limits."
+        },
+        {
+          "type": "list",
+          "title": "Ways to Activate the Flight Director:",
+          "items": [
+            "Press the FD key -- activates in default pitch/roll mode",
+            "Press the AP key -- activates autopilot, which includes the flight director",
+            "Press any flight director mode key -- activates the FD directly in that mode"
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Command Bar Disappearance",
+          "content": "The command bars are removed from the PFD if attitude information becomes invalid or unavailable. They also disappear if pitch exceeds +30/-20 degrees or bank exceeds 65 degrees. At those extreme attitudes, the flight director can't provide useful guidance, so the bars are removed to prevent confusion."
+        },
+        {
+          "type": "concept",
+          "title": "Mode Annunciations",
+          "content": "On the PFD, green annunciations indicate active modes (what the system is currently doing), while white annunciations indicate armed modes (what the system is preparing to capture). For example, during a GPS approach, NAV might appear in green (actively tracking) while GS might appear in white (armed, waiting for glideslope intercept)."
+        },
+        {
+          "type": "check",
+          "question": "At what pitch and bank angles do the flight director command bars disappear from the PFD?",
+          "answer": "The command bars disappear if pitch exceeds +30/-20 degrees or bank exceeds 65 degrees. They also disappear if attitude data becomes invalid."
+        }
+      ]
+    },
+    {
+      "title": "Electronic Stability and Protection (ESP)",
+      "objective": "Explain ESP engagement thresholds, force limits, and how it interacts with training maneuvers.",
+      "pageRange": "123-124",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "ESP is like having a safety net built into the flight controls. It nudges you back toward normal flight if you get into an unusual attitude -- but it's also something you need to actively manage during training maneuvers like stalls and steep turns. Understanding ESP is essential for both safety and practical flying in the DA42."
+        },
+        {
+          "type": "concept",
+          "title": "How ESP Works",
+          "content": "The ESP system increases servo forces to maximum to encourage you to return to a normal flight attitude. It acts on the flight controls to resist unusual attitudes, keeping the airplane within the normal flight envelope. ESP operates above 200 feet AGL when the autopilot is OFF."
+        },
+        {
+          "type": "keypoint",
+          "content": "ESP is enabled by default. It can be overridden by pressing and holding the CWS (Control Wheel Steering) or Autopilot Disconnect button. There are no ESP markings or indications on the G1000."
+        },
+        {
+          "type": "concept",
+          "title": "Pitch Protection Thresholds",
+          "content": "For nose-up attitudes, ESP engages at 16 degrees and disengages at 12 degrees. For nose-down attitudes, ESP engages at 22 degrees and disengages at 17 degrees. In both cases, maximum servo force is applied at the engagement angle to push the nose back toward level."
+        },
+        {
+          "type": "concept",
+          "title": "Bank Protection",
+          "content": "Banking more than 45 degrees causes ESP to roll the aircraft back to 30 degrees of bank. Exceeding 75 degrees of bank will automatically disconnect ESP entirely. This disconnect at extreme bank angles prevents ESP from interfering if the pilot needs full control authority during an unusual attitude recovery."
+        },
+        {
+          "type": "concept",
+          "title": "Overspeed Protection",
+          "content": "If the aircraft exceeds VNE (never-exceed speed), ESP will pitch the nose up to slow the aircraft below VNE. This protects against structural damage from excessive airspeed."
+        },
+        {
+          "type": "warning",
+          "content": "During stalls and steep turns in training, you MUST press and hold the CWS or Autopilot Disconnect button throughout the entire maneuver. Otherwise, ESP will fight your control inputs and prevent you from completing the maneuver."
+        },
+        {
+          "type": "example",
+          "title": "Steep Turn Training",
+          "content": "You're practicing steep turns at 45 degrees of bank. As you roll past 45 degrees, you feel the controls resist and the aircraft starts rolling back toward 30 degrees -- that's ESP. Your instructor reminds you to press and hold the CWS button before entering the turn. With CWS held, ESP is overridden, and you can smoothly hold 45+ degrees of bank for the maneuver."
+        },
+        {
+          "type": "check",
+          "question": "What two buttons can override ESP, and how must they be used?",
+          "answer": "The CWS (Control Wheel Steering) button or the Autopilot Disconnect button. Either must be pressed and HELD throughout the maneuver -- releasing the button re-enables ESP."
+        },
+        {
+          "type": "check",
+          "question": "At what bank angle does ESP automatically disconnect itself?",
+          "answer": "75 degrees. Below that, ESP actively rolls the aircraft back toward 30 degrees when bank exceeds 45 degrees."
+        }
+      ]
+    },
+    {
+      "title": "Underspeed Protection and AFCS Go-Around",
+      "objective": "Describe the Underspeed Protection System modes and the autopilot go-around capability.",
+      "pageRange": "123-124",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "While ESP protects you during hand-flying, the Underspeed Protection System (USP) protects you when the autopilot is flying. If the aircraft gets too slow with the autopilot engaged, USP steps in to prevent a stall. The system also integrates with the go-around function for missed approaches."
+        },
+        {
+          "type": "concept",
+          "title": "Non-Altitude-Critical Mode",
+          "content": "In normal flight, if airspeed falls below 90 KIAS with the autopilot engaged, USP commands a pitch-down to maintain 90 KIAS. A 'MINSPD' annunciator appears above the airspeed tape, a 'USP ACTIVE' warning displays, and an aural alert announces 'Airspeed' once."
+        },
+        {
+          "type": "concept",
+          "title": "Altitude-Critical Mode",
+          "content": "In altitude-critical situations, USP activates when the aural stall warning sounds for more than 1 second. The autopilot pitches down to maintain the speed that triggered the warning plus 2 KIAS of margin. 'USP ACTIVE' warning displays and 'Airspeed' aural alert sounds every 5 seconds."
+        },
+        {
+          "type": "warning",
+          "content": "Minimum speed protection is NOT available within 200 feet AGL. At low altitude, you are responsible for maintaining adequate airspeed. The emergency procedure for an underspeed condition is to add power, then reselect appropriate autopilot modes once the situation is corrected."
+        },
+        {
+          "type": "concept",
+          "title": "AFCS Go-Around",
+          "content": "The Auto Flight Control System with ESP is fully capable of flying a go-around. Press the GA (Go-Around) button on the left power lever, and the autopilot will stay engaged to follow the flight director's go-around guidance. You must increase the power levers manually to avoid an underspeed condition -- the autopilot controls pitch and roll, but not the throttles."
+        },
+        {
+          "type": "keypoint",
+          "content": "During a go-around with the autopilot, the pilot must add power manually. The autopilot handles pitch and roll guidance, but the power levers are always your responsibility."
+        },
+        {
+          "type": "example",
+          "title": "Autopilot Go-Around Scenario",
+          "content": "You're flying an ILS approach with the autopilot engaged. At decision altitude, you don't see the runway environment. You press the GA button on the left power lever and simultaneously advance both power levers toward full power. The autopilot follows the flight director's go-around commands, pitching up and tracking the missed approach course. You manage the power and monitor the autopilot's performance throughout the climb."
+        },
+        {
+          "type": "check",
+          "question": "Below what altitude is the Underspeed Protection System not available?",
+          "answer": "200 feet AGL. Below this altitude, the pilot must manually manage airspeed."
+        },
+        {
+          "type": "check",
+          "question": "During an AFCS go-around, what must the pilot do that the autopilot does not handle?",
+          "answer": "The pilot must manually increase the power levers. The autopilot handles pitch and roll guidance via the flight director, but throttle management is always the pilot's responsibility."
+        }
+      ]
+    }
+  ]
+}

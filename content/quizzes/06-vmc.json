@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "06-vmc",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What are the four warning signs that VMC is occurring or about to occur?",
+      "options": [
+        { "text": "Engine vibration, low oil pressure, high CHT, low fuel", "isCorrect": false },
+        { "text": "Loss of directional control, stall warning horn, buffeting, rapid decay of control effectiveness", "isCorrect": true },
+        { "text": "Airspeed decrease, altitude loss, heading change, bank angle", "isCorrect": false },
+        { "text": "Rudder vibration, aileron flutter, nose drop, wing drop", "isCorrect": false }
+      ],
+      "explanation": "The four warning signs of VMC are: 1) Loss of directional control (full rudder and still turning), 2) Stall warning horn, 3) Buffeting before the stall, and 4) A rapid decay of control effectiveness."
+    },
+    {
+      "id": "q2",
+      "question": "What two actions must occur simultaneously to recover from VMC?",
+      "options": [
+        { "text": "Raise the gear and retract the flaps", "isCorrect": false },
+        { "text": "Reduce power on the operating engine and pitch down", "isCorrect": true },
+        { "text": "Apply full rudder and increase power", "isCorrect": false },
+        { "text": "Feather the propeller and bank toward the good engine", "isCorrect": false }
+      ],
+      "explanation": "To recover from VMC, two simultaneous actions are required: 1) Reduce power on the operating engine (to reduce asymmetric thrust), and 2) Pitch down (to increase airspeed and make the rudder more effective)."
+    },
+    {
+      "id": "q3",
+      "question": "How does an increase in density altitude affect VMC speed?",
+      "options": [
+        { "text": "VMC increases because the rudder becomes less effective", "isCorrect": false },
+        { "text": "VMC decreases because less engine power means less asymmetrical thrust", "isCorrect": true },
+        { "text": "VMC stays the same because it is an indicated airspeed", "isCorrect": false },
+        { "text": "VMC increases because the airplane weighs less", "isCorrect": false }
+      ],
+      "explanation": "As density altitude increases, engine power decreases, resulting in less asymmetrical thrust. Less asymmetrical thrust means less yaw and less rudder needed, which decreases VMC. However, performance also decreases."
+    },
+    {
+      "id": "q4",
+      "question": "At what bank angle toward the operating engine does the airplane achieve zero sideslip and minimum drag?",
+      "options": [
+        { "text": "0 degrees", "isCorrect": false },
+        { "text": "2-3 degrees", "isCorrect": true },
+        { "text": "5 degrees", "isCorrect": false },
+        { "text": "8 degrees", "isCorrect": false }
+      ],
+      "explanation": "A 2-3 degree bank toward the operating engine results in a zero sideslip condition where the relative wind is parallel to the longitudinal axis. This produces the minimum drag and best performance with one engine inoperative."
+    },
+    {
+      "id": "q5",
+      "question": "How does a forward C.G. affect VMC?",
+      "options": [
+        { "text": "VMC increases because the airplane is heavier", "isCorrect": false },
+        { "text": "VMC decreases because the longer arm to the rudder makes it more effective", "isCorrect": true },
+        { "text": "VMC is not affected by C.G. position", "isCorrect": false },
+        { "text": "VMC increases because more tail-down force is required", "isCorrect": false }
+      ],
+      "explanation": "A forward C.G. increases the arm (distance) between the C.G. and the rudder. A larger arm makes the rudder more effective, meaning less rudder is needed, leaving more available to the pilot and decreasing VMC."
+    }
+  ]
+}

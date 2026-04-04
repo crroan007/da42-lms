@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "14-powerplant",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What type of engines does the DA42-VI use?",
+      "options": [
+        { "text": "Lycoming IO-360 gasoline engines", "isCorrect": false },
+        { "text": "Austro AE300-E4C turbocharged diesel engines", "isCorrect": true },
+        { "text": "Continental TSIO-520 turbocharged gasoline engines", "isCorrect": false },
+        { "text": "Pratt & Whitney PT6 turboprop engines", "isCorrect": false }
+      ],
+      "explanation": "The DA42-VI uses Austro AE300-E4C engines, which are turbocharged, inline 4-cylinder, 4-stroke, liquid-cooled, common rail fuel-injected diesel engines that use Jet-A fuel."
+    },
+    {
+      "id": "q2",
+      "question": "What is the Maximum Continuous Power (MCP) setting for the DA42-VI when both engines are operating?",
+      "options": [
+        { "text": "100% power (165 HP)", "isCorrect": false },
+        { "text": "92% power (152 HP)", "isCorrect": true },
+        { "text": "80% power (132 HP)", "isCorrect": false },
+        { "text": "75% power (124 HP)", "isCorrect": false }
+      ],
+      "explanation": "Each engine produces 165 HP at 2300 RPM, but is limited to MCP of 152 HP (92% power) when both engines are operating. Full power (100%) is only allowed for 5 minutes, even with one engine inoperative."
+    },
+    {
+      "id": "q3",
+      "question": "How many ECUs (Engine Control Units) does each engine have, and what happens if both power lever sensors fail?",
+      "options": [
+        { "text": "One ECU; the engine shuts down", "isCorrect": false },
+        { "text": "Two ECUs (A and B); the ECU sets 80% power", "isCorrect": true },
+        { "text": "Two ECUs (A and B); the engine reverts to manual control", "isCorrect": false },
+        { "text": "Three ECUs; the backup ECU takes over", "isCorrect": false }
+      ],
+      "explanation": "Each engine has two ECUs (A and B). While both are active, only one is used at a time via the Voter Switch. If both power lever sensors fail, the ECU will automatically set 80% power."
+    },
+    {
+      "id": "q4",
+      "question": "How does the DA42-VI achieve ignition once the engine is running?",
+      "options": [
+        { "text": "Spark plugs fire continuously", "isCorrect": false },
+        { "text": "Magnetos provide ignition timing", "isCorrect": false },
+        { "text": "Compression of air in the diesel cylinder causes spontaneous combustion", "isCorrect": true },
+        { "text": "Electronic ignition coils controlled by the ECU", "isCorrect": false }
+      ],
+      "explanation": "The DA42-VI uses glow plugs only for cold starts. Once running, ignition occurs through compression ignition only -- compression of air in the diesel cylinder heats it enough to cause spontaneous combustion of the fuel."
+    },
+    {
+      "id": "q5",
+      "question": "What is the purpose of the waste gate on the turbocharger?",
+      "options": [
+        { "text": "To filter exhaust gases before they exit", "isCorrect": false },
+        { "text": "To prevent oil from entering the intake", "isCorrect": false },
+        { "text": "To control the amount of compressed air by allowing exhaust to bypass the turbine", "isCorrect": true },
+        { "text": "To cool the turbocharger during ground operations", "isCorrect": false }
+      ],
+      "explanation": "The waste gate allows exhaust gases to bypass the turbine, controlling the amount of air compression. When open, less air flows over the turbine (less compression). When closed, more compression occurs. It is controlled by the ECU."
+    }
+  ]
+}

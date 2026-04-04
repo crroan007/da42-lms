@@ -1,0 +1,121 @@
+{
+  "slug": "07-da42-vi-systems-overview",
+  "title": "DA42-VI Systems Overview",
+  "orderIndex": 7,
+  "description": "DA42-VI dimensions, V-speeds reference, and general aircraft specifications.",
+  "estimatedMinutes": 6,
+  "lessons": [
+    {
+      "title": "DA42-VI Dimensions and Specifications",
+      "objective": "Identify the key physical dimensions and general specifications of the DA42-VI aircraft.",
+      "pageRange": "37-38",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Before you fly any airplane, you need to know what you're working with. The DA42-VI is a sleek, modern twin-engine aircraft built by Diamond Aircraft. Understanding its dimensions helps you judge taxi clearances, hangar fit, and parking considerations."
+        },
+        {
+          "type": "concept",
+          "title": "Why Dimensions Matter",
+          "content": "Knowing your wingspan, length, and height isn't just trivia. You'll use these numbers when planning for tight taxiways, checking hangar clearance, and ensuring adequate wingtip separation on the ramp."
+        },
+        {
+          "type": "keypoint",
+          "content": "Always reference the DA42-VI Airplane Flight Manual (AFM) for the most current and authoritative specifications. The numbers in this course are for training purposes."
+        }
+      ]
+    },
+    {
+      "title": "V-Speeds Reference",
+      "objective": "Recall the critical V-speeds for the DA42-VI and understand when each applies.",
+      "pageRange": "37-38",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "V-speeds are the language of aviation performance. Every speed has a specific meaning, and knowing them cold is non-negotiable for safe multi-engine operations. Let's walk through the DA42-VI's key V-speeds from slowest to fastest."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of V-speeds like speed limits and recommended speeds on a highway. Some are absolute limits you must never exceed, others are targets for specific maneuvers. Just as you wouldn't take a highway exit ramp at 80 mph, you wouldn't extend landing gear above VLE."
+        },
+        {
+          "type": "concept",
+          "title": "Stall Speeds",
+          "content": "VS0 (lower white arc) is 62 KIAS -- this is the stall speed in landing configuration (full flaps, gear down). VS (lower green arc) is 68 KIAS -- the stall speed in clean configuration (flaps up, gear up). These are the slowest you can fly before the wing stops producing enough lift."
+        },
+        {
+          "type": "concept",
+          "title": "Minimum Control Speeds (VMCA)",
+          "content": "VMCA with flaps in the APP position is 71 KIAS. VMCA with flaps UP is 85 KIAS. These are the minimum speeds at which you can maintain directional control with one engine inoperative. Below these speeds, full rudder won't keep you straight."
+        },
+        {
+          "type": "warning",
+          "content": "VMCA with flaps UP (85 KIAS) is higher than VMCA with flaps APP (71 KIAS). During a go-around with an engine failure, retracting flaps too early raises your minimum controllable speed. Manage your configuration changes carefully."
+        },
+        {
+          "type": "concept",
+          "title": "VYSE -- Blue Line",
+          "content": "VYSE is 85 KIAS, marked by the blue radial line on the airspeed indicator. This is your best single-engine rate of climb speed. When you lose an engine, pitch for blue line -- it gives you the best climb performance available on one engine."
+        },
+        {
+          "type": "keypoint",
+          "content": "Blue line (VYSE = 85 KIAS) is your go-to target speed after any engine failure. Memorize it: 85 knots, blue line, best single-engine climb."
+        },
+        {
+          "type": "check",
+          "question": "What is the DA42-VI's VYSE (best single-engine rate of climb speed), and how is it marked on the airspeed indicator?",
+          "answer": "VYSE is 85 KIAS, marked by the blue radial line on the airspeed indicator."
+        },
+        {
+          "type": "concept",
+          "title": "Rotation Speeds (VR)",
+          "content": "Rotation speeds depend on takeoff type and weight. For a normal takeoff, VR is 77 KIAS. For a short-field takeoff at or below 4189 lbs, VR is 74 KIAS. For a short-field takeoff above 4189 lbs, VR is 76 KIAS."
+        },
+        {
+          "type": "concept",
+          "title": "Best Angle and Rate of Climb Speeds (VX and VY)",
+          "content": "VX (best angle of climb) for a short takeoff is 79 KIAS up to 4189 lbs and 85 KIAS above that weight. VY (best rate of climb) with flaps APP is 90 KIAS. VY with flaps UP is 92 KIAS up to 4189 lbs and 92 KIAS above that weight."
+        },
+        {
+          "type": "concept",
+          "title": "Reference Speeds (VREF)",
+          "content": "VREF is your target speed on final approach and varies by flap setting and weight. With flaps LDG: 84 KIAS (above 4189 lbs) or 86 KIAS (at or below 4189 lbs). With flaps APP: 86 KIAS (above 4189 lbs) or 88 KIAS (at or below 4189 lbs). With flaps UP: 92 KIAS (above 4189 lbs) or 92 KIAS (at or below 4189 lbs)."
+        },
+        {
+          "type": "check",
+          "question": "What is your normal takeoff rotation speed (VR) in the DA42-VI?",
+          "answer": "77 KIAS for a normal takeoff."
+        },
+        {
+          "type": "concept",
+          "title": "Maneuvering Speed (VO)",
+          "content": "VO varies by weight: 119 KIAS (up to 3748 lbs), 122 KIAS (3748 to 3968 lbs), and 122 KIAS (above 3968 lbs). Note that the DA42-VI uses VO (Operating Maneuvering Speed), which is not the same as VA. More on this distinction in the Limitations module."
+        },
+        {
+          "type": "concept",
+          "title": "Flap Extension Speeds (VFE)",
+          "content": "VFE for the LDG flap setting is 133 KIAS (upper white arc). VFE for the APP flap setting is 152 KIAS. Never extend flaps beyond these speeds or you risk structural damage to the flap system."
+        },
+        {
+          "type": "concept",
+          "title": "Landing Gear Speeds (VLE/VLO)",
+          "content": "VLO for retraction is 188 KIAS. VLO for extension is 188 KIAS. VLE (max speed with gear extended) is 188 KIAS. The DA42-VI keeps it simple -- all gear speeds are the same."
+        },
+        {
+          "type": "concept",
+          "title": "Maximum Speeds (VNO and VNE)",
+          "content": "VNO (maximum structural cruising speed) is 188 KIAS, marking the upper portion of the green arc. VNE (never exceed speed) is the upper red radial line. Operating above VNO into the yellow arc is only permitted in smooth air, and you must never exceed VNE under any circumstances."
+        },
+        {
+          "type": "warning",
+          "content": "VNE is an absolute limit. Exceeding it risks structural failure. The yellow arc between VNO and VNE is the caution range -- fly there only in smooth air with no turbulence."
+        },
+        {
+          "type": "check",
+          "question": "What is VFE for the LDG flap position in the DA42-VI?",
+          "answer": "133 KIAS. This is also the upper limit of the white arc on the airspeed indicator."
+        }
+      ]
+    }
+  ]
+}

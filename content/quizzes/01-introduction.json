@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "01-introduction",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the maximum certificated takeoff weight that defines a \"light twin\" airplane?",
+      "options": [
+        { "text": "4,000 pounds", "isCorrect": false },
+        { "text": "6,000 pounds", "isCorrect": true },
+        { "text": "8,000 pounds", "isCorrect": false },
+        { "text": "12,500 pounds", "isCorrect": false }
+      ],
+      "explanation": "A \"light twin\" is defined as a small multi-engine airplane with a maximum certificated takeoff weight of 6,000 pounds or less."
+    },
+    {
+      "id": "q2",
+      "question": "When one engine becomes inoperative on a multi-engine airplane, the loss of power reduces climb performance by approximately how much?",
+      "options": [
+        { "text": "50%", "isCorrect": false },
+        { "text": "60 to 70%", "isCorrect": false },
+        { "text": "80 to 90% or more", "isCorrect": true },
+        { "text": "100%", "isCorrect": false }
+      ],
+      "explanation": "While 50% of power is lost when one engine fails, the reduction in climb performance can be as much as 80 to 90% or more due to the additional drag and asymmetric thrust effects."
+    },
+    {
+      "id": "q3",
+      "question": "What advantage do multi-engine airplanes have over single-engine airplanes during taxi operations?",
+      "options": [
+        { "text": "Shorter wingspan for tighter turns", "isCorrect": false },
+        { "text": "Differential power capability for turning", "isCorrect": true },
+        { "text": "More responsive nose wheel steering", "isCorrect": false },
+        { "text": "Higher taxi speeds", "isCorrect": false }
+      ],
+      "explanation": "Multi-engine airplanes can use differential power to assist in turns during taxi, reducing the need for braking while maintaining the same turning radius."
+    },
+    {
+      "id": "q4",
+      "question": "For multi-engine airplanes with adjustable cowl flaps, how should cowl flaps be positioned during ground operations?",
+      "options": [
+        { "text": "Fully closed", "isCorrect": false },
+        { "text": "Half open", "isCorrect": false },
+        { "text": "Fully open", "isCorrect": true },
+        { "text": "As directed by ATC", "isCorrect": false }
+      ],
+      "explanation": "Cowl flaps should be fully open during ground operations to ensure adequate engine cooling, unless otherwise directed by the AFM or POH."
+    },
+    {
+      "id": "q5",
+      "question": "What are the two main penalties when operating a multi-engine airplane with one engine inoperative?",
+      "options": [
+        { "text": "Fuel consumption and noise", "isCorrect": false },
+        { "text": "Performance and control", "isCorrect": true },
+        { "text": "Speed and altitude", "isCorrect": false },
+        { "text": "Weight and balance", "isCorrect": false }
+      ],
+      "explanation": "The two penalties for loss of an engine are: 1) performance (loss of power reducing climb performance by 80-90%) and 2) control (asymmetric thrust requiring careful management)."
+    }
+  ]
+}

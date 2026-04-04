@@ -1,0 +1,163 @@
+{
+  "slug": "09-airframe",
+  "title": "Airframe",
+  "orderIndex": 9,
+  "description": "Carbon fiber and glass fiber airframe construction, fuselage, wings, and empennage.",
+  "estimatedMinutes": 15,
+  "lessons": [
+    {
+      "title": "Composite Construction",
+      "objective": "Explain why the DA42-VI uses composite materials and identify the two primary types used in its construction.",
+      "pageRange": "43-47",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The DA42-VI isn't built like your grandfather's Cessna. Instead of riveted aluminum sheets, Diamond uses advanced composite materials throughout the airframe. This gives the airplane some impressive advantages, but it also means you need to understand how composites behave differently from metal."
+        },
+        {
+          "type": "concept",
+          "title": "CFRP -- Carbon Fiber Reinforced Polymer",
+          "content": "Carbon fiber is the high-strength material in the DA42-VI. It provides exceptional rigidity and strength at a very low weight. You'll find CFRP in areas where strength matters most -- the wing spars, fuselage structure, and load-bearing components."
+        },
+        {
+          "type": "concept",
+          "title": "GFRP -- Glass Fiber Reinforced Plastic",
+          "content": "Glass fiber is lighter and more flexible than carbon fiber. It's used in areas where some flex is acceptable, like control surfaces, fairings, and the empennage shell. Many parts of the DA42-VI use a combination of both CFRP and GFRP."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of carbon fiber like the steel beams in a building -- it handles the heavy structural loads. Glass fiber is more like the drywall -- it provides shape and coverage, but the real strength comes from the carbon fiber underneath."
+        },
+        {
+          "type": "keypoint",
+          "content": "The DA42-VI uses two composite materials: CFRP (Carbon Fiber Reinforced Polymer) for high-strength structural areas, and GFRP (Glass Fiber Reinforced Plastic) for lighter-duty surfaces and shells."
+        },
+        {
+          "type": "check",
+          "question": "What are the two primary composite materials used in the DA42-VI, and where would you find each?",
+          "answer": "CFRP (Carbon Fiber Reinforced Polymer) is used for high-strength structural components like wing spars. GFRP (Glass Fiber Reinforced Plastic) is used for control surfaces, fairings, and empennage shells."
+        }
+      ]
+    },
+    {
+      "title": "Fuselage and Wing Center Section",
+      "objective": "Describe the DA42-VI fuselage construction and identify the components housed in the wing center section.",
+      "pageRange": "43-47",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The fuselage is the backbone of the airplane -- everything connects to it. Understanding how it's built helps you appreciate what to look for during preflight and why certain damage is more serious than it might appear."
+        },
+        {
+          "type": "concept",
+          "title": "Semi-Monocoque Fuselage",
+          "content": "The DA42-VI fuselage uses semi-monocoque construction. It's built in two halves that are bonded together. In this design, the outer skin carries a significant portion of the structural loads, supported by internal frames and bulkheads. Carbon fiber reinforcement gives it the strength it needs."
+        },
+        {
+          "type": "concept",
+          "title": "Wing Center Section",
+          "content": "The fuselage attaches to a wing center section, which is a critical structural hub. This center section houses three important elements: the two engine nacelles (where the engines mount), the wing stubs (attachment points for the outer wing panels), and the fuselage center-section floor."
+        },
+        {
+          "type": "warning",
+          "content": "Because the fuselage is bonded composite rather than riveted aluminum, even minor impacts or surface damage can compromise the underlying structure. Any dent, crack, or delamination in the composite skin must be reported and inspected by qualified maintenance personnel."
+        },
+        {
+          "type": "check",
+          "question": "What three major components are housed in the DA42-VI wing center section?",
+          "answer": "The two engine nacelles, the wing stubs (wing attachment points), and the fuselage center-section floor."
+        }
+      ]
+    },
+    {
+      "title": "Wings",
+      "objective": "Describe the wing construction, fuel tank installation, and the purpose of vortex generators on the DA42-VI.",
+      "pageRange": "43-47",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The wings do the heavy lifting -- literally. They generate all the lift that keeps you in the air, and they also house the fuel tanks. Knowing what's inside and on the surface of your wings is essential for a thorough preflight."
+        },
+        {
+          "type": "concept",
+          "title": "Wing Construction",
+          "content": "Each wing is built from both CFRP and GFRP in a sandwich design -- a top shell and a bottom shell bonded together. Inside each wing are a front spar and a rear spar made of CFRP, providing the primary structural strength. Aluminum fuel tanks are installed between the upper and lower wing shells."
+        },
+        {
+          "type": "concept",
+          "title": "Vortex Generators",
+          "content": "You'll notice small fins on the inboard leading edge of each wing. These are vortex generators, and they serve an important aerodynamic function. They energize the boundary layer airflow over the wing, delaying flow separation and improving low-speed handling characteristics."
+        },
+        {
+          "type": "warning",
+          "content": "Do NOT touch the vortex generators, and do not step forward of the anti-skid tape on the wing. Damaging or bending a vortex generator changes the aerodynamic characteristics of the wing and can affect stall behavior."
+        },
+        {
+          "type": "check",
+          "question": "Where are the vortex generators located on the DA42-VI wings, and what is their purpose?",
+          "answer": "They are located on the inboard portion of the wing's leading edge. They energize the boundary layer to delay flow separation and improve low-speed handling."
+        }
+      ]
+    },
+    {
+      "title": "Empennage and Lightning Protection",
+      "objective": "Describe the T-tail empennage design and explain how the DA42-VI's lightning protection system works.",
+      "pageRange": "43-47",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The tail section of the DA42-VI has some unique design features that set it apart from many training aircraft. Understanding the T-tail design and the lightning protection system will help you appreciate both the benefits and the special considerations of composite construction."
+        },
+        {
+          "type": "concept",
+          "title": "T-Tail Design",
+          "content": "The DA42-VI uses a T-tail configuration, meaning the horizontal stabilizer sits on top of the vertical stabilizer. The empennage is built with GFRP and CFRP in semi-monocoque construction, just like the fuselage. The stabilizers have twin spars for structural strength, and the elevator and rudder use sandwich design construction."
+        },
+        {
+          "type": "concept",
+          "title": "Why Lightning Protection Matters",
+          "content": "Metal airplanes naturally conduct lightning through the airframe. Composite airplanes don't -- carbon fiber and glass fiber are poor conductors. Without a dedicated lightning protection system, a lightning strike could cause serious structural damage, ignite fuel vapors, or damage avionics."
+        },
+        {
+          "type": "concept",
+          "title": "The Lightning Protection System",
+          "content": "The DA42-VI uses a network of aluminum alloy tubes and strips to create a conductive path through the airframe. The system has two components: a longitudinal system (nose to tail) and a lateral system (wingtip to wingtip). Aluminum strips and braids connect the engines, fuel tanks, and other metal components to the main lateral system."
+        },
+        {
+          "type": "keypoint",
+          "content": "If lightning strikes the DA42-VI, the energy is conducted through the aluminum strip network to the rear of the aircraft and exits through a lightning electrode located beneath the horizontal stabilizer."
+        },
+        {
+          "type": "check",
+          "question": "Where does lightning energy exit the DA42-VI airframe?",
+          "answer": "Through a lightning electrode located beneath the horizontal stabilizer at the rear of the aircraft."
+        }
+      ]
+    },
+    {
+      "title": "Antenna Locations",
+      "objective": "Identify the general antenna locations on the DA42-VI and note which antenna is not externally visible.",
+      "pageRange": "43-47",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "During your preflight, you should be able to identify the antennas on the aircraft. Antennas that are damaged, missing, or obstructed can mean a loss of communication or navigation capability in flight."
+        },
+        {
+          "type": "concept",
+          "title": "Antenna Placement",
+          "content": "The DA42-VI has multiple antennas for communication and navigation systems, positioned at various locations on the fuselage and empennage. Most are visible during a walkaround, but the VOR antenna is located inside the horizontal stabilizer and is not visible from the outside."
+        },
+        {
+          "type": "keypoint",
+          "content": "The VOR antenna is hidden inside the horizontal stabilizer. You won't see it during preflight, but all other antennas should be checked for security and damage during your walkaround."
+        },
+        {
+          "type": "check",
+          "question": "Which DA42-VI antenna is not visible during a preflight inspection, and where is it located?",
+          "answer": "The VOR antenna is located inside the horizontal stabilizer and is not visible from the outside."
+        }
+      ]
+    }
+  ]
+}

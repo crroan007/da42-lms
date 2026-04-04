@@ -1,0 +1,103 @@
+{
+  "slug": "04-multi-engine-aerodynamics",
+  "title": "Multi-Engine Aerodynamics",
+  "orderIndex": 4,
+  "description": "Induced flow, P-factor, accelerated slipstream, and asymmetric thrust effects.",
+  "estimatedMinutes": 9,
+  "subsections": [
+    {
+      "title": "Why Multi-Engine Aerodynamics Matter",
+      "objective": "Understand why wing-mounted engines create aerodynamic effects that don't exist in single-engine airplanes",
+      "pageRange": "6-8",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "In a single-engine airplane, the forces are fairly symmetrical. The engine sits on the nose, the thrust goes straight ahead, and the propeller effects are manageable with a little rudder. In a twin, everything changes because your engines are mounted out on the wings."
+        },
+        {
+          "type": "text",
+          "content": "This lesson covers the aerodynamic effects that are unique to -- or amplified by -- having two wing-mounted engines. Understanding these forces is essential, because they determine which engine is the 'critical' one and what happens when it fails."
+        }
+      ]
+    },
+    {
+      "title": "Induced Flow (Accelerated Slipstream)",
+      "objective": "Explain how propellers create additional lift over the wings and why that matters when an engine fails",
+      "pageRange": "6-8",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Picture a wing with no engine attached. The lift distribution across that wing is smooth and symmetrical. Now bolt an engine and propeller onto each wing, and everything changes."
+        },
+        {
+          "type": "concept",
+          "title": "Induced Flow",
+          "content": "The spinning propellers blast a high-speed stream of air -- called induced flow or accelerated slipstream -- directly over the inboard sections of each wing. This accelerated air creates additional lift in those areas, beyond what the wing would produce from forward motion alone."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of each propeller as a leaf blower pointed at the wing behind it. With both blowers running, each wing gets an equal boost of extra airflow and extra lift. Turn one off, and suddenly one wing has the boost and the other doesn't."
+        },
+        {
+          "type": "figure",
+          "caption": "Lift distribution on a wing without engines (smooth, symmetrical) compared to a multi-engine wing with propeller-induced flow (increased lift behind each propeller disc)."
+        },
+        {
+          "type": "text",
+          "content": "Induced flow exists in single-engine airplanes too, but it's less significant because the engine is on the centerline, not out on the wings. In a twin, the offset location of each engine means that when one fails, the lift becomes dramatically asymmetric."
+        },
+        {
+          "type": "keypoint",
+          "content": "When one engine fails, the wing behind the operating engine still gets boosted lift from induced flow, but the wing behind the dead engine loses that boost. This creates an asymmetric lift condition that rolls you toward the dead engine."
+        },
+        {
+          "type": "check",
+          "question": "Why is induced flow (accelerated slipstream) more significant in a multi-engine airplane than in a single?",
+          "answer": "Because the engines are mounted on the wings, not the centerline. Each propeller accelerates air over its respective wing. When one engine fails, one wing keeps the lift boost while the other loses it, creating asymmetric lift and a rolling tendency."
+        }
+      ]
+    },
+    {
+      "title": "Turning Tendencies in a Twin",
+      "objective": "Distinguish between conventional and counter-rotating propeller configurations and their effects on handling",
+      "pageRange": "6-8",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "You know from single-engine training that a spinning propeller creates turning tendencies -- torque, P-factor, and the rest. In a twin, these effects are amplified because you have two propellers. But here's the key question: do those propellers spin in the same direction, or opposite directions?"
+        },
+        {
+          "type": "concept",
+          "title": "Conventional Twin",
+          "content": "A twin-engine airplane where both propellers rotate in the same direction (typically clockwise when viewed from the cockpit). The DA42-VI is a conventional twin. Because both propellers spin the same way, the torque and P-factor from each engine push the airplane in the same direction -- creating a combined left-turning tendency."
+        },
+        {
+          "type": "concept",
+          "title": "Counter-Rotating Twin",
+          "content": "A twin-engine airplane where the propellers rotate in opposite directions. The left engine's propeller turns one way, the right engine's propeller turns the other. This design cancels out torque and P-factor effects, resulting in balanced handling and less rudder workload."
+        },
+        {
+          "type": "figure",
+          "caption": "Conventional twin (DA42-VI): Both propellers rotate clockwise. Torque produces a roll tendency to the left, and P-factor produces a yaw tendency to the left. Both effects combine."
+        },
+        {
+          "type": "figure",
+          "caption": "Counter-rotating twin: Propellers rotate in opposite directions. Torque from each engine cancels the other, and P-factor from each engine cancels the other. No net turning tendency."
+        },
+        {
+          "type": "text",
+          "content": "In a conventional twin, you need more rudder input to oppose the combined left-turning tendency of both engines. In a counter-rotating twin, the forces balance each other, and the airplane handles more neutrally."
+        },
+        {
+          "type": "keypoint",
+          "content": "The DA42-VI is a conventional twin with clockwise-rotating propellers. This means it has left-turning tendencies from both torque and P-factor -- and it has a critical engine (which we'll cover in the next module)."
+        },
+        {
+          "type": "check",
+          "question": "What is the fundamental handling difference between a conventional twin and a counter-rotating twin?",
+          "answer": "In a conventional twin, both propellers spin the same direction, so torque and P-factor effects combine to create a turning tendency (typically to the left). In a counter-rotating twin, the propellers spin opposite directions, canceling these effects and producing more balanced handling."
+        }
+      ]
+    }
+  ]
+}

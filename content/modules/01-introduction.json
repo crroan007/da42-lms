@@ -1,0 +1,112 @@
+{
+  "slug": "01-introduction",
+  "title": "Introduction to Multi-Engine Aircraft",
+  "orderIndex": 1,
+  "description": "Overview of multi-engine aircraft characteristics and differences from single-engine operations.",
+  "estimatedMinutes": 5,
+  "subsections": [
+    {
+      "title": "Welcome to Multi-Engine Flying",
+      "objective": "Understand why multi-engine training requires new knowledge beyond single-engine experience",
+      "pageRange": "1",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "You've earned your wings in a single-engine airplane, and everything you've learned still applies. But stepping into a twin-engine aircraft is more than just doubling the engines -- it introduces entirely new capabilities and, more importantly, new risks that demand a deeper level of understanding."
+        },
+        {
+          "type": "text",
+          "content": "This guide will walk you through the key concepts of multi-engine flight, with a focus on the Diamond DA42-VI. By the end, you'll understand not just how to fly a twin, but why the details matter when one engine stops running."
+        },
+        {
+          "type": "concept",
+          "title": "Light Twin",
+          "content": "A 'light twin' is a multi-engine airplane with a maximum certificated takeoff weight of 6,000 pounds or less. The DA42-VI falls into this category. While the term isn't formally defined in the Federal Aviation Regulations, it's widely used in training and operations."
+        },
+        {
+          "type": "keypoint",
+          "content": "Multi-engine airplanes are generally faster, fly higher, are larger and more complex, and demand additional pilot knowledge -- especially regarding one-engine-inoperative (OEI) operations."
+        }
+      ]
+    },
+    {
+      "title": "Ground Operations and Taxi",
+      "objective": "Recognize the differences in taxiing a multi-engine airplane compared to a single-engine airplane",
+      "pageRange": "1",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Before you even leave the ground, you'll notice some differences. The most obvious one? Your wingspan is bigger. That extra reach means you need to be even more careful around hangars, fuel pumps, and other aircraft on the ramp."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of it like upgrading from a compact car to a wide-body truck. You can still drive the same roads, but you need to pay a lot more attention to your clearances when turning corners or passing through tight spaces."
+        },
+        {
+          "type": "text",
+          "content": "Multi-engine airplanes may also feel less nimble on the ground. Steering inputs may not be as crisp as what you're used to in a smaller single. But you have a trick up your sleeve: differential power."
+        },
+        {
+          "type": "concept",
+          "title": "Differential Power",
+          "content": "By adding slightly more power to one engine than the other, you can assist your turns during taxi without relying heavily on brakes. This reduces brake wear and helps maintain a tighter turning radius. However, differential power is a tool, not a crutch -- don't use it for every turn, and always keep engine power to a minimum on the ground."
+        },
+        {
+          "type": "warning",
+          "content": "Never 'ride' the brakes while taxiing. Excessive braking generates heat, accelerates wear, and can lead to brake fade when you actually need stopping power."
+        },
+        {
+          "type": "text",
+          "content": "If your airplane has adjustable cowl flaps, keep them fully open during ground operations. This ensures adequate engine cooling while you're moving at low speeds and reduced airflow. Always check your AFM/POH for specific guidance."
+        },
+        {
+          "type": "check",
+          "question": "What advantage do multi-engine airplanes have over singles when taxiing in tight spaces?",
+          "answer": "Differential power -- by adding slightly more power to one engine, you can assist turns and reduce the need for heavy braking while maintaining the same turning radius."
+        }
+      ]
+    },
+    {
+      "title": "The Two Penalties of Losing an Engine",
+      "objective": "Identify the two critical consequences of an engine failure in a multi-engine airplane",
+      "pageRange": "1",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Here's where multi-engine flying gets serious. When you lose an engine in a twin, you don't just lose half your power. The penalties are twofold, and both can bite you if you're not prepared."
+        },
+        {
+          "type": "concept",
+          "title": "Penalty #1: Performance Loss",
+          "content": "Losing one engine means losing 50% of your available power. But the performance impact is far worse than 50%. Your climb performance can drop by 80 to 90% or more. That's not a typo -- you lose half the power, but nearly all of your climb capability."
+        },
+        {
+          "type": "analogy",
+          "content": "Imagine you're carrying a heavy backpack up a steep hill. With both legs working, you make slow but steady progress. Now imagine one leg gives out. You don't just go half as fast -- you can barely move forward at all, because most of your effort goes into just staying upright."
+        },
+        {
+          "type": "concept",
+          "title": "Penalty #2: Asymmetric Thrust",
+          "content": "The second problem is control. With only one engine producing thrust, that thrust is now off-center. The airplane wants to yaw and roll toward the dead engine. Managing this asymmetric thrust is the core challenge of single-engine operations in a twin."
+        },
+        {
+          "type": "warning",
+          "content": "An engine failure during takeoff is the most dangerous scenario in a twin. Unlike a single where you land straight ahead, a twin with one engine out may not be able to climb, and the asymmetric thrust makes it much harder to control."
+        },
+        {
+          "type": "keypoint",
+          "content": "When an engine fails in a twin, you face two simultaneous challenges: a massive loss of climb performance (80-90%) and asymmetric thrust that tries to yaw and roll you toward the dead engine. You must manage both at the same time."
+        },
+        {
+          "type": "check",
+          "question": "If you lose one engine in a twin, you lose 50% of your power. How much climb performance do you actually lose?",
+          "answer": "80 to 90% or more. The performance loss far exceeds the raw power loss because the remaining engine must now overcome all the drag that was previously shared between two engines."
+        },
+        {
+          "type": "text",
+          "content": "Flying a twin-engine airplane is both exhilarating and demanding. To take full advantage of its capabilities and stay safe, you need to be well-trained, knowledgeable, and proficient. That's exactly what this course is designed to make you."
+        }
+      ]
+    }
+  ]
+}

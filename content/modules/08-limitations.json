@@ -1,0 +1,166 @@
+{
+  "slug": "08-limitations",
+  "title": "Limitations",
+  "orderIndex": 8,
+  "description": "Operating limitations including V-speeds, weight limits, CG limits, and engine limitations.",
+  "estimatedMinutes": 12,
+  "lessons": [
+    {
+      "title": "VO vs. VA -- Maneuvering Speed Explained",
+      "objective": "Distinguish between VO (Operating Maneuvering Speed) and VA (Design Maneuvering Speed) and understand why the DA42-VI uses VO.",
+      "pageRange": "39-42",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Most pilots learn about VA early in training and assume it means you can yank the controls however you like below that speed. That's a dangerous misunderstanding, and the DA42-VI makes the distinction even more important by using VO instead of VA."
+        },
+        {
+          "type": "concept",
+          "title": "VA -- Design Maneuvering Speed",
+          "content": "VA is selected by the manufacturer and is used to determine the structural design of the empennage (tail section) and ailerons. VA does NOT permit unrestricted flight control movements. You can still exceed structural limits with abrupt or combined control inputs at or below VA."
+        },
+        {
+          "type": "concept",
+          "title": "VO -- Operating Maneuvering Speed",
+          "content": "VO is the more restrictive of the two speeds. It is the maximum speed at which a nose-up pitching maneuver will cause a stall before exceeding structural limits. In other words, at or below VO, pulling back on the stick will stall the wing before you break anything."
+        },
+        {
+          "type": "warning",
+          "content": "VO is NOT the same as VA. VO is more restrictive. The DA42-VI placards VO, and you must respect it as your maneuvering speed limit. Do not confuse the two."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of VA as the speed rating on a tire -- the manufacturer's design target. VO is like the actual recommended speed for your specific vehicle in specific conditions. It's the practical, operational limit you actually use."
+        },
+        {
+          "type": "formula",
+          "label": "VA Calculation",
+          "formula": "VA = VS * sqrt(limit load factor)",
+          "explanation": "VA is a minimum airspeed calculated from the stall speed times the square root of the limit load factor. VO is a maximum airspeed that must not be greater than VS times the square root of the limit load factor."
+        },
+        {
+          "type": "check",
+          "question": "Why does the DA42-VI use VO instead of VA, and what is the key difference?",
+          "answer": "VO is more restrictive than VA. At or below VO, a nose-up pitching maneuver will cause a stall before exceeding structural limits. VA alone does not permit unrestricted control movements without risking structural damage."
+        }
+      ]
+    },
+    {
+      "title": "Weight and Balance Limitations",
+      "objective": "Identify the DA42-VI's weight limits and understand how the ERAU-specific modifications affect maximum weights.",
+      "pageRange": "39-42",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Weight and balance is one of those topics that can feel tedious on the ground but becomes critically important in the air. Exceeding weight limits degrades performance, increases stall speeds, and can make the airplane uncontrollable in an engine-out situation."
+        },
+        {
+          "type": "concept",
+          "title": "Key Weight Limits",
+          "content": "The DA42-VI has several weight limits you need to know. These assume the ERAU modifications (MAM 42-678 and MAM 42-659) have been carried out, which they have on all ERAU aircraft."
+        },
+        {
+          "type": "list",
+          "title": "DA42-VI Weight Limitations (with ERAU modifications):",
+          "items": [
+            "Minimum flight mass: 3,197 lbs (1,450 kg)",
+            "Maximum takeoff mass: 4,407 lbs (1,999 kg)",
+            "Maximum zero fuel mass: 4,045 lbs (1,835 kg)",
+            "Maximum landing mass: 4,407 lbs (1,999 kg)"
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Baggage Compartment Limits",
+          "content": "With OAM 42-207 carried out (required for RACC), the DA42-VI has three baggage areas. The nose compartment holds a maximum of 66 lbs (30 kg). The standard rear compartment (between rear seats and baggage bulkhead) holds 66 lbs (30 kg). The short baggage extension holds just 33 lbs (15 kg)."
+        },
+        {
+          "type": "warning",
+          "content": "Exceeding baggage compartment limits can shift the CG outside of the approved envelope, even if you are within the overall weight limit. Always check both individual compartment limits AND total weight and balance."
+        },
+        {
+          "type": "keypoint",
+          "content": "ERAU DA42-VI aircraft have MAM 42-659, MAM 42-678, and OAM 42-207 carried out. These modifications affect maximum weights and baggage capacity. Always verify which modifications apply to the specific aircraft you are flying."
+        },
+        {
+          "type": "check",
+          "question": "What is the maximum takeoff mass of the ERAU DA42-VI, and what modification must be carried out for this limit to apply?",
+          "answer": "4,407 lbs (1,999 kg), with MAM 42-678 carried out."
+        }
+      ]
+    },
+    {
+      "title": "Center of Gravity Limitations",
+      "objective": "Interpret the DA42-VI CG envelope and explain how CG limits change with weight.",
+      "pageRange": "39-42",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The center of gravity envelope is not a single number -- it's a range that changes with weight. Flying outside the CG envelope can make the airplane uncontrollable, especially in single-engine situations. This is one limitation you never want to discover the hard way."
+        },
+        {
+          "type": "concept",
+          "title": "Forward CG Limits",
+          "content": "The forward CG limit varies with weight. At minimum flight mass (3,197 lbs), the forward limit is 92.52 inches aft of datum. At maximum takeoff mass with MAM 42-678 (4,407 lbs), it moves to 95.83 inches aft of datum. The variation between these points is linear."
+        },
+        {
+          "type": "concept",
+          "title": "Aft CG Limits",
+          "content": "The aft CG limit also varies. At minimum flight mass (3,197 lbs), the aft limit is 96.61 inches aft of datum. At 3,748 lbs, it moves to 97.64 inches aft of datum and remains there up to maximum takeoff mass."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of the CG envelope like the safe zone on a seesaw. Too far forward and it's nose-heavy and hard to control in pitch. Too far aft and it becomes dangerously unstable -- like trying to balance on the very tip of the seesaw."
+        },
+        {
+          "type": "keypoint",
+          "content": "CG limits are measured in inches aft of the datum plane. The forward limit gets more restrictive (moves aft) as weight increases. Always plot your actual CG on the envelope chart -- don't just estimate."
+        },
+        {
+          "type": "check",
+          "question": "Does the forward CG limit move forward or aft as the DA42-VI's weight increases?",
+          "answer": "The forward CG limit moves aft as weight increases. At minimum weight, it is 92.52 inches aft of datum; at maximum takeoff mass, it moves to 95.83 inches aft of datum."
+        }
+      ]
+    },
+    {
+      "title": "Load Factor and General Limitations",
+      "objective": "State the DA42-VI's load factor limits, maximum operating altitude, crosswind limits, and canopy speed restriction.",
+      "pageRange": "39-42",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Beyond weight and CG, the DA42-VI has several operational limits that you need to have committed to memory. These cover everything from how hard you can pull on the stick to how high you can fly and how much crosswind you can handle."
+        },
+        {
+          "type": "concept",
+          "title": "Load Factor Limits",
+          "content": "The DA42-VI is certified in the Normal category. This means it has specific positive and negative G limits that you must not exceed. Turbulence, aggressive maneuvering, or abrupt control inputs can all push you toward these limits."
+        },
+        {
+          "type": "concept",
+          "title": "Maximum Operating Altitude",
+          "content": "The DA42-VI has a maximum operating altitude of 18,000 feet pressure altitude. Above this altitude, the aircraft is not certified for flight, and engine performance, pressurization (or lack thereof), and structural considerations all come into play."
+        },
+        {
+          "type": "concept",
+          "title": "Crosswind Limitations",
+          "content": "The maximum demonstrated crosswind component is 25 knots with flaps UP and 20 knots with flaps in the APP position. Remember -- 'demonstrated' means the manufacturer showed it could be done, not that every pilot should attempt it in every condition."
+        },
+        {
+          "type": "warning",
+          "content": "The canopy may only be opened to the cooling gap position in flight at or below 117 KIAS, and only during an emergency. This is not for ventilation on a hot day -- it is an emergency-only procedure."
+        },
+        {
+          "type": "keypoint",
+          "content": "Max altitude: 18,000 ft pressure altitude. Max crosswind: 25 kts (flaps UP), 20 kts (flaps APP). Canopy opening in flight: 117 KIAS max, emergency only."
+        },
+        {
+          "type": "check",
+          "question": "What is the maximum demonstrated crosswind component for the DA42-VI with flaps in the APP position?",
+          "answer": "20 knots."
+        }
+      ]
+    }
+  ]
+}

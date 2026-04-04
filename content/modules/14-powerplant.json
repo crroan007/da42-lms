@@ -1,0 +1,356 @@
+{
+  "slug": "14-powerplant",
+  "title": "Powerplant",
+  "orderIndex": 14,
+  "description": "Austro AE300 turbocharged diesel engines, ECU, power management, and cooling systems.",
+  "estimatedMinutes": 48,
+  "subsections": [
+    {
+      "title": "Austro AE300 Engine Overview",
+      "objective": "Identify the key characteristics and power ratings of the DA42-VI's diesel engines.",
+      "pageRange": "95-110",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The DA42-VI's engines are unlike anything you've flown with in a Cessna or Piper. These are jet-fuel burning diesel engines -- more like what you'd find in a European sports car than a traditional aircraft. Understanding this engine's unique characteristics is essential because almost everything about power management, fuel, and ignition is different from what you've learned in piston singles."
+        },
+        {
+          "type": "concept",
+          "title": "Engine Specifications",
+          "content": "The Austro AE300-E4C is a turbocharged, inline 4-cylinder, 4-stroke, overhead valve, dual overhead cam, liquid-cooled, common rail fuel-injected diesel engine with a reduction gear. It burns Jet-A fuel instead of conventional diesel or avgas."
+        },
+        {
+          "type": "analogy",
+          "content": "If you've ever driven a turbodiesel car, you already have a feel for how these engines behave -- smooth, torquey power delivery without spark plugs, running on jet fuel instead of gasoline. The reduction gear is like the transmission in your car, converting high engine RPM to a more efficient propeller speed."
+        },
+        {
+          "type": "concept",
+          "title": "Power Ratings",
+          "content": "Each engine produces 165 horsepower at 2300 RPM. However, when both engines are operating, the Airplane Flight Manual limits you to Maximum Continuous Power (MCP) of 152 HP, which is achieved by setting the power levers to 92%. This is not a physical limitation of the engine -- it's an AFM restriction."
+        },
+        {
+          "type": "keypoint",
+          "content": "Both engines turn clockwise (conventional rotation). There is no critical engine in the DA42-VI based on P-factor considerations from engine rotation direction."
+        },
+        {
+          "type": "warning",
+          "content": "Full power (100%) is only allowed for takeoff and is limited to 5 minutes maximum. This 5-minute limitation applies even during single-engine operations -- you cannot run the remaining engine at full power indefinitely."
+        },
+        {
+          "type": "check",
+          "question": "What power lever setting achieves Maximum Continuous Power, and what horsepower does it produce?",
+          "answer": "92% power lever setting produces 152 HP per engine. This is the maximum allowed for continuous operation when both engines are running."
+        }
+      ]
+    },
+    {
+      "title": "Engine Air Intake and Alternate Air",
+      "objective": "Understand the engine air intake location and the alternate air system for blocked intake scenarios.",
+      "pageRange": "95-110",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Getting clean air into the engine is just as important as fuel. If the air supply gets blocked, you'll experience a substantial power loss. The DA42 has a backup system for this, but it comes with trade-offs you need to understand."
+        },
+        {
+          "type": "concept",
+          "title": "Engine Air Intake Location",
+          "content": "The engine air intake is located on the left side of each engine (which appears on the right side when you're looking at the engine head-on from the front). Air passes through a filter before entering the induction system."
+        },
+        {
+          "type": "concept",
+          "title": "Alternate Air System",
+          "content": "If the engine air intake becomes blocked by induction ice or a clogged air filter, you'll experience a substantial loss of power. The Alternate Air Control handle, located under the instrument panel to the right of the center console, opens an alternate air path. Pulling the lever rearward allows the engine to draw unfiltered, warmer air from within the engine compartment through six alternate air inlets, bypassing the normal filtered intake."
+        },
+        {
+          "type": "warning",
+          "content": "Alternate air is UNFILTERED. Do not use it for normal operations in dusty conditions or during ground operations. The warm engine compartment air helps with ice, but the lack of filtration means dirt and debris can enter the engine."
+        },
+        {
+          "type": "figure",
+          "caption": "Engine Air Intake and Alternate Air system diagram showing the normal intake path, alternate air handle location, and the six alternate air inlets on the engine compartment."
+        },
+        {
+          "type": "check",
+          "question": "Why should you avoid using alternate air during ground operations or in dusty conditions?",
+          "answer": "Because alternate air is unfiltered -- it draws air directly from the engine compartment, bypassing the air filter. This could allow dirt and debris to enter the engine."
+        }
+      ]
+    },
+    {
+      "title": "Electronic Engine Control Unit (ECU)",
+      "objective": "Explain the dual ECU system, voter switch operation, testing procedures, and backup power.",
+      "pageRange": "95-110",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "In a traditional piston aircraft, you manage the mixture, prop, and throttle yourself. In the DA42, most of that work is done by a computer. The Engine Control Unit is the brain of each engine, and understanding how it works -- and what happens when it fails -- is critical knowledge."
+        },
+        {
+          "type": "concept",
+          "title": "ECU Function",
+          "content": "The ECU monitors, controls, and regulates all engine parameters. It receives inputs from sensors throughout the engine -- manifold pressure, RPM, fuel injector pressure, and more. Think of it as the engine's autopilot: you tell it how much power you want via the power lever, and it figures out all the details."
+        },
+        {
+          "type": "concept",
+          "title": "Dual ECU Redundancy",
+          "content": "Each engine has TWO ECUs (A and B). While both ECUs are always active and monitoring, only one is actually controlling the engine at any given time. The Voter Switch selects which ECU is in command. It should be left in the AUTO position unless you're following a specific checklist procedure."
+        },
+        {
+          "type": "concept",
+          "title": "Automatic ECU Failover",
+          "content": "The active ECU continuously monitors its own health. If it detects it's not at 100%, it will automatically switch to the other ECU. When this happens, you'll see a PFD caution stating 'L/R ECU A/B FAIL' -- for example, 'L ECU A FAIL' means the left engine's ECU A has handed off to ECU B."
+        },
+        {
+          "type": "analogy",
+          "content": "The dual ECU setup is like having two co-pilots, one actively flying while the other monitors everything and is ready to take the controls instantly if the first one has a problem. The voter switch decides who's flying."
+        },
+        {
+          "type": "concept",
+          "title": "ECU Test Procedure",
+          "content": "The ECU TEST is required during the before-takeoff run-up. The test will only run when power levers are at idle AND gearbox temperatures are in the green. Press and hold the ECU TEST button until the caution lights on the PFD extinguish. A slight shake during the test is normal -- that's the engines briefly switching between ECUs."
+        },
+        {
+          "type": "concept",
+          "title": "ECU Backup Batteries",
+          "content": "Each ECU has two backup batteries (four lead-acid batteries total per engine, eight total for the aircraft). In the event of a complete electrical failure, these batteries will power ONLY the ECUs for up to 30 minutes. They're located under the rear passenger seats."
+        },
+        {
+          "type": "keypoint",
+          "content": "ECU backup batteries provide 30 minutes of power to the ECUs only. This means even with a total electrical failure, the engines will continue to run and be properly managed for at least 30 minutes -- enough time to get on the ground."
+        },
+        {
+          "type": "check",
+          "question": "What two conditions must be met before the ECU TEST will run?",
+          "answer": "Power levers must be at idle AND gearbox temperatures must be indicating green."
+        },
+        {
+          "type": "check",
+          "question": "During a total electrical failure, how long will the ECU backup batteries keep the engines running?",
+          "answer": "Up to 30 minutes. The backup batteries power ONLY the ECUs -- no other electrical systems."
+        }
+      ]
+    },
+    {
+      "title": "Power Levers and Engine Instruments",
+      "objective": "Describe power lever operation, sensor redundancy, and the engine instrument display.",
+      "pageRange": "95-110",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "In the DA42, power management is simplified compared to traditional piston aircraft -- there's no separate mixture or prop control. One lever per engine does it all. But that simplicity comes with some important caveats about how the system handles failures."
+        },
+        {
+          "type": "concept",
+          "title": "Power Lever Operation",
+          "content": "There is one power lever per engine. You select a percent power setting, and the ECU handles everything else -- fuel injection timing, turbocharger wastegate position, and propeller RPM. The power lever position is sent to each ECU via independent position sensors."
+        },
+        {
+          "type": "concept",
+          "title": "Power Lever Sensor Redundancy",
+          "content": "Each power lever has TWO position sensors. If one sensor fails, the other provides enough information for the ECU to operate normally. If BOTH sensors fail, the ECU defaults to 80% power -- enough to maintain flight but not something you'd want during approach."
+        },
+        {
+          "type": "warning",
+          "content": "Avoid rapid power lever movements. Even though the ECU manages the propeller, overspeeding the propellers is still possible with abrupt throttle inputs."
+        },
+        {
+          "type": "keypoint",
+          "content": "If both power lever sensors fail, the ECU defaults to 80% power. All annunciators, sensors, and controlled components are managed by the ECU."
+        },
+        {
+          "type": "concept",
+          "title": "Engine Instruments",
+          "content": "All engine instruments are displayed on the G1000 MFD engine page. This includes RPM, manifold pressure, fuel flow, oil temperature and pressure, coolant temperature, gearbox temperature, and electrical system status. The digital display makes trend monitoring easy -- watch for any parameter moving toward the yellow or red range."
+        },
+        {
+          "type": "check",
+          "question": "What happens if both position sensors on a power lever fail?",
+          "answer": "The ECU will default to 80% power. The pilot cannot change the power setting for that engine until the sensors are restored."
+        }
+      ]
+    },
+    {
+      "title": "Ignition System",
+      "objective": "Understand how diesel compression ignition works and the role of glow plugs in the DA42.",
+      "pageRange": "95-110",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "If you're used to checking magnetos during run-up, the DA42 will feel very different. There are no magnetos, no spark plugs, and no mixture control. Diesel ignition is fundamentally different from gasoline engine ignition, and this affects how you start the engine and what happens if you need to restart in flight."
+        },
+        {
+          "type": "concept",
+          "title": "Compression Ignition",
+          "content": "Once running, the Austro AE300 ignites fuel purely through compression. When air is compressed in the cylinder, it heats up enough to cause the injected Jet-A fuel to spontaneously combust. There are no spark plugs involved during normal operation -- compression alone does the job."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of a bicycle pump getting hot when you pump air rapidly -- that's compression heating. In the diesel engine, the compression ratio is high enough that the air temperature exceeds the fuel's ignition point, and combustion happens without any spark."
+        },
+        {
+          "type": "concept",
+          "title": "Glow Plugs for Cold Starts",
+          "content": "The DA42 has glow plugs to pre-heat the combustion chamber for cold starts. However, glow plugs only operate during the start sequence -- they do not operate while the engine is running, and they won't activate if the squat switch indicates the aircraft is not on the ground."
+        },
+        {
+          "type": "warning",
+          "content": "If an engine is shut down in flight, it must be restarted within a certain time period before the combustion chambers cool too much for compression ignition to work. The longer you wait, the less likely an airborne restart will succeed."
+        },
+        {
+          "type": "keypoint",
+          "content": "All ignition parameters are controlled by the ECU. There is no magneto check, no 'both' or 'left/right' ignition positions. The ECU TEST during run-up replaces the traditional magneto check."
+        },
+        {
+          "type": "check",
+          "question": "Why don't the glow plugs operate while the engine is running?",
+          "answer": "Because once the engine is running, combustion is sustained entirely by compression heating of the air in the cylinders. The glow plugs are only needed to pre-heat the combustion chamber for cold starts on the ground."
+        }
+      ]
+    },
+    {
+      "title": "Turbocharger System",
+      "objective": "Explain how the turbocharger maintains engine performance at altitude and the role of the wastegate.",
+      "pageRange": "95-110",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Turbocharging is what allows the DA42 to maintain excellent performance at altitude. Without it, the diesel engines would lose significant power as you climb. Understanding how the turbocharger works helps you manage power properly and avoid damaging this critical component."
+        },
+        {
+          "type": "concept",
+          "title": "Turbocharging Basics",
+          "content": "Turbocharging is a form of forced induction that uses exhaust gases to spin a turbine, which drives a compressor that pressurizes the intake air before it reaches the engine. This allows the engines to maintain near-sea-level manifold pressure -- and therefore near-sea-level performance -- even at higher altitudes."
+        },
+        {
+          "type": "analogy",
+          "content": "Imagine blowing up a balloon at sea level versus on top of a mountain. At altitude, there's less air available. The turbocharger acts like a helper who pre-fills your balloon with extra air to compensate for the thin atmosphere, so the engine always gets a full breath."
+        },
+        {
+          "type": "concept",
+          "title": "Intercooler",
+          "content": "Compressing air heats it up, and hot air is less dense (defeating the purpose of turbocharging). So the compressed air passes through an intercooler before entering the engine. The intercooler uses outside air from an opening in the nacelle to cool the compressed intake air. The cooling air exits through the rear of the engine nacelle."
+        },
+        {
+          "type": "concept",
+          "title": "Wastegate Operation",
+          "content": "A wastegate on the turbocharger controls how much exhaust gas reaches the turbine. When the wastegate is OPEN, exhaust bypasses the turbine, resulting in less compression. When the wastegate is CLOSED, more exhaust drives the turbine, increasing compression. The ECU manages the wastegate automatically to deliver the correct manifold pressure for your power setting."
+        },
+        {
+          "type": "warning",
+          "content": "After landing, power must be kept below 10% for one minute to allow proper cooling of the turbocharger unit. The turbocharger runs at extremely high temperatures, and shutting down immediately after high-power operation can cause heat damage."
+        },
+        {
+          "type": "keypoint",
+          "content": "Wastegate OPEN = less boost (exhaust bypasses turbine). Wastegate CLOSED = more boost (exhaust drives turbine). The ECU manages this automatically."
+        },
+        {
+          "type": "figure",
+          "caption": "Turbocharger system diagram showing compressed air flow to the engine, ambient air intake, exhaust gas path to the turbocharger and bypass, wastegate, and impeller blades."
+        },
+        {
+          "type": "check",
+          "question": "Why does the compressed intake air need to pass through an intercooler?",
+          "answer": "Compression heats the air, making it less dense. The intercooler cools the compressed air back down, maximizing the density of the air charge entering the engine. Cooling also helps prevent detonation."
+        },
+        {
+          "type": "check",
+          "question": "What must you do after landing to protect the turbocharger?",
+          "answer": "Keep power below 10% for one minute after landing to allow the turbocharger to cool properly before engine shutdown."
+        }
+      ]
+    },
+    {
+      "title": "Oil System",
+      "objective": "Distinguish between the two separate oil systems in each engine and know the inspection methods.",
+      "pageRange": "95-110",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Here's something that surprises most pilots transitioning to the DA42: each engine has TWO separate oil systems, not one. Knowing which system does what -- and how to check each one -- is critical for your preflight and for understanding oil-related warnings in flight."
+        },
+        {
+          "type": "concept",
+          "title": "Engine Oil System",
+          "content": "The first oil system lubricates the engine and turbocharger. It's a wet sump system (meaning oil is stored in the bottom of the engine, not in a separate tank) and is cooled by a water/oil cooler on the upper side of the engine. Maximum capacity is 7 liters (7.4 quarts), with a minimum of 5 liters required."
+        },
+        {
+          "type": "concept",
+          "title": "Gearbox Oil System",
+          "content": "The second oil system is completely separate -- it lubricates the reduction gearbox and serves the propeller governor system. This system has its own oil supply that is NOT checked with the engine dipstick."
+        },
+        {
+          "type": "warning",
+          "content": "The gearbox oil is inspected through a SIGHT GLASS, not the engine dipstick. Using the engine dipstick will only tell you about engine oil -- it tells you nothing about gearbox oil level. Check both during preflight."
+        },
+        {
+          "type": "keypoint",
+          "content": "Two separate oil systems per engine: (1) Engine/turbo oil -- checked with dipstick, 7 liters max / 5 liters min; (2) Gearbox/propeller governor oil -- checked through sight glass."
+        },
+        {
+          "type": "check",
+          "question": "How do you check the gearbox oil level during preflight?",
+          "answer": "Through a sight glass on the gearbox -- NOT with the engine dipstick. The engine dipstick only shows engine oil level."
+        }
+      ]
+    },
+    {
+      "title": "Liquid Cooling System",
+      "objective": "Understand the engine liquid cooling system, thermostat operation, and temperature limits.",
+      "pageRange": "95-110",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Unlike air-cooled engines in most training aircraft, the DA42's engines use liquid cooling -- just like your car. This provides more even temperature distribution and better heat management, but it also means you have a coolant system to monitor and understand."
+        },
+        {
+          "type": "concept",
+          "title": "Liquid Cooling Basics",
+          "content": "A water-based coolant with anti-freeze additives circulates through the crankcase and cylinder heads to dissipate heat. The coolant temperature is displayed on the G1000 as required by 14 CFR 91.205."
+        },
+        {
+          "type": "list",
+          "title": "Coolant Temperature Limits:",
+          "items": [
+            "Minimum at startup: -30 degrees C",
+            "Minimum at full load: 60 degrees C",
+            "Maximum: 150 degrees C"
+          ]
+        },
+        {
+          "type": "concept",
+          "title": "Thermostat and Bypass",
+          "content": "The cooling system has a radiator (coolant heat exchanger) and a bypass circuit. When coolant is cold (below 80 degrees C), the bypass is active, routing coolant around the radiator so the engine warms up quickly. Once coolant reaches 80 degrees C, a thermostat valve opens and routes coolant through the radiator for active cooling."
+        },
+        {
+          "type": "analogy",
+          "content": "This works identically to your car's thermostat. On a cold morning, the engine warms up fast because coolant bypasses the radiator. Once warm, the thermostat opens and coolant flows through the radiator to prevent overheating."
+        },
+        {
+          "type": "concept",
+          "title": "Cabin Heat Connection",
+          "content": "A separate coolant-to-air heat exchanger provides warm air for the cabin heat system. This heat exchanger operates independently of the coolant temperature -- it's always flowing, regardless of whether the thermostat has opened the radiator circuit."
+        },
+        {
+          "type": "concept",
+          "title": "System Protection",
+          "content": "An expansion tank adjusts pressure in the system as coolant heats up and expands. A pressure relief valve protects against overpressure."
+        },
+        {
+          "type": "figure",
+          "caption": "Coolant system diagram showing the cold coolant loop (below 80 degrees C), hot coolant loop (above 80 degrees C), combined loop, heat exchanger for cabin heat, and expansion tank."
+        },
+        {
+          "type": "check",
+          "question": "At what temperature does the thermostat open to route coolant through the radiator?",
+          "answer": "80 degrees C. Below this temperature, coolant bypasses the radiator to allow faster engine warm-up."
+        },
+        {
+          "type": "check",
+          "question": "What is the maximum allowable coolant temperature?",
+          "answer": "150 degrees C. The minimum at startup is -30 degrees C, and the minimum at full load is 60 degrees C."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "17-electrical-system",
+  "title": "Electrical System",
+  "orderIndex": 17,
+  "description": "28V DC dual-generator electrical system, buses, and circuit protection.",
+  "estimatedMinutes": 5,
+  "subsections": [
+    {
+      "title": "Power Generation and Battery",
+      "objective": "Understand the DA42's dual alternator power generation, battery specifications, and load balancing.",
+      "pageRange": "118-118",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The electrical system powers everything from your avionics to your gear pump. Losing electrical power in the DA42 isn't immediately catastrophic (the engines have backup batteries), but understanding how power is generated and distributed helps you manage failures effectively."
+        },
+        {
+          "type": "concept",
+          "title": "Dual Alternators",
+          "content": "The DA42 generates electrical power through two belt-driven, 28-volt DC, 70-amp alternators -- one on each engine. Each alternator has its own Alternator Control Unit that senses the power demand and adjusts the electrical load accordingly."
+        },
+        {
+          "type": "concept",
+          "title": "Load Balancing",
+          "content": "The Left Alternator Control Unit has a special role: its voltage regulator balances the load between the two alternators so they produce a similar output. This prevents one alternator from doing all the work while the other loafs."
+        },
+        {
+          "type": "warning",
+          "content": "The alternator switches should ALWAYS be on during normal operations. Only switch an alternator off when securing an engine after a failure -- follow the appropriate checklist."
+        },
+        {
+          "type": "concept",
+          "title": "Main Battery",
+          "content": "The main battery is a 24-volt, 13.6 amp-hour lead acid battery located in the center-aft side of the front baggage compartment. The battery vent is underneath the nose compartment. This battery provides power for engine starting and serves as a backup when alternator output is insufficient."
+        },
+        {
+          "type": "keypoint",
+          "content": "The ECU backup batteries (four lead-acid batteries under the rear passenger seats) are separate from the main battery. They provide 30 minutes of power to ONLY the ECUs during a total electrical failure."
+        },
+        {
+          "type": "check",
+          "question": "What is the voltage and amperage rating of each alternator?",
+          "answer": "28 volts DC, 70 amps each. They are belt-driven from the engines."
+        }
+      ]
+    },
+    {
+      "title": "Electrical Buses and Distribution",
+      "objective": "Describe the bus architecture and how power flows through the electrical system, including ECU bus independence.",
+      "pageRange": "118-118",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The DA42's electrical bus architecture has some clever redundancy built in -- especially when it comes to keeping the engines running. Understanding how the buses are connected helps you predict what you'll lose during various failure scenarios."
+        },
+        {
+          "type": "concept",
+          "title": "Bus Architecture",
+          "content": "The battery bus and main battery feed both the Left and Right Main Buses. From these main buses, power is distributed to the various aircraft systems, avionics, and accessories."
+        },
+        {
+          "type": "concept",
+          "title": "ECU Bus Independence",
+          "content": "The Left and Right ECU Buses have a special design feature: they can take power directly from the alternator even if the alternator switch is in the OFF position. This means even if you accidentally (or intentionally) switch off an alternator, the ECU on that side can still draw power from it."
+        },
+        {
+          "type": "keypoint",
+          "content": "The ECU backup batteries can also excite the alternator field if needed. This creates a chain of redundancy: alternators power the ECU buses directly (even with switches off), and ECU backup batteries can help restart alternator output."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of the ECU buses like a VIP power line that bypasses the normal circuit breaker panel. Even if everything else in the house loses power, the VIP line keeps the most critical system (the engines) running through multiple backup paths."
+        },
+        {
+          "type": "figure",
+          "caption": "Power Distribution / Electrical System diagram showing alternators, battery bus, left and right main buses, ECU buses, and the backup battery connections."
+        },
+        {
+          "type": "check",
+          "question": "Can the ECU buses receive power from an alternator that has its switch in the OFF position?",
+          "answer": "Yes. The Left and Right ECU Buses can take power directly from the alternator regardless of the alternator switch position, providing an extra layer of redundancy for engine management."
+        },
+        {
+          "type": "check",
+          "question": "What are the three possible power sources for the ECU buses?",
+          "answer": "1) The main electrical bus through normal distribution, 2) Directly from the alternator (even with switch OFF), and 3) The ECU backup batteries (which can also excite the alternator field)."
+        }
+      ]
+    }
+  ]
+}

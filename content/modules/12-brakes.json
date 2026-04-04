@@ -1,0 +1,98 @@
+{
+  "slug": "12-brakes",
+  "title": "Brakes",
+  "orderIndex": 12,
+  "description": "Hydraulic brake system with disk brakes, toe-brake operation, and parking brake.",
+  "estimatedMinutes": 6,
+  "subsections": [
+    {
+      "title": "Brake System Design and Operation",
+      "objective": "Understand the DA42-VI hydraulic brake system components and how pilot and copilot braking works.",
+      "pageRange": "86-87",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The brake system may seem simple compared to the landing gear hydraulics, but there's a critical asymmetry in the DA42 brake design that every pilot needs to know. Understanding how the brakes are plumbed could matter a lot if you ever experience a brake failure."
+        },
+        {
+          "type": "concept",
+          "title": "Brake Components",
+          "content": "Each main wheel has a disk, brake pad, and brake caliper -- a standard disk brake setup similar to what you'd find on a car. Toe-brake pedals on the rudder pedals operate separate hydraulic brake cylinders located behind the brake pedals."
+        },
+        {
+          "type": "analogy",
+          "content": "The DA42 brakes work exactly like the brakes on your car: you press a pedal, it pushes fluid through a hydraulic line, and that fluid squeezes a caliper against a spinning disk to create friction and slow you down."
+        },
+        {
+          "type": "concept",
+          "title": "Hydraulic Connections",
+          "content": "Hydraulic piping and hoses connect the brake cylinders (behind the pedals) to the brake calipers (at the wheels). The pilot-side and copilot-side pedals have separate cylinders, but they ultimately act on the same brake calipers."
+        },
+        {
+          "type": "warning",
+          "content": "The brake system has a critical asymmetry: if the copilot-side brake pedals fail, the pilot-side brakes will still work. However, if the pilot-side brakes fail, braking is UNAVAILABLE entirely -- even from the copilot side. This is because the system is plumbed so that pilot-side functionality is the primary path."
+        },
+        {
+          "type": "keypoint",
+          "content": "Pilot-side brake failure = total brake loss. Copilot-side brake failure = pilot brakes still functional. Always verify pilot-side brakes during taxi."
+        },
+        {
+          "type": "check",
+          "question": "If the copilot's brake pedals stop working, can the pilot still brake the aircraft?",
+          "answer": "Yes. The system is designed so that copilot-side brake failure still allows the pilot-side brake pedals to operate normally."
+        },
+        {
+          "type": "check",
+          "question": "What happens if the pilot-side brake system fails?",
+          "answer": "Braking becomes completely unavailable -- even from the copilot side. The pilot-side is the primary brake path."
+        }
+      ]
+    },
+    {
+      "title": "Parking Brake",
+      "objective": "Describe how the parking brake locks and releases, and proper operating technique.",
+      "pageRange": "86-87",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The parking brake on the DA42 works a bit differently than a simple on/off lever. You need to build up pressure first, then lock it in. Getting this sequence wrong means your parking brake won't hold -- and an airplane rolling away on the ramp is a very bad day."
+        },
+        {
+          "type": "concept",
+          "title": "Parking Brake Operation",
+          "content": "The parking brake valve works by retaining hydraulic pressure in the brake lines. To set it, you pump the toe brake pedals multiple times to build up pressure, then move the parking brake handle to the locked position. This valve traps the pressure, keeping the brakes applied."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of the parking brake like filling a balloon (pumping the pedals builds pressure) and then pinching the neck shut (the parking brake valve locks that pressure in). If you don't pump enough, there's not enough 'air in the balloon' to hold."
+        },
+        {
+          "type": "keypoint",
+          "content": "The parking brake requires MULTIPLE pumps of the toe brakes to build pressure before locking. A single pedal press is usually not enough to set it firmly."
+        },
+        {
+          "type": "list",
+          "title": "Parking Brake Handle Positions:",
+          "items": [
+            "Forward position = Brake Released",
+            "Aft (pulled) position = Brake Locked"
+          ]
+        },
+        {
+          "type": "figure",
+          "caption": "Parking Brake Handle showing the forward (released) and aft (locked) positions, along with the complete brake system hydraulic diagram."
+        },
+        {
+          "type": "example",
+          "title": "Proper Parking Brake Set",
+          "content": "After arriving at your parking spot, you hold the toe brakes firmly and pump them 3-4 times to build hydraulic pressure. While maintaining pressure on the pedals, you pull the parking brake handle aft to the locked position. You then release the toe brakes and verify the airplane doesn't roll. Before engine start on the next flight, you verify the parking brake is set and check for any roll."
+        },
+        {
+          "type": "check",
+          "question": "Why must you pump the toe brake pedals multiple times before setting the parking brake?",
+          "answer": "The parking brake valve works by retaining hydraulic pressure built up by pumping the toe brake pedals. Multiple pumps are needed to build sufficient pressure for the valve to lock and hold the brakes in the ON position."
+        }
+      ]
+    }
+  ]
+}

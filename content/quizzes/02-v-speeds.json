@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "02-v-speeds",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What does VYSE represent and how is it marked on the airspeed indicator?",
+      "options": [
+        { "text": "Best angle of climb speed, marked with a red line", "isCorrect": false },
+        { "text": "Best rate of climb speed with one engine inoperative, marked with a blue line", "isCorrect": true },
+        { "text": "Safe single-engine speed, marked with a green arc", "isCorrect": false },
+        { "text": "Minimum control speed, marked with a blue line", "isCorrect": false }
+      ],
+      "explanation": "VYSE is the best rate-of-climb speed with one engine inoperative. It is marked with a blue radial line on most airspeed indicators."
+    },
+    {
+      "id": "q2",
+      "question": "What is VMC and how is it marked on the airspeed indicator?",
+      "options": [
+        { "text": "Maximum cruise speed, marked with a yellow arc", "isCorrect": false },
+        { "text": "Minimum control speed with critical engine inoperative, marked with a red radial line", "isCorrect": true },
+        { "text": "Maneuvering speed, marked with a white arc", "isCorrect": false },
+        { "text": "Best glide speed, marked with a green arc", "isCorrect": false }
+      ],
+      "explanation": "VMC is the minimum control speed with the critical engine inoperative. It is marked with a red radial line on most airspeed indicators."
+    },
+    {
+      "id": "q3",
+      "question": "What is VSSE?",
+      "options": [
+        { "text": "The speed at which the airplane lifts off the surface", "isCorrect": false },
+        { "text": "The best angle-of-climb speed with one engine inoperative", "isCorrect": false },
+        { "text": "The safe, intentional one-engine-inoperative speed", "isCorrect": true },
+        { "text": "The best rate of climb speed with all engines operating", "isCorrect": false }
+      ],
+      "explanation": "VSSE is the safe, intentional one-engine-inoperative speed. It is the minimum speed to intentionally render the critical engine inoperative and is required to be published in the AFM/POH by 14 CFR Part 23."
+    },
+    {
+      "id": "q4",
+      "question": "If an engine failure occurs below VMC while the airplane is on the ground, what should the pilot do?",
+      "options": [
+        { "text": "Continue the takeoff and climb at VYSE", "isCorrect": false },
+        { "text": "Reject the takeoff by closing both throttles and using rudder and brakes", "isCorrect": true },
+        { "text": "Apply full power on the remaining engine", "isCorrect": false },
+        { "text": "Raise the landing gear immediately", "isCorrect": false }
+      ],
+      "explanation": "If an engine failure occurs below VMC while on the ground, the takeoff must be rejected. Directional control can only be maintained by promptly closing both throttles and using rudder and brakes as required."
+    },
+    {
+      "id": "q5",
+      "question": "After liftoff in a multi-engine airplane, what speed should be maintained until reaching a safe single-engine maneuvering altitude?",
+      "options": [
+        { "text": "VMC", "isCorrect": false },
+        { "text": "VSSE", "isCorrect": false },
+        { "text": "VY", "isCorrect": true },
+        { "text": "VR", "isCorrect": false }
+      ],
+      "explanation": "After liftoff, VY should be established and maintained until reaching a safe single-engine maneuvering altitude, typically a minimum of 400-500 feet AGL."
+    }
+  ]
+}

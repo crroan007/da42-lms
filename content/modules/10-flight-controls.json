@@ -1,0 +1,275 @@
+{
+  "slug": "10-flight-controls",
+  "title": "Flight Controls",
+  "orderIndex": 10,
+  "description": "Primary and secondary flight controls including ailerons, elevator, rudder, trim, and flaps.",
+  "estimatedMinutes": 45,
+  "lessons": [
+    {
+      "title": "Flight Control System Overview",
+      "objective": "Describe how the DA42-VI's primary flight controls are connected and operated from the cockpit.",
+      "pageRange": "48-62",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Every input you make on the control stick and rudder pedals gets translated into movement of the control surfaces on the wings and tail. Understanding how that translation happens -- mechanically, not by magic -- helps you catch problems during preflight and understand what you're feeling through the controls in flight."
+        },
+        {
+          "type": "concept",
+          "title": "Control Stick Inputs",
+          "content": "The DA42-VI provides a control stick for each pilot (left and right seat). The control stick operates both the ailerons (roll) and the elevator (pitch). These surfaces are connected to the stick through a series of bell cranks and pushrods -- solid mechanical linkages, not cables."
+        },
+        {
+          "type": "concept",
+          "title": "Rudder Inputs",
+          "content": "The rudder is operated by the rudder pedals through flexible steel cables. This is a different linkage system than the ailerons and elevator. Rudder trim and elevator trim are also controlled by steel cables."
+        },
+        {
+          "type": "concept",
+          "title": "Flap Operation",
+          "content": "Unlike the other control surfaces, the flaps are operated by an electric actuator using pushrods. You command them electrically from the cockpit, and the actuator does the work of extending and retracting them."
+        },
+        {
+          "type": "list",
+          "title": "Control linkage summary:",
+          "items": [
+            "Ailerons: bell cranks and pushrods (from control stick)",
+            "Elevator: bell cranks and pushrods (from control stick)",
+            "Rudder: flexible steel cables (from rudder pedals)",
+            "Elevator trim: steel cables (from trim wheel / electric motor)",
+            "Rudder trim: steel cables (from trim knob)",
+            "Flaps: electric actuator with pushrods"
+          ]
+        },
+        {
+          "type": "check",
+          "question": "What type of mechanical linkage connects the control stick to the ailerons and elevator?",
+          "answer": "Bell cranks and pushrods. The rudder, by contrast, uses flexible steel cables."
+        }
+      ]
+    },
+    {
+      "title": "Ailerons",
+      "objective": "Explain the DA42-VI's differential aileron design and the purpose of the aileron paddle and trim tab.",
+      "pageRange": "48-62",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The ailerons control roll, but in the DA42-VI they do more than just go up and down symmetrically. Diamond engineered several clever features into the aileron system to improve handling, reduce adverse yaw, and prevent dangerous flutter."
+        },
+        {
+          "type": "concept",
+          "title": "Differential Ailerons",
+          "content": "The DA42-VI uses differential ailerons, meaning the up-going aileron deflects more than the down-going aileron. Specifically, the ailerons travel up 25 degrees but only down 15 degrees. This difference is intentional and serves an important purpose."
+        },
+        {
+          "type": "concept",
+          "title": "Why Differential?",
+          "content": "When you bank, the descending wing needs more lift (down aileron), which also creates more induced drag. The ascending wing's aileron deflects further up, creating proportionally more drag on that side. This helps equalize the drag between both wings, reducing adverse yaw -- the tendency for the nose to swing opposite to your intended turn."
+        },
+        {
+          "type": "analogy",
+          "content": "Imagine dragging your hand through water while swimming. If one hand creates more drag than the other, you'll veer off course. Differential ailerons balance the drag so the airplane turns cleanly without the nose swinging the wrong way."
+        },
+        {
+          "type": "concept",
+          "title": "Aileron Paddle (Mass Balance)",
+          "content": "Each aileron has a mass balance, also called a paddle, that protrudes below the wing. This paddle serves two purposes: it prevents aileron flutter (a dangerous high-speed vibration) and it adds additional drag to further counter adverse yaw. During preflight, you must check that the paddle is clear of debris."
+        },
+        {
+          "type": "concept",
+          "title": "Ground-Adjustable Trim Tab",
+          "content": "The left aileron contains a ground-adjustable trim tab. This tab is set by maintenance to correct any wing-heavy tendencies. You can't adjust it from the cockpit -- it's bent to the correct position on the ground."
+        },
+        {
+          "type": "warning",
+          "content": "During preflight, check the aileron pushrods for damage. The pushrods are locked by a jam nut with locking varnish. Any twisting or abnormal appearance of the pushrod indicates potential damage. Also verify each hinge has its roll pin in place -- a missing roll pin could lead to loss of the hinge pin in flight."
+        },
+        {
+          "type": "keypoint",
+          "content": "Aileron deflection: UP 25 degrees, DOWN 15 degrees. The differential design reduces adverse yaw. Always check the paddles for debris and hinge roll pins during preflight."
+        },
+        {
+          "type": "check",
+          "question": "How much do the DA42-VI ailerons deflect up versus down, and why is there a difference?",
+          "answer": "Up 25 degrees, down 15 degrees. The greater upward deflection creates more drag on the ascending wing, which helps counteract adverse yaw during turns."
+        }
+      ]
+    },
+    {
+      "title": "Elevator and Variable Elevator Stop",
+      "objective": "Describe the elevator system and explain how the variable elevator stop protects against over-rotation.",
+      "pageRange": "48-62",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The elevator controls pitch, and in a twin-engine airplane, pitch control takes on extra importance. The DA42-VI has a unique feature called the variable elevator stop that limits how far you can pull back on the stick under certain conditions. Understanding when and why it activates could save you from a dangerous situation."
+        },
+        {
+          "type": "concept",
+          "title": "Elevator Construction",
+          "content": "The elevator is a GFRP sandwich design, operated through steel push-pull rods from the control stick. It connects to the horizontal stabilizer with 5 hinges. The elevator travels up 15.5 degrees and down 13 degrees."
+        },
+        {
+          "type": "concept",
+          "title": "Variable Elevator Stop",
+          "content": "The variable elevator stop is an electrically operated actuator that limits elevator-up travel from 15.5 degrees to 13 degrees -- a 2.5 degree reduction. The electric motor controlling it is located under the pilot seat."
+        },
+        {
+          "type": "concept",
+          "title": "When Does It Activate?",
+          "content": "Switches on the power levers detect the lever position (not actual engine power). When BOTH power levers exceed approximately 20% -- what Diamond calls the 'approach' power setting -- the variable elevator stop engages and limits upward travel. When only ONE engine is below 20%, full elevator deflection is available."
+        },
+        {
+          "type": "analogy",
+          "content": "Think of the variable elevator stop like a rev limiter on a car engine. When both engines are producing significant power, the system limits how far you can pull back to prevent you from over-rotating or pitching up into a dangerous attitude. When you need maximum pitch authority (like during an engine-out situation), it gets out of your way."
+        },
+        {
+          "type": "warning",
+          "content": "If the variable elevator stop malfunctions, a Garmin G1000 amber annunciation will appear. The annunciator illuminates when the stop is doing the OPPOSITE of what it should -- either failing to activate when it should be active, or failing to deactivate when it should release. Understand the logic so you can interpret this annunciator correctly."
+        },
+        {
+          "type": "keypoint",
+          "content": "Variable elevator stop: activates (limits to 13 degrees up) when BOTH power levers exceed 20%. Deactivates (full 15.5 degrees up available) when at least one power lever is below 20%. Amber annunciation means the system is doing the opposite of what it should."
+        },
+        {
+          "type": "check",
+          "question": "Under what power lever condition does the variable elevator stop engage, and how much does it limit elevator travel?",
+          "answer": "It engages when BOTH power levers exceed approximately 20%. It limits elevator-up travel from 15.5 degrees to 13 degrees (a 2.5 degree reduction)."
+        },
+        {
+          "type": "check",
+          "question": "You see a G1000 amber annunciation for the variable elevator stop during a single-engine approach with one power lever at idle. What does this mean?",
+          "answer": "It means the variable elevator stop is malfunctioning. With one power lever below 20%, the stop should be deactivated (giving you full elevator travel), but the amber annunciation means it's doing the opposite -- it's still limiting your elevator travel when it shouldn't be."
+        }
+      ]
+    },
+    {
+      "title": "Elevator Trim",
+      "objective": "Explain how the DA42-VI's anti-servo elevator trim works and why it differs from a conventional trim tab.",
+      "pageRange": "48-62",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Trim reduces the control forces you need to hold during sustained flight. But the DA42-VI uses an anti-servo trim tab on the elevator, which works differently than the trim tabs you may have learned about in a Cessna 172. Understanding this distinction matters for both knowledge tests and for interpreting what you feel through the controls."
+        },
+        {
+          "type": "concept",
+          "title": "Manual Trim Control",
+          "content": "The elevator trim tab is adjusted by a black trim wheel on the center console. Turning the wheel forward produces nose-down trim; turning it aft produces nose-up trim. The trim wheel connects to the trim tab through steel cables."
+        },
+        {
+          "type": "concept",
+          "title": "Electric Trim",
+          "content": "The DA42-VI also has an electric trim motor located under the co-pilot seat. The electric trim is controlled by a button on the control stick and is integrated with the autopilot system. This gives you two ways to trim -- manual (wheel) and electric (button)."
+        },
+        {
+          "type": "concept",
+          "title": "Anti-Servo Trim -- How It Works",
+          "content": "Unlike a conventional trim tab that moves opposite to the control surface, an anti-servo tab moves in the SAME direction as the elevator. This creates three important effects that change how the airplane feels and responds."
+        },
+        {
+          "type": "list",
+          "title": "Effects of the anti-servo trim tab:",
+          "items": [
+            "Increases the effective angle of attack on the elevator, making it a more effective control surface",
+            "Increases pilot feedback -- the more you deflect the elevator, the harder it pushes back, giving you a progressive feel",
+            "Increases stability -- the relative wind naturally pushes the elevator back toward neutral"
+          ]
+        },
+        {
+          "type": "analogy",
+          "content": "A conventional trim tab is like power steering -- it makes the controls easier to move. An anti-servo tab is more like the centering spring on a video game joystick. It helps the control surface work better, gives you more feel, and always tries to bring things back to center."
+        },
+        {
+          "type": "concept",
+          "title": "Trim Tab Safety Features",
+          "content": "The trim tab has two actuating levers. One connects to the steel trim cable. The other connects through a friction block that prevents the trim tab from fluttering if the trim cable ever breaks. This is a built-in redundancy for a critical control surface."
+        },
+        {
+          "type": "check",
+          "question": "How does an anti-servo trim tab move relative to the elevator, and what effect does this have on pilot feedback?",
+          "answer": "An anti-servo trim tab moves in the SAME direction as the elevator. This increases pilot feedback by making it progressively harder to deflect the elevator, giving you a natural feel for how much input you're applying."
+        }
+      ]
+    },
+    {
+      "title": "Rudder System",
+      "objective": "Describe the rudder construction, cable system, and the adjustable rudder pedal mechanism.",
+      "pageRange": "48-62",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "In a twin-engine airplane, the rudder is arguably your most important control surface during an engine failure. Understanding how it works mechanically -- and how to set up the pedals for your leg length -- ensures you can use it effectively when it matters most."
+        },
+        {
+          "type": "concept",
+          "title": "Rudder Construction",
+          "content": "The rudder is a GFRP sandwich design, connected to the vertical tail by bolts and nuts that are accessible for visual inspection. The gap between the vertical tail and the rudder is sealed with PTFE (Teflon) gap seal tape on both sides to reduce drag and prevent airflow from disrupting the control surface."
+        },
+        {
+          "type": "concept",
+          "title": "Rudder Cable System",
+          "content": "Unlike the ailerons and elevator (which use pushrods), the rudder is operated through steel cables. These cables run from the rudder pedal assembly to the rudder itself. During preflight, you should check for cable tension and any signs of fraying or wear."
+        },
+        {
+          "type": "concept",
+          "title": "Adjustable Rudder Pedals",
+          "content": "The rudder pedals are electrically adjustable to accommodate different pilot leg lengths. A positioning switch (rocker switch) is located on the rear wall of the leg area on each side. Press the upper side of the switch to move the pedals toward you; press the lower side to move them away."
+        },
+        {
+          "type": "warning",
+          "content": "Rudder pedal adjustment must only be done on the ground. The pedal position is locked when you release the rocker switch. If the pedal adjustment motor runs away, the emergency procedure is to pull the circuit breaker located below the rocker switch."
+        },
+        {
+          "type": "concept",
+          "title": "S-Tubes and Cable Tension",
+          "content": "When you adjust the pedal position, the rudder cables move through S-shaped tubes. These S-tubes maintain proper cable tension across all pedal positions, ensuring consistent rudder response regardless of where you set your pedals."
+        },
+        {
+          "type": "keypoint",
+          "content": "Adjust rudder pedals on the ground only. Use the rocker switch by the rear wall of the leg area. Pull the circuit breaker below the switch if the motor runs away. The S-tubes maintain cable tension in all positions."
+        },
+        {
+          "type": "check",
+          "question": "What is the emergency procedure for a runaway rudder pedal adjustment motor?",
+          "answer": "Pull the circuit breaker, which is located below the rocker switch in the leg area."
+        }
+      ]
+    },
+    {
+      "title": "Rudder Trim",
+      "objective": "Describe the rudder trim system and identify the precaution for its operation.",
+      "pageRange": "48-62",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Rudder trim is essential in multi-engine flying. Any time you have asymmetric thrust -- different power settings on each engine, or an engine failure -- you'll need rudder trim to reduce the foot pressure required to keep the airplane coordinated."
+        },
+        {
+          "type": "concept",
+          "title": "Rudder Trim System",
+          "content": "The DA42-VI uses an anti-servo rudder trim tab, just like the elevator trim. It's controlled by a trim knob on the center console, which moves a steel cable connected to push rods that actuate the rudder trim tab. A position indicator on the center console shows the current trim setting."
+        },
+        {
+          "type": "warning",
+          "content": "Do not force the rudder trim past its limits. Forcing it can cause the trim mechanism to become stuck, leaving you with a jammed rudder trim -- a significant problem, especially during single-engine operations."
+        },
+        {
+          "type": "concept",
+          "title": "Anti-Flutter Design",
+          "content": "The back of the rudder trim tab has an L-shaped end. This design feature prevents flutter of the trim tab at higher speeds. Flutter in any control surface can rapidly become destructive, so this is an important passive safety feature."
+        },
+        {
+          "type": "keypoint",
+          "content": "Rudder trim: controlled by knob on center console, uses steel cables and push rods, has anti-flutter L-shaped end. Never force past limits or it may become stuck."
+        },
+        {
+          "type": "check",
+          "question": "What feature prevents flutter in the DA42-VI's rudder trim tab?",
+          "answer": "An L-shaped end on the back of the rudder trim tab prevents flutter at higher speeds."
+        }
+      ]
+    }
+  ]
+}
