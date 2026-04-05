@@ -3,6 +3,8 @@
 import { ContentRenderer } from "@/components/modules/ContentRenderer";
 import { TTSProvider, LessonNarrationToggle } from "@/components/modules/LessonNarration";
 import { Target } from "lucide-react";
+import { useProgress } from "@/hooks/useProgress";
+import { useEffect } from "react";
 import type { LessonBlock } from "@/types";
 
 interface LessonSection {
@@ -19,6 +21,12 @@ interface LessonListProps {
 }
 
 export function LessonList({ moduleSlug, sections }: LessonListProps) {
+  const { markStarted } = useProgress();
+
+  useEffect(() => {
+    markStarted(moduleSlug);
+  }, [moduleSlug, markStarted]);
+
   return (
     <TTSProvider moduleSlug={moduleSlug} sections={sections}>
       <div className="space-y-4">
