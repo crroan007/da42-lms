@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { ChevronLeft, CheckCircle2, XCircle, RotateCcw, Trophy } from "lucide-react";
+import { ChevronLeft, CheckCircle2, XCircle, RotateCcw, Trophy, Lock, Unlock } from "lucide-react";
+import { useProgress } from "@/hooks/useProgress";
 import type { QuizQuestion } from "@/types";
 
 export default function QuizPage() {
@@ -17,6 +18,8 @@ export default function QuizPage() {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [loading, setLoading] = useState(true);
+  const { saveQuizScore } = useProgress();
+  const scoreSavedRef = useRef(false);
 
   useEffect(() => {
     fetch(`/api/quiz/${slug}`)
@@ -89,36 +92,50 @@ export default function QuizPage() {
 
   if (finished) {
     const percent = Math.round((score / totalQuestions) * 100);
-    const passed = percent >= 80;
+    const perfect = score === totalQuestions;
+
+    // Save score once
+    if (!scoreSavedRef.current) {
+      scoreSavedRef.current = true;
+      saveQuizScore(slug, score, totalQuestions);
+    }
+
     return (
       <div className="max-w-3xl mx-auto space-y-4">
         <Link href={`/modules/${slug}`} className="inline-flex items-center gap-1 text-sm text-text-secondary hover:text-gold transition-colors">
           <ChevronLeft className="h-4 w-4" /> Back to Module
         </Link>
         <div className="panel p-6 text-center">
-          <div className={`inline-flex h-16 w-16 items-center justify-center rounded mb-3 ${passed ? "bg-status-operational/10" : "bg-status-caution/10"}`}>
-            <Trophy className={`h-8 w-8 ${passed ? "text-status-operational" : "text-status-caution"}`} />
+          <div className={`inline-flex h-16 w-16 items-center justify-center rounded mb-3 ${perfect ? "bg-status-operational/10" : "bg-status-caution/10"}`}>
+            {perfect ? (
+              <Unlock className="h-8 w-8 text-status-operational" />
+            ) : (
+              <Lock className="h-8 w-8 text-status-caution" />
+            )}
           </div>
           <h1 className="text-xl font-semibold text-text-primary mb-1">
-            {passed ? "Great Job!" : "Keep Studying"}
+            {perfect ? "Perfect Score — Next Module Unlocked!" : "Not Quite — 100% Required"}
           </h1>
           <p className="text-3xl font-semibold text-gold font-mono mb-1">{percent}%</p>
           <p className="text-text-secondary text-sm mb-4">
-            You scored <span className="font-mono">{score}</span> out of <span className="font-mono">{totalQuestions}</span> questions correctly.
+            You scored <span className="font-mono">{score}</span> out of <span className="font-mono">{totalQuestions}</span>.
+            {!perfect && " Review the material and try again — you need a perfect score to proceed."}
           </p>
           <div className="flex items-center justify-center gap-3">
-            <button
-              onClick={handleRestart}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded border border-border-default text-text-secondary hover:border-border-strong hover:text-text-primary transition-colors"
-            >
-              <RotateCcw className="h-4 w-4" />
-              Retry Quiz
-            </button>
+            {!perfect && (
+              <button
+                onClick={() => { scoreSavedRef.current = false; handleRestart(); }}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded border border-border-default text-text-secondary hover:border-border-strong hover:text-text-primary transition-colors"
+              >
+                <RotateCcw className="h-4 w-4" />
+                Retry Quiz
+              </button>
+            )}
             <Link
-              href={`/modules/${slug}`}
+              href={perfect ? "/modules" : `/modules/${slug}`}
               className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gold text-surface-base font-semibold hover:opacity-90 transition-opacity"
             >
-              Back to Module
+              {perfect ? "Continue to Modules" : "Review Material"}
             </Link>
           </div>
         </div>

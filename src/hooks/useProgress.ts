@@ -69,9 +69,23 @@ export function useProgress() {
     } catch {}
   }, [progress, fetchProgress]);
 
+  /** Check if a module is unlocked. Module 1 always unlocked. Others require 100% on previous quiz. */
+  const isModuleUnlocked = useCallback(
+    (orderIndex: number, allModuleSlugs: string[]): boolean => {
+      if (orderIndex <= 1) return true; // Module 1 always unlocked
+      const prevSlug = allModuleSlugs[orderIndex - 2]; // orderIndex is 1-based
+      if (!prevSlug) return true;
+      const prevEntry = progress.find((p) => p.module_slug === prevSlug);
+      if (!prevEntry) return false;
+      // Must have 100% quiz score to unlock next
+      return prevEntry.quiz_score !== null && prevEntry.quiz_total !== null && prevEntry.quiz_score === prevEntry.quiz_total;
+    },
+    [progress]
+  );
+
   const saveQuizScore = useCallback(async (moduleSlug: string, score: number, total: number) => {
     try {
-      const passed = score / total >= 0.8;
+      const passed = score === total; // 100% required
       await fetch("/api/progress", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -98,6 +112,7 @@ export function useProgress() {
     getQuizScore,
     markStarted,
     saveQuizScore,
+    isModuleUnlocked,
     completedCount,
     avgScore,
     refresh: fetchProgress,
