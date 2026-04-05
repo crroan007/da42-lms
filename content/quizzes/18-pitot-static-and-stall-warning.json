@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "18-pitot-static-and-stall-warning",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Why does the G1000 show 'STALL HT FAIL' when pitot heat is turned on while on the ground?",
+      "options": [
+        { "text": "The stall warning heater element has failed and needs maintenance", "isCorrect": false },
+        { "text": "The pitot heat circuit breaker is tripped", "isCorrect": false },
+        { "text": "The stall warning heat is de-rated to 50% on the ground via the squat switch, triggering the message", "isCorrect": true },
+        { "text": "The system requires 28V to operate but only receives 24V from the battery", "isCorrect": false }
+      ],
+      "explanation": "This is normal ground behavior. The squat switch on the right main gear de-rates stall warning heat to 50% power on the ground, which the system interprets as a failure. The message should clear once airborne."
+    },
+    {
+      "id": "q2",
+      "question": "Where are the primary static ports located on the DA42?",
+      "options": [
+        { "text": "On the bottom of the pitot probe", "isCorrect": false },
+        { "text": "On the left and right sides of the rear fuselage", "isCorrect": true },
+        { "text": "On the left side of the instrument panel", "isCorrect": false },
+        { "text": "On the leading edge of each wing", "isCorrect": false }
+      ],
+      "explanation": "The static ports are located on the left and right sides of the rear fuselage. Having ports on both sides helps cancel out errors from sideslip."
+    },
+    {
+      "id": "q3",
+      "question": "Where is the alternate static source located, and what does it use?",
+      "options": [
+        { "text": "On the vertical stabilizer; it uses ram air pressure", "isCorrect": false },
+        { "text": "Under the left side of the instrument panel; it uses cabin air pressure", "isCorrect": true },
+        { "text": "In the nose baggage compartment; it uses outside air through a filtered vent", "isCorrect": false },
+        { "text": "On the right wing root; it uses engine nacelle air pressure", "isCorrect": false }
+      ],
+      "explanation": "The alternate static vent is under the left side of the instrument panel. Opening this valve allows cabin air to be used as the static pressure source if normal static ports become blocked."
+    },
+    {
+      "id": "q4",
+      "question": "Which switch controls both pitot heat and stall warning heat on the DA42?",
+      "options": [
+        { "text": "They have separate dedicated switches", "isCorrect": false },
+        { "text": "The same single switch controls both systems", "isCorrect": true },
+        { "text": "Pitot heat is automatic; only stall warning heat has a switch", "isCorrect": false },
+        { "text": "The avionics master switch controls both", "isCorrect": false }
+      ],
+      "explanation": "Pitot heat and stall warning heat share the same switch — one switch activates both systems simultaneously."
+    },
+    {
+      "id": "q5",
+      "question": "Are the static pressure orifices on the bottom of the pitot probe used by the pitot-static system?",
+      "options": [
+        { "text": "Yes, they serve as the primary static source", "isCorrect": false },
+        { "text": "Yes, but only as a backup when the fuselage static ports fail", "isCorrect": false },
+        { "text": "No, the pitot probe's built-in static ports are NOT used by the system", "isCorrect": true },
+        { "text": "Yes, they feed the standby instruments only", "isCorrect": false }
+      ],
+      "explanation": "Although there are static pressure orifices on the bottom of the pitot probe, they are NOT used by the DA42's pitot-static system. The system uses the static ports on the rear fuselage instead."
+    }
+  ]
+}

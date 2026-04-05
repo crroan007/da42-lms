@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "20-flight-director-and-esp",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "At what pitch and bank angles do the flight director command bars disappear from the PFD?",
+      "options": [
+        { "text": "Pitch exceeding +20/-15 degrees or bank exceeding 45 degrees", "isCorrect": false },
+        { "text": "Pitch exceeding +30/-20 degrees or bank exceeding 65 degrees", "isCorrect": true },
+        { "text": "Pitch exceeding +25/-25 degrees or bank exceeding 60 degrees", "isCorrect": false },
+        { "text": "They never disappear — they remain visible at all attitudes", "isCorrect": false }
+      ],
+      "explanation": "The command bars are removed from the PFD if pitch exceeds +30/-20 degrees or bank exceeds 65 degrees. At those extreme attitudes, the flight director cannot provide useful guidance."
+    },
+    {
+      "id": "q2",
+      "question": "At what bank angle does ESP automatically disconnect itself?",
+      "options": [
+        { "text": "45 degrees", "isCorrect": false },
+        { "text": "60 degrees", "isCorrect": false },
+        { "text": "30 degrees", "isCorrect": false },
+        { "text": "75 degrees", "isCorrect": true }
+      ],
+      "explanation": "Exceeding 75 degrees of bank automatically disconnects ESP entirely. This prevents ESP from interfering if the pilot needs full control authority during an unusual attitude recovery."
+    },
+    {
+      "id": "q3",
+      "question": "How do you override ESP during training maneuvers like steep turns?",
+      "options": [
+        { "text": "Turn ESP off through the G1000 menu system", "isCorrect": false },
+        { "text": "Press and hold the CWS or Autopilot Disconnect button throughout the maneuver", "isCorrect": true },
+        { "text": "Pull the ESP circuit breaker before beginning the maneuver", "isCorrect": false },
+        { "text": "ESP automatically deactivates when the autopilot is off", "isCorrect": false }
+      ],
+      "explanation": "ESP can be overridden by pressing and holding the CWS (Control Wheel Steering) button or the Autopilot Disconnect button. Either must be held throughout the entire maneuver — releasing re-enables ESP."
+    },
+    {
+      "id": "q4",
+      "question": "Below what altitude AGL is the Underspeed Protection System NOT available?",
+      "options": [
+        { "text": "500 feet AGL", "isCorrect": false },
+        { "text": "1,200 feet AGL", "isCorrect": false },
+        { "text": "200 feet AGL", "isCorrect": true },
+        { "text": "100 feet AGL", "isCorrect": false }
+      ],
+      "explanation": "Minimum speed protection is not available within 200 feet AGL. At low altitude, the pilot is responsible for maintaining adequate airspeed."
+    },
+    {
+      "id": "q5",
+      "question": "During an AFCS go-around, what must the pilot do that the autopilot does NOT handle?",
+      "options": [
+        { "text": "Retract the landing gear", "isCorrect": false },
+        { "text": "Select the missed approach course on the G1000", "isCorrect": false },
+        { "text": "Manually increase the power levers", "isCorrect": true },
+        { "text": "Press the NAV button to track the missed approach", "isCorrect": false }
+      ],
+      "explanation": "During an AFCS go-around, the autopilot handles pitch and roll guidance via the flight director, but the pilot must manually increase the power levers. Throttle management is always the pilot's responsibility."
+    }
+  ]
+}

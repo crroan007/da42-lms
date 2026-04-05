@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "07-da42-vi-systems-overview",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the DA42-VI's VYSE (best single-engine rate of climb speed)?",
+      "options": [
+        { "text": "77 KIAS", "isCorrect": false },
+        { "text": "92 KIAS", "isCorrect": false },
+        { "text": "85 KIAS", "isCorrect": true },
+        { "text": "71 KIAS", "isCorrect": false }
+      ],
+      "explanation": "VYSE is 85 KIAS, marked by the blue radial line on the airspeed indicator. This is the go-to target speed after any engine failure."
+    },
+    {
+      "id": "q2",
+      "question": "What is VFE for the LDG flap position in the DA42-VI?",
+      "options": [
+        { "text": "188 KIAS", "isCorrect": false },
+        { "text": "152 KIAS", "isCorrect": false },
+        { "text": "117 KIAS", "isCorrect": false },
+        { "text": "133 KIAS", "isCorrect": true }
+      ],
+      "explanation": "VFE for the LDG flap setting is 133 KIAS, which is also the upper limit of the white arc on the airspeed indicator."
+    },
+    {
+      "id": "q3",
+      "question": "What is the normal takeoff rotation speed (VR) for the DA42-VI?",
+      "options": [
+        { "text": "74 KIAS", "isCorrect": false },
+        { "text": "77 KIAS", "isCorrect": true },
+        { "text": "79 KIAS", "isCorrect": false },
+        { "text": "85 KIAS", "isCorrect": false }
+      ],
+      "explanation": "The normal takeoff rotation speed (VR) for the DA42-VI is 77 KIAS. Short-field VR values differ based on weight."
+    },
+    {
+      "id": "q4",
+      "question": "Why is VMCA with flaps UP (85 KIAS) higher than VMCA with flaps APP (71 KIAS)?",
+      "options": [
+        { "text": "Flaps increase drag which slows the airplane, lowering VMCA", "isCorrect": false },
+        { "text": "Flap extension provides aerodynamic benefits that allow directional control at a lower speed", "isCorrect": true },
+        { "text": "The flap setting has no real effect; the difference is caused by weight changes", "isCorrect": false },
+        { "text": "Flaps UP shifts the center of pressure aft, reducing rudder effectiveness", "isCorrect": false }
+      ],
+      "explanation": "VMCA with flaps APP (71 KIAS) is lower than with flaps UP (85 KIAS). During a go-around with an engine failure, retracting flaps too early raises your minimum controllable speed, requiring careful configuration management."
+    },
+    {
+      "id": "q5",
+      "question": "What are the maximum landing gear speeds (VLO and VLE) for the DA42-VI?",
+      "options": [
+        { "text": "152 KIAS for all gear operations", "isCorrect": false },
+        { "text": "133 KIAS for extension, 188 KIAS for retraction", "isCorrect": false },
+        { "text": "188 KIAS for all gear operations", "isCorrect": true },
+        { "text": "119 KIAS for extension, 152 KIAS with gear extended", "isCorrect": false }
+      ],
+      "explanation": "The DA42-VI keeps it simple — VLO for retraction, VLO for extension, and VLE (max speed with gear extended) are all 188 KIAS."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "12-brakes",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What happens if the pilot-side brake system fails on the DA42-VI?",
+      "options": [
+        { "text": "The copilot-side brakes take over automatically", "isCorrect": false },
+        { "text": "Only the left main wheel brake is lost", "isCorrect": false },
+        { "text": "Braking becomes completely unavailable, even from the copilot side", "isCorrect": true },
+        { "text": "The parking brake can still be used as a backup", "isCorrect": false }
+      ],
+      "explanation": "If the pilot-side brakes fail, braking is completely unavailable -- even from the copilot side. The system is plumbed so that pilot-side functionality is the primary brake path. This is a critical asymmetry in the DA42 brake design."
+    },
+    {
+      "id": "q2",
+      "question": "Why must you pump the toe brake pedals multiple times before setting the parking brake?",
+      "options": [
+        { "text": "To warm up the brake fluid so it flows properly through the lines", "isCorrect": false },
+        { "text": "To bleed air out of the hydraulic brake lines", "isCorrect": false },
+        { "text": "To build sufficient hydraulic pressure for the parking brake valve to retain", "isCorrect": true },
+        { "text": "To test that both left and right brakes are responding equally", "isCorrect": false }
+      ],
+      "explanation": "The parking brake valve works by retaining hydraulic pressure in the brake lines. Multiple pumps of the toe brake pedals are needed to build up enough pressure for the valve to lock and hold the brakes in the applied position."
+    },
+    {
+      "id": "q3",
+      "question": "What type of brakes does the DA42-VI use on the main wheels?",
+      "options": [
+        { "text": "Drum brakes with mechanical linkage", "isCorrect": false },
+        { "text": "Disk brakes with hydraulic brake calipers", "isCorrect": true },
+        { "text": "Carbon composite brakes with electric actuation", "isCorrect": false },
+        { "text": "Multi-disk brakes with pneumatic calipers", "isCorrect": false }
+      ],
+      "explanation": "Each main wheel has a standard disk brake setup consisting of a disk, brake pad, and brake caliper. Toe-brake pedals on the rudder pedals operate separate hydraulic brake cylinders that push fluid to squeeze the calipers against the spinning disks."
+    },
+    {
+      "id": "q4",
+      "question": "What is the parking brake handle position when the brake is locked (set)?",
+      "options": [
+        { "text": "Rotated 90 degrees clockwise", "isCorrect": false },
+        { "text": "Forward position", "isCorrect": false },
+        { "text": "Pushed down", "isCorrect": false },
+        { "text": "Aft (pulled) position", "isCorrect": true }
+      ],
+      "explanation": "The parking brake handle has two positions: forward for brake released and aft (pulled) for brake locked. After pumping the toe brakes to build pressure, you pull the handle aft to trap that pressure in the lines."
+    },
+    {
+      "id": "q5",
+      "question": "If the copilot-side brake pedals fail, what is the effect on the braking system?",
+      "options": [
+        { "text": "All braking is lost because both sides share the same hydraulic circuit", "isCorrect": false },
+        { "text": "The pilot-side brakes still work normally", "isCorrect": true },
+        { "text": "Only differential braking is lost; straight-ahead braking still works", "isCorrect": false },
+        { "text": "The parking brake activates automatically as a backup", "isCorrect": false }
+      ],
+      "explanation": "If the copilot-side brake pedals fail, the pilot-side brakes continue to function normally. The system is designed so that copilot-side failure does not affect the pilot's ability to brake. The critical failure is pilot-side, which causes total brake loss."
+    }
+  ]
+}

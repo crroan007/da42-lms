@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "08-limitations",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the key difference between VO and VA on the DA42-VI?",
+      "options": [
+        { "text": "VO is higher than VA and allows more aggressive maneuvering", "isCorrect": false },
+        { "text": "They are identical speeds with different naming conventions", "isCorrect": false },
+        { "text": "VO is more restrictive — at or below VO, a nose-up pitch will stall the wing before exceeding structural limits", "isCorrect": true },
+        { "text": "VA is the speed used in the DA42-VI; VO is not placarded", "isCorrect": false }
+      ],
+      "explanation": "VO (Operating Maneuvering Speed) is more restrictive than VA. At or below VO, pulling back on the stick will stall the wing before exceeding structural limits. The DA42-VI placards VO, not VA."
+    },
+    {
+      "id": "q2",
+      "question": "What is the maximum takeoff mass of the ERAU DA42-VI with MAM 42-678 carried out?",
+      "options": [
+        { "text": "3,197 lbs (1,450 kg)", "isCorrect": false },
+        { "text": "4,045 lbs (1,835 kg)", "isCorrect": false },
+        { "text": "3,748 lbs (1,700 kg)", "isCorrect": false },
+        { "text": "4,407 lbs (1,999 kg)", "isCorrect": true }
+      ],
+      "explanation": "With MAM 42-678 carried out, the maximum takeoff mass is 4,407 lbs (1,999 kg). This is the limit for all ERAU DA42-VI aircraft."
+    },
+    {
+      "id": "q3",
+      "question": "What is the maximum demonstrated crosswind component with flaps in the APP position?",
+      "options": [
+        { "text": "25 knots", "isCorrect": false },
+        { "text": "15 knots", "isCorrect": false },
+        { "text": "20 knots", "isCorrect": true },
+        { "text": "30 knots", "isCorrect": false }
+      ],
+      "explanation": "The maximum demonstrated crosswind component is 20 knots with flaps APP and 25 knots with flaps UP."
+    },
+    {
+      "id": "q4",
+      "question": "How does the forward CG limit change as the DA42-VI's weight increases?",
+      "options": [
+        { "text": "It moves forward, becoming less restrictive", "isCorrect": false },
+        { "text": "It moves aft, becoming more restrictive", "isCorrect": true },
+        { "text": "It remains constant regardless of weight", "isCorrect": false },
+        { "text": "It oscillates depending on fuel load", "isCorrect": false }
+      ],
+      "explanation": "The forward CG limit moves aft as weight increases. At minimum flight mass it is 92.52 inches aft of datum; at maximum takeoff mass it moves to 95.83 inches aft of datum."
+    },
+    {
+      "id": "q5",
+      "question": "What is the maximum operating altitude for the DA42-VI?",
+      "options": [
+        { "text": "25,000 feet pressure altitude", "isCorrect": false },
+        { "text": "18,000 feet pressure altitude", "isCorrect": true },
+        { "text": "14,000 feet pressure altitude", "isCorrect": false },
+        { "text": "12,500 feet pressure altitude", "isCorrect": false }
+      ],
+      "explanation": "The DA42-VI has a maximum operating altitude of 18,000 feet pressure altitude. Above this altitude, the aircraft is not certified for flight."
+    }
+  ]
+}

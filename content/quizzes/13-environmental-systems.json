@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "13-environmental-systems",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Which engine provides cabin heat and which provides windshield defrost on the DA42-VI?",
+      "options": [
+        { "text": "Left engine provides both cabin heat and defrost", "isCorrect": false },
+        { "text": "Right engine provides cabin heat; left engine provides defrost", "isCorrect": true },
+        { "text": "Left engine provides cabin heat; right engine provides defrost", "isCorrect": false },
+        { "text": "Both engines share the load equally for both systems", "isCorrect": false }
+      ],
+      "explanation": "The right engine provides warm air for cabin heat, while the left engine provides warm air for the defroster. Each uses a heat exchanger connected to that engine's coolant system. Losing an engine means losing the corresponding function."
+    },
+    {
+      "id": "q2",
+      "question": "What powers the RACC (Recirculating Air Cabin Cooling) system?",
+      "options": [
+        { "text": "The aircraft's main electrical bus through the avionics switch", "isCorrect": false },
+        { "text": "A belt-driven compressor on the right engine", "isCorrect": false },
+        { "text": "An engine-driven bleed air system from both engines", "isCorrect": false },
+        { "text": "A dedicated additional alternator on the left engine, separate from the main electrical system", "isCorrect": true }
+      ],
+      "explanation": "The RACC has its own dedicated alternator on the left engine, completely separate from the aircraft's main electrical system. The AUX POWER switch must be set to ON to provide power to the RACC."
+    },
+    {
+      "id": "q3",
+      "question": "Under which of the following conditions must the AUX POWER switch be turned OFF?",
+      "options": [
+        { "text": "During takeoff and landing only", "isCorrect": false },
+        { "text": "Whenever OAT is above 30 degrees Celsius", "isCorrect": false },
+        { "text": "In all emergencies, below 10 degrees C OAT, and above 10,000 feet MSL", "isCorrect": true },
+        { "text": "Only during single-engine operations", "isCorrect": false }
+      ],
+      "explanation": "The AUX POWER switch must be OFF in all emergencies, during abnormal operating procedures, below 10 degrees Celsius OAT, and above 10,000 feet MSL. The additional alternator load on the left engine could be problematic during emergencies."
+    },
+    {
+      "id": "q4",
+      "question": "How much climb rate is lost when the RACC system is operating?",
+      "options": [
+        { "text": "30 ft/min", "isCorrect": false },
+        { "text": "150 ft/min", "isCorrect": false },
+        { "text": "70 ft/min", "isCorrect": true },
+        { "text": "100 ft/min", "isCorrect": false }
+      ],
+      "explanation": "With the RACC ON, climb rate is reduced by 70 ft/min. Additionally, cruise speed is reduced by 5% with RACC ON and 2% with RACC OFF (due to alternator drag alone)."
+    },
+    {
+      "id": "q5",
+      "question": "How does the DA42-VI cabin heating system differ from a traditional piston aircraft's cabin heat?",
+      "options": [
+        { "text": "It uses electric resistance heaters powered by the main bus", "isCorrect": false },
+        { "text": "It uses bleed air from the turbocharger system", "isCorrect": false },
+        { "text": "It uses engine coolant heat exchangers instead of exhaust muffler heat, eliminating carbon monoxide risk", "isCorrect": true },
+        { "text": "It uses combustion heaters with their own fuel supply", "isCorrect": false }
+      ],
+      "explanation": "The DA42 uses heat exchangers connected to the engine coolant system. Outside air flows over these heat exchangers and is warmed by the coolant. Unlike traditional piston aircraft that use exhaust muffler heat, no combustion gases enter the cabin, so there is no carbon monoxide risk from the heating system."
+    }
+  ]
+}

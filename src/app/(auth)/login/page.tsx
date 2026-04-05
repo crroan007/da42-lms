@@ -1,9 +1,33 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
+import { createClient } from "@/lib/supabase/client";
 
 export default function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+    setLoading(true);
+
+    const supabase = createClient();
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+
+    if (error) {
+      setError(error.message);
+      setLoading(false);
+    } else {
+      window.location.href = "/";
+    }
+  };
+
   return (
     <>
-      {/* Mobile-only branding (hidden on lg where left panel shows it) */}
       <div className="lg:hidden text-center mb-6">
         <h1 className="text-xl font-bold text-[var(--color-text-primary)] tracking-tight">DA42-VI Training</h1>
         <p className="text-xs text-[var(--color-text-muted)] mt-1">Multi-Engine Ground School</p>
@@ -13,7 +37,13 @@ export default function LoginPage() {
         <h2 className="text-lg font-semibold text-[var(--color-text-primary)] mb-1">Sign in</h2>
         <p className="text-sm text-[var(--color-text-muted)] mb-5">Access your training dashboard</p>
 
-        <form className="space-y-4">
+        {error && (
+          <div className="mb-4 p-3 rounded bg-[var(--color-status-warning)]/10 border border-[var(--color-status-warning)]/20 text-sm text-[var(--color-status-warning)]">
+            {error}
+          </div>
+        )}
+
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="email" className="block text-[11px] font-medium uppercase tracking-widest text-[var(--color-text-muted)] mb-1.5">
               Email
@@ -21,7 +51,10 @@ export default function LoginPage() {
             <input
               id="email"
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="pilot@example.com"
+              required
               className="w-full px-3 py-2.5 rounded bg-[var(--color-surface-sunken)] border border-[var(--color-border-default)] text-[var(--color-text-primary)] placeholder:text-[var(--color-text-faint)] focus:outline-none focus:border-[var(--color-gold)] transition-colors text-sm"
             />
           </div>
@@ -33,29 +66,23 @@ export default function LoginPage() {
             <input
               id="password"
               type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your password"
+              required
               className="w-full px-3 py-2.5 rounded bg-[var(--color-surface-sunken)] border border-[var(--color-border-default)] text-[var(--color-text-primary)] placeholder:text-[var(--color-text-faint)] focus:outline-none focus:border-[var(--color-gold)] transition-colors text-sm"
             />
           </div>
 
-          <div className="flex items-center justify-between">
-            <label className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] cursor-pointer">
-              <input type="checkbox" className="rounded-sm border-[var(--color-border-default)] bg-[var(--color-surface-sunken)] accent-[var(--color-gold)]" />
-              Remember me
-            </label>
-            <a href="#" className="text-sm text-[var(--color-gold)] hover:opacity-80 transition-opacity">
-              Forgot password?
-            </a>
-          </div>
-
           <button
             type="submit"
-            className="w-full py-2.5 rounded bg-[var(--color-gold)] text-[var(--color-surface-base)] font-semibold text-sm transition-opacity hover:opacity-90"
+            disabled={loading}
+            className="w-full py-2.5 rounded bg-[var(--color-gold)] text-[var(--color-surface-base)] font-semibold text-sm transition-opacity hover:opacity-90 disabled:opacity-50"
             style={{
               boxShadow: "inset 0 1px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.1)"
             }}
           >
-            Sign In
+            {loading ? "Signing in..." : "Sign In"}
           </button>
         </form>
 

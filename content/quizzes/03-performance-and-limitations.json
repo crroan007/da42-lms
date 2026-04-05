@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "03-performance-and-limitations",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the accelerate-go distance?",
+      "options": [
+        { "text": "The runway needed to accelerate to rotation speed and stop after an engine failure", "isCorrect": false },
+        { "text": "The horizontal distance to accelerate, lose an engine, and continue to 50 feet AGL on the remaining engine", "isCorrect": true },
+        { "text": "The total distance needed to take off and reach cruise altitude on both engines", "isCorrect": false },
+        { "text": "The distance needed to abort a takeoff from any speed during the roll", "isCorrect": false }
+      ],
+      "explanation": "Accelerate-go distance is the total horizontal distance required to accelerate to VR or VLOF, experience an engine failure, and continue the takeoff climbing to 50 feet AGL on the remaining engine."
+    },
+    {
+      "id": "q2",
+      "question": "What rate of climb defines the single-engine service ceiling?",
+      "options": [
+        { "text": "100 feet per minute", "isCorrect": false },
+        { "text": "0 feet per minute", "isCorrect": false },
+        { "text": "200 feet per minute", "isCorrect": false },
+        { "text": "50 feet per minute", "isCorrect": true }
+      ],
+      "explanation": "The single-engine service ceiling is the highest altitude where the airplane can maintain a steady climb of 50 fpm with one engine at full power and the dead engine's propeller feathered."
+    },
+    {
+      "id": "q3",
+      "question": "You are cruising at 10,000 feet and your single-engine absolute ceiling is 6,000 feet. What happens if you lose an engine?",
+      "options": [
+        { "text": "The airplane maintains altitude if you fly at VYSE", "isCorrect": false },
+        { "text": "You must immediately descend to pattern altitude", "isCorrect": false },
+        { "text": "The airplane drifts down to 6,000 feet, the highest altitude it can sustain on one engine", "isCorrect": true },
+        { "text": "You can maintain 10,000 feet by increasing power on the operating engine", "isCorrect": false }
+      ],
+      "explanation": "Above the single-engine absolute ceiling, the airplane cannot maintain altitude on one engine and will gradually drift down until leveling off at the single-engine absolute ceiling."
+    },
+    {
+      "id": "q4",
+      "question": "Does the FAA require light twins (6,000 lbs or less) to have a positive single-engine climb rate?",
+      "options": [
+        { "text": "Yes, at least 100 fpm at sea level", "isCorrect": false },
+        { "text": "Yes, at least 50 fpm at 5,000 feet", "isCorrect": false },
+        { "text": "No, the regulation only requires that the OEI climb rate be determined, not that it be positive", "isCorrect": true },
+        { "text": "No, but positive climb is required above 3,000 feet MSL", "isCorrect": false }
+      ],
+      "explanation": "Under 14 CFR Part 23.67, for light twins with a maximum weight of 6,000 lbs or less and VSO of 61 knots or less, the OEI climb rate must only be determined — it can legally be a negative number."
+    },
+    {
+      "id": "q5",
+      "question": "How does a headwind affect climb gradient?",
+      "options": [
+        { "text": "It has no effect on climb gradient", "isCorrect": false },
+        { "text": "It degrades climb gradient because the airplane flies slower", "isCorrect": false },
+        { "text": "It improves climb gradient because less ground distance is covered for the same altitude gain", "isCorrect": true },
+        { "text": "It improves climb gradient only above the single-engine service ceiling", "isCorrect": false }
+      ],
+      "explanation": "Unlike rate of climb, climb gradient is affected by wind. A headwind improves gradient because you cover less ground distance for the same altitude gained."
+    }
+  ]
+}

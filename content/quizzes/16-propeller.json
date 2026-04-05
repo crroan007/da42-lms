@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "16-propeller",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the reduction gearbox ratio on the DA42, and why is it needed?",
+      "options": [
+        { "text": "2.5:1 — the propeller needs to spin faster than the engine", "isCorrect": false },
+        { "text": "1:1 — direct drive with no reduction", "isCorrect": false },
+        { "text": "1.69:1 — the diesel engine turns faster than the optimal propeller RPM", "isCorrect": true },
+        { "text": "3.0:1 — required for feathering capability", "isCorrect": false }
+      ],
+      "explanation": "The reduction gearbox has a 1.69:1 ratio because the diesel engine turns at a higher RPM than is efficient for the propeller. For every 1.69 engine crankshaft turns, the propeller makes one rotation."
+    },
+    {
+      "id": "q2",
+      "question": "What happens to the propeller blades if oil pressure is lost in the propeller hub?",
+      "options": [
+        { "text": "The blades move to flat (low) pitch, increasing RPM", "isCorrect": false },
+        { "text": "The blades lock in their current position", "isCorrect": false },
+        { "text": "The hub spring and counterweights drive the blades to the feathered position", "isCorrect": true },
+        { "text": "The blades oscillate between high and low pitch", "isCorrect": false }
+      ],
+      "explanation": "Loss of oil pressure results in feathering — the hub spring and counterweights naturally drive the blades toward feather when no oil opposes them. This is a safety feature that reduces drag on a dead engine."
+    },
+    {
+      "id": "q3",
+      "question": "What is the purpose of the unfeathering accumulator?",
+      "options": [
+        { "text": "It prevents the propeller from feathering on the ground", "isCorrect": false },
+        { "text": "It stores oil pressure to push blades out of feather for an engine restart", "isCorrect": true },
+        { "text": "It dampens torsional vibration during normal operations", "isCorrect": false },
+        { "text": "It maintains constant RPM during cruise flight", "isCorrect": false }
+      ],
+      "explanation": "The unfeathering accumulator stores oil pressure under a charge. When the engine master switch is turned back ON, it provides the initial burst of oil pressure needed to push the blades out of feather and allow the engine to restart."
+    },
+    {
+      "id": "q4",
+      "question": "What prevents the propeller from accidentally feathering while on the ground?",
+      "options": [
+        { "text": "The engine master switch interlock", "isCorrect": false },
+        { "text": "A coarse pitch stop that engages below 1300 RPM", "isCorrect": true },
+        { "text": "The unfeathering accumulator holds the blades in fine pitch", "isCorrect": false },
+        { "text": "Ground mode software in the ECU", "isCorrect": false }
+      ],
+      "explanation": "A coarse pitch stop prevents feathering from occurring when propeller RPM is below 1300 RPM, which prevents accidental feathering while on the ground."
+    },
+    {
+      "id": "q5",
+      "question": "How do you feather a propeller on the DA42?",
+      "options": [
+        { "text": "Pull the propeller lever to the full feather position", "isCorrect": false },
+        { "text": "Press the feather button on the instrument panel", "isCorrect": false },
+        { "text": "Bring the power lever to idle and turn the engine master switch OFF", "isCorrect": true },
+        { "text": "Bring the power lever to idle — the propeller feathers automatically", "isCorrect": false }
+      ],
+      "explanation": "To feather, bring the power lever to idle and place the engine master switch to OFF. Turning off the master switch opens the electric governor valve, draining oil from the hub. Simply pulling the power to idle is not enough — the engine master switch must also be turned off."
+    }
+  ]
+}

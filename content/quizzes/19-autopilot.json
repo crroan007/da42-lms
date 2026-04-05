@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "19-autopilot",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What happens if one of the two GIA 63 units fails?",
+      "options": [
+        { "text": "The autopilot operates in a degraded mode with reduced capability", "isCorrect": false },
+        { "text": "The remaining GIA 63 takes over all autopilot functions", "isCorrect": false },
+        { "text": "The autopilot cannot operate — both GIA 63 units are required", "isCorrect": true },
+        { "text": "Only the yaw damper remains functional", "isCorrect": false }
+      ],
+      "explanation": "Both GIA 63 units are required for autopilot operation. GIA #1 specifically handles flight director computations. If either fails, the autopilot cannot function."
+    },
+    {
+      "id": "q2",
+      "question": "What is the difference between pressing the FD button and the AP button?",
+      "options": [
+        { "text": "FD engages the servos; AP shows guidance on the PFD", "isCorrect": false },
+        { "text": "FD activates only the flight director for guidance; AP engages the servos to actually control the aircraft", "isCorrect": true },
+        { "text": "They are interchangeable and perform the same function", "isCorrect": false },
+        { "text": "FD controls lateral modes only; AP controls vertical modes only", "isCorrect": false }
+      ],
+      "explanation": "FD activates only the flight director, showing command bars on the PFD for hand-flying guidance. AP engages the autopilot servos to physically control the aircraft. You can have FD without AP, but AP always includes FD."
+    },
+    {
+      "id": "q3",
+      "question": "Which autopilot mode maintains a selected airspeed during climbs and descents?",
+      "options": [
+        { "text": "VS (Vertical Speed)", "isCorrect": false },
+        { "text": "ALT (Altitude Hold)", "isCorrect": false },
+        { "text": "FLC (Flight Level Change)", "isCorrect": true },
+        { "text": "VNAV (Vertical Navigation)", "isCorrect": false }
+      ],
+      "explanation": "FLC (Flight Level Change) mode maintains a selected airspeed by adjusting pitch while climbing or descending to a new altitude."
+    },
+    {
+      "id": "q4",
+      "question": "Below what altitude AGL is altitude capture prohibited with the autopilot?",
+      "options": [
+        { "text": "500 feet AGL", "isCorrect": false },
+        { "text": "200 feet AGL", "isCorrect": false },
+        { "text": "1,200 feet AGL", "isCorrect": true },
+        { "text": "2,000 feet AGL", "isCorrect": false }
+      ],
+      "explanation": "Altitude capture below 1,200 feet AGL is prohibited because the autopilot's altitude capture mode could command abrupt pitch changes at low altitudes where recovery margins are small."
+    },
+    {
+      "id": "q5",
+      "question": "Can the yaw damper operate independently of the autopilot?",
+      "options": [
+        { "text": "No, the yaw damper requires the autopilot to be engaged", "isCorrect": false },
+        { "text": "Yes, it can be used during hand-flying for a smoother ride", "isCorrect": true },
+        { "text": "Only when the flight director is active", "isCorrect": false },
+        { "text": "Only below 10,000 feet MSL", "isCorrect": false }
+      ],
+      "explanation": "The yaw damper can operate independently of the autopilot. It smooths out Dutch roll oscillations and can be used during hand-flying for a smoother ride."
+    }
+  ]
+}

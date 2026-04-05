@@ -35,7 +35,9 @@
       "Bash(powershell -Command \"Expand-Archive -Path ''C:\\\\Users\\\\Kado\\\\AppData\\\\Local\\\\Temp\\\\gh.zip'' -DestinationPath ''C:\\\\Users\\\\Kado\\\\AppData\\\\Local\\\\Temp\\\\gh-cli'' -Force; Get-ChildItem ''C:\\\\Users\\\\Kado\\\\AppData\\\\Local\\\\Temp\\\\gh-cli'' -Recurse -Filter ''gh.exe'' | Select-Object -ExpandProperty FullName\")",
       "Bash(GH=\"C:/Users/Kado/AppData/Local/Temp/gh-cli/bin/gh.exe\")",
       "Bash(\"$GH\" --version)",
-      "Bash(\"$GH\" auth:*)"
+      "Bash(\"$GH\" auth:*)",
+      "Bash(\"$GH\" repo:*)",
+      "Bash(npx vercel:*)"
     ]
   }
 }

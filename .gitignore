@@ -42,3 +42,5 @@ next-env.d.ts
 
 # temp scripts
 scripts/peek-*.py
+
+.vercel

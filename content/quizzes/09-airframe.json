@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "09-airframe",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What are the two primary composite materials used in the DA42-VI airframe?",
+      "options": [
+        { "text": "Aluminum alloy and titanium", "isCorrect": false },
+        { "text": "Kevlar and fiberglass", "isCorrect": false },
+        { "text": "CFRP (Carbon Fiber Reinforced Polymer) and GFRP (Glass Fiber Reinforced Plastic)", "isCorrect": true },
+        { "text": "Steel and carbon fiber", "isCorrect": false }
+      ],
+      "explanation": "The DA42-VI uses CFRP for high-strength structural areas like wing spars, and GFRP for lighter-duty surfaces like control surfaces, fairings, and empennage shells."
+    },
+    {
+      "id": "q2",
+      "question": "What three major components are housed in the DA42-VI wing center section?",
+      "options": [
+        { "text": "Fuel tanks, avionics bay, and battery compartment", "isCorrect": false },
+        { "text": "Two engine nacelles, wing stubs, and fuselage center-section floor", "isCorrect": true },
+        { "text": "Landing gear wells, hydraulic pumps, and engine mounts", "isCorrect": false },
+        { "text": "Baggage compartment, fuel lines, and electrical bus", "isCorrect": false }
+      ],
+      "explanation": "The wing center section is a critical structural hub that houses the two engine nacelles, the wing stubs (attachment points for the outer wing panels), and the fuselage center-section floor."
+    },
+    {
+      "id": "q3",
+      "question": "What is the purpose of the vortex generators on the DA42-VI wings?",
+      "options": [
+        { "text": "They reduce fuel consumption at cruise speed", "isCorrect": false },
+        { "text": "They provide lightning strike protection for the wings", "isCorrect": false },
+        { "text": "They increase maximum cruise speed by reducing drag", "isCorrect": false },
+        { "text": "They energize the boundary layer to delay flow separation and improve low-speed handling", "isCorrect": true }
+      ],
+      "explanation": "Vortex generators are small fins on the inboard leading edge of each wing that energize the boundary layer airflow, delaying flow separation and improving low-speed handling characteristics."
+    },
+    {
+      "id": "q4",
+      "question": "Where does lightning energy exit the DA42-VI airframe?",
+      "options": [
+        { "text": "Through the wingtips via aluminum strips", "isCorrect": false },
+        { "text": "Through the engine nacelles to the ground", "isCorrect": false },
+        { "text": "Through a lightning electrode beneath the horizontal stabilizer", "isCorrect": true },
+        { "text": "Through the landing gear struts", "isCorrect": false }
+      ],
+      "explanation": "The lightning protection system conducts energy through a network of aluminum alloy tubes and strips to the rear of the aircraft, where it exits through a lightning electrode located beneath the horizontal stabilizer."
+    },
+    {
+      "id": "q5",
+      "question": "Which DA42-VI antenna is not visible during a preflight inspection?",
+      "options": [
+        { "text": "The COM1 antenna on the fuselage belly", "isCorrect": false },
+        { "text": "The VOR antenna inside the horizontal stabilizer", "isCorrect": true },
+        { "text": "The transponder antenna on the vertical stabilizer", "isCorrect": false },
+        { "text": "The GPS antenna on the fuselage roof", "isCorrect": false }
+      ],
+      "explanation": "The VOR antenna is located inside the horizontal stabilizer and is not visible from the outside during a walkaround. All other antennas should be checked for security and damage during preflight."
+    }
+  ]
+}

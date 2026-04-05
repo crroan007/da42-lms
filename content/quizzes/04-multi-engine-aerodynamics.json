@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "04-multi-engine-aerodynamics",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What happens to lift distribution when one engine fails on a multi-engine airplane?",
+      "options": [
+        { "text": "Both wings lose lift equally", "isCorrect": false },
+        { "text": "The wing behind the operating engine keeps its lift boost while the dead-engine wing loses it, creating asymmetric lift", "isCorrect": true },
+        { "text": "The induced flow redistributes evenly across both wings", "isCorrect": false },
+        { "text": "Lift increases on both wings due to reduced drag", "isCorrect": false }
+      ],
+      "explanation": "When one engine fails, the wing behind the operating engine still receives boosted lift from induced flow (accelerated slipstream), but the dead-engine wing loses that boost, creating an asymmetric lift condition and a roll toward the dead engine."
+    },
+    {
+      "id": "q2",
+      "question": "What type of twin-engine configuration is the DA42-VI?",
+      "options": [
+        { "text": "Counter-rotating twin with no critical engine", "isCorrect": false },
+        { "text": "Conventional twin with clockwise-rotating propellers", "isCorrect": true },
+        { "text": "Counter-rotating twin with clockwise-rotating propellers", "isCorrect": false },
+        { "text": "Conventional twin with counter-clockwise-rotating propellers", "isCorrect": false }
+      ],
+      "explanation": "The DA42-VI is a conventional twin with both propellers rotating clockwise (when viewed from the cockpit). This means it has left-turning tendencies from combined torque and P-factor, and it has a critical engine."
+    },
+    {
+      "id": "q3",
+      "question": "In a counter-rotating twin, how are torque and P-factor effects handled?",
+      "options": [
+        { "text": "They double because both engines spin in opposite directions", "isCorrect": false },
+        { "text": "They are reduced by 50% compared to a conventional twin", "isCorrect": false },
+        { "text": "They cancel each other out, resulting in more balanced handling", "isCorrect": true },
+        { "text": "They are managed entirely through the rudder trim system", "isCorrect": false }
+      ],
+      "explanation": "In a counter-rotating twin, the propellers rotate in opposite directions. Torque from each engine cancels the other, and P-factor from each engine cancels the other, producing no net turning tendency and more balanced handling."
+    },
+    {
+      "id": "q4",
+      "question": "Why is induced flow (accelerated slipstream) more significant in a twin than in a single-engine airplane?",
+      "options": [
+        { "text": "Twin engines produce more total horsepower", "isCorrect": false },
+        { "text": "The propellers are larger in twin-engine aircraft", "isCorrect": false },
+        { "text": "The engines are mounted on the wings rather than the centerline, so engine failure creates asymmetric lift", "isCorrect": true },
+        { "text": "Single-engine airplanes do not produce any induced flow", "isCorrect": false }
+      ],
+      "explanation": "In a twin, the engines are mounted on the wings rather than the centerline. Each propeller accelerates air over its respective wing section. When one engine fails, one wing keeps the lift boost and the other loses it, creating a significant asymmetric lift condition."
+    },
+    {
+      "id": "q5",
+      "question": "What turning tendency does a conventional twin with clockwise-rotating propellers produce?",
+      "options": [
+        { "text": "A right-turning tendency from combined torque and gyroscopic precession", "isCorrect": false },
+        { "text": "No turning tendency because the two engines are symmetrical", "isCorrect": false },
+        { "text": "A left-turning tendency from combined torque and P-factor", "isCorrect": true },
+        { "text": "An alternating left-right oscillation at high power settings", "isCorrect": false }
+      ],
+      "explanation": "In a conventional twin where both propellers rotate clockwise, the torque and P-factor from each engine both push the airplane in the same direction, creating a combined left-turning tendency that requires more rudder input to oppose."
+    }
+  ]
+}

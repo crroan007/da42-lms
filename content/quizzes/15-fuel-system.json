@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "15-fuel-system",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "How much total and usable fuel does the DA42-VI carry?",
+      "options": [
+        { "text": "Total: 60 US gallons; Usable: 58 US gallons", "isCorrect": false },
+        { "text": "Total: 52 US gallons; Usable: 50 US gallons", "isCorrect": true },
+        { "text": "Total: 50 US gallons; Usable: 48 US gallons", "isCorrect": false },
+        { "text": "Total: 46 US gallons; Usable: 44 US gallons", "isCorrect": false }
+      ],
+      "explanation": "The DA42-VI carries 52 US gallons total (26 per side) with 50 US gallons usable (1 gallon unusable in each wing tank)."
+    },
+    {
+      "id": "q2",
+      "question": "What is the purpose of the fuel crossfeed system, and when should it be used?",
+      "options": [
+        { "text": "To supply both engines from one tank during single-engine flight only", "isCorrect": false },
+        { "text": "To maintain less than a 5-gallon fuel imbalance between the left and right tanks", "isCorrect": true },
+        { "text": "To drain fuel for weight reduction during an emergency", "isCorrect": false },
+        { "text": "To transfer fuel from auxiliary tanks to the main wing tanks", "isCorrect": false }
+      ],
+      "explanation": "Crossfeed allows one engine to draw fuel from the opposite wing tank. It should be used to maintain less than a 5-gallon fuel imbalance between sides during normal operations."
+    },
+    {
+      "id": "q3",
+      "question": "What is the 'common rail' in the DA42-VI's fuel injection system?",
+      "options": [
+        { "text": "The fuel line that connects the left and right wing tanks", "isCorrect": false },
+        { "text": "The low-pressure fuel manifold between the electric pumps and the engine", "isCorrect": false },
+        { "text": "A high-pressure fuel reservoir shared by all four injectors in each engine", "isCorrect": true },
+        { "text": "The return line that sends unused fuel back to the wing tanks", "isCorrect": false }
+      ],
+      "explanation": "The common rail is a high-pressure reservoir of fuel that feeds all four injectors simultaneously. Each cylinder has one injector nozzle supplied from this shared rail, and the ECU controls rail pressure based on the power lever setting."
+    },
+    {
+      "id": "q4",
+      "question": "Why does unused fuel from the common rail need to be cooled before returning to the wing tanks?",
+      "options": [
+        { "text": "To prevent the fuel from igniting on contact with wing tank air", "isCorrect": false },
+        { "text": "To reduce fuel viscosity so it flows through the return lines", "isCorrect": false },
+        { "text": "Because the high rail pressure heats the fuel, and returning hot fuel could cause vapor issues and unsafe tank temperatures", "isCorrect": true },
+        { "text": "To convert the fuel from a gaseous state back to liquid", "isCorrect": false }
+      ],
+      "explanation": "The common rail operates at very high pressure, which heats the fuel significantly. Since most pressurized fuel is returned to the tanks without being injected, a fuel cooler (heat exchanger on the bottom front of each engine) removes heat before the fuel goes back to the wing tanks."
+    },
+    {
+      "id": "q5",
+      "question": "How many fuel sumps must be checked during preflight on the DA42-VI, and where are they located?",
+      "options": [
+        { "text": "Two total: one under each wing tank", "isCorrect": false },
+        { "text": "Six total: one at each tank, one at each filter, and one at each engine", "isCorrect": false },
+        { "text": "Four total: one at the main tank and one at the fuel filter on each side", "isCorrect": true },
+        { "text": "One total: a single sump at the lowest point of the fuel system", "isCorrect": false }
+      ],
+      "explanation": "There are 2 fuel sumps on each side of the airplane (4 total): one at the main tank and one at the lowest point in the fuel system at the filter. All four must be checked during preflight."
+    }
+  ]
+}

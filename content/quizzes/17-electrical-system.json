@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "17-electrical-system",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What are the voltage and amperage ratings of each alternator on the DA42?",
+      "options": [
+        { "text": "14 volts DC, 60 amps", "isCorrect": false },
+        { "text": "28 volts DC, 70 amps", "isCorrect": true },
+        { "text": "24 volts DC, 50 amps", "isCorrect": false },
+        { "text": "28 volts DC, 100 amps", "isCorrect": false }
+      ],
+      "explanation": "The DA42 has two belt-driven, 28-volt DC, 70-amp alternators — one on each engine."
+    },
+    {
+      "id": "q2",
+      "question": "Can the ECU buses receive power from an alternator that has its switch in the OFF position?",
+      "options": [
+        { "text": "No, the alternator switch must be ON for any bus to receive power", "isCorrect": false },
+        { "text": "Yes, the ECU buses can draw power directly from the alternator regardless of switch position", "isCorrect": true },
+        { "text": "Only if the main battery is fully charged", "isCorrect": false },
+        { "text": "Only during an emergency declared by the pilot", "isCorrect": false }
+      ],
+      "explanation": "The Left and Right ECU Buses have a special design feature: they can take power directly from the alternator even if the alternator switch is in the OFF position, providing extra redundancy for engine management."
+    },
+    {
+      "id": "q3",
+      "question": "Where is the main battery located on the DA42, and what type is it?",
+      "options": [
+        { "text": "A lithium-ion battery in the tail cone", "isCorrect": false },
+        { "text": "A 24-volt, 13.6 amp-hour lead acid battery in the center-aft side of the front baggage compartment", "isCorrect": true },
+        { "text": "A nickel-cadmium battery behind the instrument panel", "isCorrect": false },
+        { "text": "A 28-volt lead acid battery under the rear passenger seats", "isCorrect": false }
+      ],
+      "explanation": "The main battery is a 24-volt, 13.6 amp-hour lead acid battery located in the center-aft side of the front baggage compartment."
+    },
+    {
+      "id": "q4",
+      "question": "How long can the ECU backup batteries power the ECUs during a total electrical failure?",
+      "options": [
+        { "text": "15 minutes", "isCorrect": false },
+        { "text": "60 minutes", "isCorrect": false },
+        { "text": "30 minutes", "isCorrect": true },
+        { "text": "2 hours", "isCorrect": false }
+      ],
+      "explanation": "The ECU backup batteries (four lead-acid batteries under the rear passenger seats) provide 30 minutes of power to ONLY the ECUs during a total electrical failure."
+    },
+    {
+      "id": "q5",
+      "question": "Which alternator control unit is responsible for balancing the load between the two alternators?",
+      "options": [
+        { "text": "The Right Alternator Control Unit", "isCorrect": false },
+        { "text": "Both units share the balancing function equally", "isCorrect": false },
+        { "text": "The Left Alternator Control Unit", "isCorrect": true },
+        { "text": "A separate dedicated load balancing module", "isCorrect": false }
+      ],
+      "explanation": "The Left Alternator Control Unit has a special role: its voltage regulator balances the load between the two alternators so they produce similar output."
+    }
+  ]
+}

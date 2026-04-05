@@ -1,0 +1,60 @@
+{
+  "moduleSlug": "10-flight-controls",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What type of mechanical linkage connects the control stick to the ailerons and elevator in the DA42-VI?",
+      "options": [
+        { "text": "Flexible steel cables", "isCorrect": false },
+        { "text": "Hydraulic actuators with pushrods", "isCorrect": false },
+        { "text": "Bell cranks and pushrods", "isCorrect": true },
+        { "text": "Electric servos with cable backup", "isCorrect": false }
+      ],
+      "explanation": "The ailerons and elevator are connected to the control stick through bell cranks and pushrods -- solid mechanical linkages. The rudder, by contrast, uses flexible steel cables."
+    },
+    {
+      "id": "q2",
+      "question": "The DA42-VI ailerons deflect up 25 degrees and down 15 degrees. What is the purpose of this differential design?",
+      "options": [
+        { "text": "To increase the roll rate during steep turns", "isCorrect": false },
+        { "text": "To prevent aileron flutter at high speeds", "isCorrect": false },
+        { "text": "To allow the flaps to extend further without interference", "isCorrect": false },
+        { "text": "To reduce adverse yaw by equalizing drag between the wings during turns", "isCorrect": true }
+      ],
+      "explanation": "Differential ailerons help equalize drag between both wings during a turn. The greater upward deflection creates proportionally more drag on the ascending wing, counteracting the tendency for the nose to swing opposite to the intended turn (adverse yaw)."
+    },
+    {
+      "id": "q3",
+      "question": "Under what condition does the variable elevator stop engage, and what does it do?",
+      "options": [
+        { "text": "When airspeed exceeds VNE; it limits elevator-down travel to 10 degrees", "isCorrect": false },
+        { "text": "When BOTH power levers exceed approximately 20%; it limits elevator-up travel from 15.5 to 13 degrees", "isCorrect": true },
+        { "text": "When flaps are extended to the landing position; it locks the elevator at neutral", "isCorrect": false },
+        { "text": "When only ONE power lever is above 20%; it increases elevator-up travel to 18 degrees", "isCorrect": false }
+      ],
+      "explanation": "The variable elevator stop engages when BOTH power levers exceed approximately 20%, limiting elevator-up travel from 15.5 degrees to 13 degrees (a 2.5-degree reduction). When at least one power lever is below 20%, full elevator travel is available."
+    },
+    {
+      "id": "q4",
+      "question": "How does the DA42-VI's anti-servo elevator trim tab move relative to the elevator, and what effect does this have?",
+      "options": [
+        { "text": "It moves opposite to the elevator, reducing control forces like power steering", "isCorrect": false },
+        { "text": "It remains fixed while the elevator moves around it", "isCorrect": false },
+        { "text": "It moves in the SAME direction as the elevator, increasing pilot feedback and stability", "isCorrect": true },
+        { "text": "It moves opposite to the elevator only during autopilot operation", "isCorrect": false }
+      ],
+      "explanation": "An anti-servo trim tab moves in the SAME direction as the elevator. This increases the effective angle of attack on the elevator, provides progressive pilot feedback (the more you deflect, the harder it pushes back), and increases stability."
+    },
+    {
+      "id": "q5",
+      "question": "What is the emergency procedure if the rudder pedal adjustment motor runs away?",
+      "options": [
+        { "text": "Turn off the avionics master switch", "isCorrect": false },
+        { "text": "Press and hold both rudder pedals simultaneously", "isCorrect": false },
+        { "text": "Cycle the electric master switch off and back on", "isCorrect": false },
+        { "text": "Pull the circuit breaker located below the rocker switch in the leg area", "isCorrect": true }
+      ],
+      "explanation": "If the rudder pedal adjustment motor runs away, the emergency procedure is to pull the circuit breaker located below the rocker switch in the leg area. Rudder pedal adjustment should only be done on the ground."
+    }
+  ]
+}
