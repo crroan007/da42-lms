@@ -1,10 +1,6 @@
 import { NextRequest } from "next/server";
-import { exec } from "child_process";
-import { createReadStream } from "fs";
-import { readFile, unlink, writeFile } from "fs/promises";
-import { randomUUID } from "crypto";
-import path from "path";
-import os from "os";
+
+const VOICE = "en-GB-SoniaNeural";
 
 export async function POST(request: NextRequest) {
   const { text } = await request.json();
@@ -16,42 +12,26 @@ export async function POST(request: NextRequest) {
     });
   }
 
-  const id = randomUUID();
-  const tmpText = path.join(os.tmpdir(), `tts-${id}.txt`);
-  const tmpAudio = path.join(os.tmpdir(), `tts-${id}.mp3`);
-  const scriptPath = path.join(process.cwd(), "scripts", "tts.py");
-
   try {
-    // Write text to temp file to avoid shell escaping issues
-    await writeFile(tmpText, text, "utf-8");
+    // Use the Communicate streaming API (more reliable than EdgeTTS.synthesize)
+    const { Communicate } = await import("@travisvn/edge-tts");
+    const comm = new Communicate(text, { voice: VOICE });
 
-    // Run Python edge-tts script
-    await new Promise<void>((resolve, reject) => {
-      const proc = exec(
-        `python "${scriptPath}" "${tmpAudio}"`,
-        { timeout: 30000 },
-        (error) => {
-          if (error) reject(error);
-          else resolve();
-        }
-      );
-      // Pipe text via stdin
-      const input = createReadStream(tmpText);
-      input.pipe(proc.stdin!);
-    });
+    const chunks: Buffer[] = [];
+    for await (const chunk of comm.stream()) {
+      if (chunk.type === "audio" && chunk.data) {
+        chunks.push(chunk.data);
+      }
+    }
 
-    const audioBuffer = await readFile(tmpAudio);
-
-    // Cleanup
-    await unlink(tmpText).catch(() => {});
-    await unlink(tmpAudio).catch(() => {});
-
-    if (audioBuffer.length === 0) {
-      return new Response(JSON.stringify({ error: "Empty audio" }), {
+    if (chunks.length === 0) {
+      return new Response(JSON.stringify({ error: "No audio generated" }), {
         status: 500,
         headers: { "Content-Type": "application/json" },
       });
     }
+
+    const audioBuffer = Buffer.concat(chunks);
 
     return new Response(audioBuffer, {
       headers: {
@@ -60,13 +40,46 @@ export async function POST(request: NextRequest) {
       },
     });
   } catch (err) {
-    // Cleanup on error
-    await unlink(tmpText).catch(() => {});
-    await unlink(tmpAudio).catch(() => {});
     console.error("TTS error:", err);
-    return new Response(JSON.stringify({ error: "TTS generation failed" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
+
+    // If Node.js edge-tts fails, try Python fallback (local dev only)
+    try {
+      const { exec } = await import("child_process");
+      const { writeFile, readFile, unlink } = await import("fs/promises");
+      const { randomUUID } = await import("crypto");
+      const path = await import("path");
+      const os = await import("os");
+
+      const id = randomUUID();
+      const tmpText = path.join(os.tmpdir(), `tts-${id}.txt`);
+      const tmpAudio = path.join(os.tmpdir(), `tts-${id}.mp3`);
+      const scriptPath = path.join(process.cwd(), "scripts", "tts.py");
+
+      await writeFile(tmpText, text, "utf-8");
+
+      await new Promise<void>((resolve, reject) => {
+        exec(
+          `python "${scriptPath}" "${tmpAudio}" < "${tmpText}"`,
+          { timeout: 30000 },
+          (error) => (error ? reject(error) : resolve())
+        );
+      });
+
+      const audioBuffer = await readFile(tmpAudio);
+      await unlink(tmpText).catch(() => {});
+      await unlink(tmpAudio).catch(() => {});
+
+      return new Response(audioBuffer, {
+        headers: {
+          "Content-Type": "audio/mpeg",
+          "Cache-Control": "public, max-age=604800",
+        },
+      });
+    } catch {
+      return new Response(JSON.stringify({ error: "TTS generation failed" }), {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
   }
 }
