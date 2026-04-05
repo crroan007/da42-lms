@@ -35,12 +35,12 @@ export function Progress({
       )}
       <div
         className={cn(
-          "w-full rounded-sm bg-[var(--color-surface-sunken)] overflow-hidden",
+          "w-full bg-[var(--color-surface-sunken)] overflow-hidden",
           trackSizes[size]
         )}
       >
         <div
-          className="h-full rounded-sm bg-[var(--color-gold)] transition-[width] duration-700 ease-out"
+          className="h-full bg-[var(--color-gold)] transition-[width] duration-700 ease-out"
           style={{ width: `${clamped}%` }}
         />
       </div>

@@ -27,7 +27,7 @@ export default function DashboardPage() {
       {/* Stats Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         <div className="panel p-3 flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded bg-gold-dim">
+          <div className="flex h-9 w-9 items-center justify-center bg-gold-dim">
             <Target className="h-5 w-5 text-gold" />
           </div>
           <div>
@@ -36,7 +36,7 @@ export default function DashboardPage() {
           </div>
         </div>
         <div className="panel p-3 flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded bg-status-advisory/10">
+          <div className="flex h-9 w-9 items-center justify-center bg-status-advisory/10">
             <BookOpen className="h-5 w-5 text-status-advisory" />
           </div>
           <div>
@@ -45,7 +45,7 @@ export default function DashboardPage() {
           </div>
         </div>
         <div className="panel p-3 flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded bg-status-operational/10">
+          <div className="flex h-9 w-9 items-center justify-center bg-status-operational/10">
             <Award className="h-5 w-5 text-status-operational" />
           </div>
           <div>
@@ -68,11 +68,11 @@ export default function DashboardPage() {
             <Link
               key={mod.slug || i}
               href={`/modules/${mod.slug}`}
-              className="panel accent-strip-top p-4 transition-lift group block"
+              className="panel accent-strip-top p-4 group block"
               data-status="locked"
             >
               <div className="flex items-start justify-between mb-2">
-                <span className="flex h-7 w-7 items-center justify-center rounded-sm bg-surface-overlay text-xs font-mono font-semibold text-gold">
+                <span className="flex h-7 w-7 items-center justify-center bg-surface-overlay text-xs font-mono font-semibold text-gold">
                   {String(mod.orderIndex || i + 1).padStart(2, "0")}
                 </span>
                 <span className="flex items-center gap-1 text-xs text-text-muted">
@@ -86,8 +86,8 @@ export default function DashboardPage() {
               <p className="text-xs text-text-secondary line-clamp-2">
                 {mod.description || "Loading content..."}
               </p>
-              <div className="mt-3 h-1 rounded-sm bg-surface-overlay">
-                <div className="h-full rounded-sm bg-gold-muted" style={{ width: "0%" }} />
+              <div className="mt-3 h-1 bg-surface-overlay">
+                <div className="h-full bg-gold-muted" style={{ width: "0%" }} />
               </div>
             </Link>
           ))}

@@ -10,7 +10,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/"
-        className="px-4 py-2 text-sm font-medium bg-[var(--color-gold)] text-[var(--color-surface-base)] rounded transition-colors hover:opacity-90"
+        className="px-4 py-2 text-sm font-medium bg-[var(--color-gold)] text-[var(--color-surface-base)] transition-colors hover:opacity-90"
       >
         Return to Dashboard
       </Link>

@@ -42,7 +42,7 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
 
         <div className="panel p-4">
           <div className="flex items-center gap-3 mb-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-sm bg-gold-dim text-xs font-mono font-semibold text-gold">
+            <span className="flex h-8 w-8 items-center justify-center bg-gold-dim text-xs font-mono font-semibold text-gold">
               {String(mod.orderIndex).padStart(2, "0")}
             </span>
             <div>
@@ -61,7 +61,7 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
         </div>
 
         {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-        <LessonList sections={mod.subsections as any} />
+        <LessonList moduleSlug={mod.slug} sections={mod.subsections as any} />
 
         <div className="panel p-4 text-center">
           <h2 className="text-base font-semibold text-text-primary mb-1">Ready to test your knowledge?</h2>
@@ -70,7 +70,7 @@ export default async function ModuleDetailPage({ params }: { params: Promise<{ s
           </p>
           <Link
             href={`/modules/${mod.slug}/quiz`}
-            className="inline-flex items-center gap-2 px-5 py-2 rounded bg-gold text-surface-base font-semibold hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-5 py-2 bg-gold text-surface-base font-semibold hover:opacity-90 transition-opacity"
           >
             Start Quiz
             <ChevronRight className="h-4 w-4" />

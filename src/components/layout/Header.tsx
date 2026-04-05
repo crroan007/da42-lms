@@ -18,20 +18,20 @@ export function Header() {
         </span>
       </div>
       <div className="flex items-center gap-3">
-        <button aria-label="Search" className="rounded p-2 text-[var(--color-text-muted)] hover:bg-[var(--color-surface-overlay)] hover:text-[var(--color-text-primary)] transition-colors">
+        <button aria-label="Search" className="p-2 text-[var(--color-text-muted)] hover:bg-[var(--color-surface-overlay)] hover:text-[var(--color-text-primary)] transition-colors">
           <Search className="h-4 w-4" />
         </button>
-        <button aria-label="Notifications" className="rounded p-2 text-[var(--color-text-muted)] hover:bg-[var(--color-surface-overlay)] hover:text-[var(--color-text-primary)] transition-colors relative">
+        <button aria-label="Notifications" className="p-2 text-[var(--color-text-muted)] hover:bg-[var(--color-surface-overlay)] hover:text-[var(--color-text-primary)] transition-colors relative">
           <Bell className="h-4 w-4" />
         </button>
         <button
           onClick={signOut}
           aria-label="Sign out"
-          className="rounded p-2 text-[var(--color-text-muted)] hover:bg-[var(--color-surface-overlay)] hover:text-[var(--color-status-warning)] transition-colors"
+          className="p-2 text-[var(--color-text-muted)] hover:bg-[var(--color-surface-overlay)] hover:text-[var(--color-status-warning)] transition-colors"
         >
           <LogOut className="h-4 w-4" />
         </button>
-        <div aria-label="User profile" className="ml-1 flex h-8 w-8 items-center justify-center rounded-full bg-gold-dim text-sm font-semibold text-gold">
+        <div aria-label="User profile" className="ml-1 flex h-8 w-8 items-center justify-center bg-gold-dim text-sm font-semibold text-gold">
           {initial}
         </div>
       </div>

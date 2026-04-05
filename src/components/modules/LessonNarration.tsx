@@ -19,8 +19,8 @@ interface TTSContextValue {
 const TTSContext = createContext<TTSContextValue | null>(null);
 
 /** Wrap all lessons — precomputes segments for every section so narration can flow through them */
-export function TTSProvider({ sections, children }: { sections: SectionData[]; children: React.ReactNode }) {
-  const tts = useTTS();
+export function TTSProvider({ moduleSlug, sections, children }: { moduleSlug: string; sections: SectionData[]; children: React.ReactNode }) {
+  const tts = useTTS(moduleSlug);
 
   const allSegments = useMemo(
     () => sections.map((s) => extractSegments(s.title, s.blocks, s.content)),

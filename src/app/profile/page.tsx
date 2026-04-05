@@ -9,7 +9,7 @@ export default function ProfilePage() {
       </div>
 
       <div className="panel p-6 flex flex-col items-center">
-        <div className="flex h-16 w-16 items-center justify-center rounded bg-gold-dim text-2xl font-semibold text-gold font-mono mb-3">
+        <div className="flex h-16 w-16 items-center justify-center bg-gold-dim text-2xl font-semibold text-gold font-mono mb-3">
           P
         </div>
         <h2 className="text-lg font-semibold text-text-primary">Pilot Trainee</h2>

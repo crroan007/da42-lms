@@ -1,0 +1,428 @@
+{
+  "01-introduction_s0": {
+    "file": "01-introduction_s0_a1b45f08.mp3",
+    "hash": "a1b45f08",
+    "slug": "01-introduction",
+    "section": 0
+  },
+  "01-introduction_s1": {
+    "file": "01-introduction_s1_190c9145.mp3",
+    "hash": "190c9145",
+    "slug": "01-introduction",
+    "section": 1
+  },
+  "01-introduction_s2": {
+    "file": "01-introduction_s2_64ba6a60.mp3",
+    "hash": "64ba6a60",
+    "slug": "01-introduction",
+    "section": 2
+  },
+  "02-v-speeds_s0": {
+    "file": "02-v-speeds_s0_92030c21.mp3",
+    "hash": "92030c21",
+    "slug": "02-v-speeds",
+    "section": 0
+  },
+  "02-v-speeds_s1": {
+    "file": "02-v-speeds_s1_cf4a42d7.mp3",
+    "hash": "cf4a42d7",
+    "slug": "02-v-speeds",
+    "section": 1
+  },
+  "02-v-speeds_s2": {
+    "file": "02-v-speeds_s2_e3748fc0.mp3",
+    "hash": "e3748fc0",
+    "slug": "02-v-speeds",
+    "section": 2
+  },
+  "02-v-speeds_s3": {
+    "file": "02-v-speeds_s3_cabfd36a.mp3",
+    "hash": "cabfd36a",
+    "slug": "02-v-speeds",
+    "section": 3
+  },
+  "03-performance-and-limitations_s0": {
+    "file": "03-performance-and-limitations_s0_b9483680.mp3",
+    "hash": "b9483680",
+    "slug": "03-performance-and-limitations",
+    "section": 0
+  },
+  "03-performance-and-limitations_s1": {
+    "file": "03-performance-and-limitations_s1_e99f2714.mp3",
+    "hash": "e99f2714",
+    "slug": "03-performance-and-limitations",
+    "section": 1
+  },
+  "03-performance-and-limitations_s2": {
+    "file": "03-performance-and-limitations_s2_0b6881d8.mp3",
+    "hash": "0b6881d8",
+    "slug": "03-performance-and-limitations",
+    "section": 2
+  },
+  "04-multi-engine-aerodynamics_s0": {
+    "file": "04-multi-engine-aerodynamics_s0_98f802b3.mp3",
+    "hash": "98f802b3",
+    "slug": "04-multi-engine-aerodynamics",
+    "section": 0
+  },
+  "04-multi-engine-aerodynamics_s1": {
+    "file": "04-multi-engine-aerodynamics_s1_ce085895.mp3",
+    "hash": "ce085895",
+    "slug": "04-multi-engine-aerodynamics",
+    "section": 1
+  },
+  "04-multi-engine-aerodynamics_s2": {
+    "file": "04-multi-engine-aerodynamics_s2_3dd23be1.mp3",
+    "hash": "3dd23be1",
+    "slug": "04-multi-engine-aerodynamics",
+    "section": 2
+  },
+  "05-engine-failures_s0": {
+    "file": "05-engine-failures_s0_4588151d.mp3",
+    "hash": "4588151d",
+    "slug": "05-engine-failures",
+    "section": 0
+  },
+  "05-engine-failures_s1": {
+    "file": "05-engine-failures_s1_6b9e59f4.mp3",
+    "hash": "6b9e59f4",
+    "slug": "05-engine-failures",
+    "section": 1
+  },
+  "05-engine-failures_s2": {
+    "file": "05-engine-failures_s2_56a73706.mp3",
+    "hash": "56a73706",
+    "slug": "05-engine-failures",
+    "section": 2
+  },
+  "05-engine-failures_s3": {
+    "file": "05-engine-failures_s3_fbbeb2a1.mp3",
+    "hash": "fbbeb2a1",
+    "slug": "05-engine-failures",
+    "section": 3
+  },
+  "05-engine-failures_s4": {
+    "file": "05-engine-failures_s4_9d5a1660.mp3",
+    "hash": "9d5a1660",
+    "slug": "05-engine-failures",
+    "section": 4
+  },
+  "05-engine-failures_s5": {
+    "file": "05-engine-failures_s5_c504d953.mp3",
+    "hash": "c504d953",
+    "slug": "05-engine-failures",
+    "section": 5
+  },
+  "05-engine-failures_s6": {
+    "file": "05-engine-failures_s6_4986c8a2.mp3",
+    "hash": "4986c8a2",
+    "slug": "05-engine-failures",
+    "section": 6
+  },
+  "06-vmc_s0": {
+    "file": "06-vmc_s0_12771c16.mp3",
+    "hash": "12771c16",
+    "slug": "06-vmc",
+    "section": 0
+  },
+  "06-vmc_s1": {
+    "file": "06-vmc_s1_f48185c1.mp3",
+    "hash": "f48185c1",
+    "slug": "06-vmc",
+    "section": 1
+  },
+  "06-vmc_s2": {
+    "file": "06-vmc_s2_e2b7edc8.mp3",
+    "hash": "e2b7edc8",
+    "slug": "06-vmc",
+    "section": 2
+  },
+  "06-vmc_s3": {
+    "file": "06-vmc_s3_f2836c69.mp3",
+    "hash": "f2836c69",
+    "slug": "06-vmc",
+    "section": 3
+  },
+  "06-vmc_s4": {
+    "file": "06-vmc_s4_df098c5c.mp3",
+    "hash": "df098c5c",
+    "slug": "06-vmc",
+    "section": 4
+  },
+  "06-vmc_s5": {
+    "file": "06-vmc_s5_3781641c.mp3",
+    "hash": "3781641c",
+    "slug": "06-vmc",
+    "section": 5
+  },
+  "06-vmc_s6": {
+    "file": "06-vmc_s6_5c5815a2.mp3",
+    "hash": "5c5815a2",
+    "slug": "06-vmc",
+    "section": 6
+  },
+  "06-vmc_s7": {
+    "file": "06-vmc_s7_e2e93a2b.mp3",
+    "hash": "e2e93a2b",
+    "slug": "06-vmc",
+    "section": 7
+  },
+  "06-vmc_s8": {
+    "file": "06-vmc_s8_e166404d.mp3",
+    "hash": "e166404d",
+    "slug": "06-vmc",
+    "section": 8
+  },
+  "06-vmc_s9": {
+    "file": "06-vmc_s9_6717b8c7.mp3",
+    "hash": "6717b8c7",
+    "slug": "06-vmc",
+    "section": 9
+  },
+  "07-da42-vi-systems-overview_s0": {
+    "file": "07-da42-vi-systems-overview_s0_f2e59560.mp3",
+    "hash": "f2e59560",
+    "slug": "07-da42-vi-systems-overview",
+    "section": 0
+  },
+  "07-da42-vi-systems-overview_s1": {
+    "file": "07-da42-vi-systems-overview_s1_e7cd9a04.mp3",
+    "hash": "e7cd9a04",
+    "slug": "07-da42-vi-systems-overview",
+    "section": 1
+  },
+  "08-limitations_s0": {
+    "file": "08-limitations_s0_a31a606f.mp3",
+    "hash": "a31a606f",
+    "slug": "08-limitations",
+    "section": 0
+  },
+  "08-limitations_s1": {
+    "file": "08-limitations_s1_806ab2b6.mp3",
+    "hash": "806ab2b6",
+    "slug": "08-limitations",
+    "section": 1
+  },
+  "08-limitations_s2": {
+    "file": "08-limitations_s2_6da0d39c.mp3",
+    "hash": "6da0d39c",
+    "slug": "08-limitations",
+    "section": 2
+  },
+  "08-limitations_s3": {
+    "file": "08-limitations_s3_9d3eaa8b.mp3",
+    "hash": "9d3eaa8b",
+    "slug": "08-limitations",
+    "section": 3
+  },
+  "09-airframe_s0": {
+    "file": "09-airframe_s0_cfae1cec.mp3",
+    "hash": "cfae1cec",
+    "slug": "09-airframe",
+    "section": 0
+  },
+  "09-airframe_s1": {
+    "file": "09-airframe_s1_2368dd86.mp3",
+    "hash": "2368dd86",
+    "slug": "09-airframe",
+    "section": 1
+  },
+  "09-airframe_s2": {
+    "file": "09-airframe_s2_0bc591a3.mp3",
+    "hash": "0bc591a3",
+    "slug": "09-airframe",
+    "section": 2
+  },
+  "09-airframe_s3": {
+    "file": "09-airframe_s3_7521ddba.mp3",
+    "hash": "7521ddba",
+    "slug": "09-airframe",
+    "section": 3
+  },
+  "09-airframe_s4": {
+    "file": "09-airframe_s4_34375c73.mp3",
+    "hash": "34375c73",
+    "slug": "09-airframe",
+    "section": 4
+  },
+  "10-flight-controls_s0": {
+    "file": "10-flight-controls_s0_34ac1020.mp3",
+    "hash": "34ac1020",
+    "slug": "10-flight-controls",
+    "section": 0
+  },
+  "10-flight-controls_s1": {
+    "file": "10-flight-controls_s1_196d3e06.mp3",
+    "hash": "196d3e06",
+    "slug": "10-flight-controls",
+    "section": 1
+  },
+  "10-flight-controls_s2": {
+    "file": "10-flight-controls_s2_5db0f6d5.mp3",
+    "hash": "5db0f6d5",
+    "slug": "10-flight-controls",
+    "section": 2
+  },
+  "10-flight-controls_s3": {
+    "file": "10-flight-controls_s3_2d4695c1.mp3",
+    "hash": "2d4695c1",
+    "slug": "10-flight-controls",
+    "section": 3
+  },
+  "11-landing-gear_s0": {
+    "file": "11-landing-gear_s0_2c1a8b5e.mp3",
+    "hash": "2c1a8b5e",
+    "slug": "11-landing-gear",
+    "section": 0
+  },
+  "11-landing-gear_s1": {
+    "file": "11-landing-gear_s1_37e2a70a.mp3",
+    "hash": "37e2a70a",
+    "slug": "11-landing-gear",
+    "section": 1
+  },
+  "11-landing-gear_s2": {
+    "file": "11-landing-gear_s2_a4589bdd.mp3",
+    "hash": "a4589bdd",
+    "slug": "11-landing-gear",
+    "section": 2
+  },
+  "11-landing-gear_s3": {
+    "file": "11-landing-gear_s3_da4e2884.mp3",
+    "hash": "da4e2884",
+    "slug": "11-landing-gear",
+    "section": 3
+  },
+  "11-landing-gear_s4": {
+    "file": "11-landing-gear_s4_6e6e74a5.mp3",
+    "hash": "6e6e74a5",
+    "slug": "11-landing-gear",
+    "section": 4
+  },
+  "11-landing-gear_s5": {
+    "file": "11-landing-gear_s5_98254048.mp3",
+    "hash": "98254048",
+    "slug": "11-landing-gear",
+    "section": 5
+  },
+  "11-landing-gear_s6": {
+    "file": "11-landing-gear_s6_a8d48a11.mp3",
+    "hash": "a8d48a11",
+    "slug": "11-landing-gear",
+    "section": 6
+  },
+  "12-brakes_s0": {
+    "file": "12-brakes_s0_b8a0d2d1.mp3",
+    "hash": "b8a0d2d1",
+    "slug": "12-brakes",
+    "section": 0
+  },
+  "12-brakes_s1": {
+    "file": "12-brakes_s1_1131b755.mp3",
+    "hash": "1131b755",
+    "slug": "12-brakes",
+    "section": 1
+  },
+  "13-environmental-systems_s0": {
+    "file": "13-environmental-systems_s0_977278c7.mp3",
+    "hash": "977278c7",
+    "slug": "13-environmental-systems",
+    "section": 0
+  },
+  "13-environmental-systems_s1": {
+    "file": "13-environmental-systems_s1_16609083.mp3",
+    "hash": "16609083",
+    "slug": "13-environmental-systems",
+    "section": 1
+  },
+  "14-powerplant_s0": {
+    "file": "14-powerplant_s0_d4fba04d.mp3",
+    "hash": "d4fba04d",
+    "slug": "14-powerplant",
+    "section": 0
+  },
+  "15-fuel-system_s0": {
+    "file": "15-fuel-system_s0_4e17c526.mp3",
+    "hash": "4e17c526",
+    "slug": "15-fuel-system",
+    "section": 0
+  },
+  "15-fuel-system_s1": {
+    "file": "15-fuel-system_s1_b75ce21b.mp3",
+    "hash": "b75ce21b",
+    "slug": "15-fuel-system",
+    "section": 1
+  },
+  "15-fuel-system_s2": {
+    "file": "15-fuel-system_s2_f7ef0f42.mp3",
+    "hash": "f7ef0f42",
+    "slug": "15-fuel-system",
+    "section": 2
+  },
+  "16-propeller_s0": {
+    "file": "16-propeller_s0_e311fe1e.mp3",
+    "hash": "e311fe1e",
+    "slug": "16-propeller",
+    "section": 0
+  },
+  "16-propeller_s1": {
+    "file": "16-propeller_s1_25be7e94.mp3",
+    "hash": "25be7e94",
+    "slug": "16-propeller",
+    "section": 1
+  },
+  "17-electrical-system_s0": {
+    "file": "17-electrical-system_s0_97e24de8.mp3",
+    "hash": "97e24de8",
+    "slug": "17-electrical-system",
+    "section": 0
+  },
+  "17-electrical-system_s1": {
+    "file": "17-electrical-system_s1_44d24429.mp3",
+    "hash": "44d24429",
+    "slug": "17-electrical-system",
+    "section": 1
+  },
+  "18-pitot-static-and-stall-warning_s0": {
+    "file": "18-pitot-static-and-stall-warning_s0_cc527302.mp3",
+    "hash": "cc527302",
+    "slug": "18-pitot-static-and-stall-warning",
+    "section": 0
+  },
+  "18-pitot-static-and-stall-warning_s1": {
+    "file": "18-pitot-static-and-stall-warning_s1_1ab44440.mp3",
+    "hash": "1ab44440",
+    "slug": "18-pitot-static-and-stall-warning",
+    "section": 1
+  },
+  "19-autopilot_s0": {
+    "file": "19-autopilot_s0_b01ea4de.mp3",
+    "hash": "b01ea4de",
+    "slug": "19-autopilot",
+    "section": 0
+  },
+  "19-autopilot_s1": {
+    "file": "19-autopilot_s1_66380107.mp3",
+    "hash": "66380107",
+    "slug": "19-autopilot",
+    "section": 1
+  },
+  "20-flight-director-and-esp_s0": {
+    "file": "20-flight-director-and-esp_s0_1cf45488.mp3",
+    "hash": "1cf45488",
+    "slug": "20-flight-director-and-esp",
+    "section": 0
+  },
+  "20-flight-director-and-esp_s1": {
+    "file": "20-flight-director-and-esp_s1_4479b4d4.mp3",
+    "hash": "4479b4d4",
+    "slug": "20-flight-director-and-esp",
+    "section": 1
+  },
+  "20-flight-director-and-esp_s2": {
+    "file": "20-flight-director-and-esp_s2_8039b600.mp3",
+    "hash": "8039b600",
+    "slug": "20-flight-director-and-esp",
+    "section": 2
+  }
+}

@@ -21,7 +21,7 @@ export function Card({
       className={cn(
         elevated ? "panel-elevated" : "panel",
         "p-4",
-        hoverable && "cursor-pointer transition-lift",
+        hoverable && "cursor-pointer",
         className
       )}
     >

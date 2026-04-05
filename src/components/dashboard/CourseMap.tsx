@@ -73,7 +73,7 @@ export function CourseMap({ modules, className }: CourseMapProps) {
             <div className="relative flex-shrink-0">
               <div
                 className={cn(
-                  "flex h-[34px] w-[34px] items-center justify-center rounded border-2 transition-colors",
+                  "flex h-[34px] w-[34px] items-center justify-center border-2 transition-colors",
                   config.ringClass
                 )}
               >
@@ -81,7 +81,7 @@ export function CourseMap({ modules, className }: CourseMapProps) {
               </div>
               {/* Active indicator — solid dot, no pulse */}
               {mod.status === "in_progress" && (
-                <span className="absolute -top-0.5 -right-0.5 h-2.5 w-2.5 rounded-sm bg-[var(--color-gold)]" />
+                <span className="absolute -top-0.5 -right-0.5 h-2.5 w-2.5 bg-[var(--color-gold)]" />
               )}
             </div>
 

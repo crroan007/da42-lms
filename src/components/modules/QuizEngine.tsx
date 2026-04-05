@@ -96,10 +96,10 @@ export function QuizEngine({
 
         {/* Score bar */}
         <div className="w-full max-w-xs mx-auto mb-6">
-          <div className="h-2 rounded-sm bg-[var(--color-surface-sunken)] overflow-hidden">
+          <div className="h-2 bg-[var(--color-surface-sunken)] overflow-hidden">
             <div
               className={cn(
-                "h-full rounded-sm transition-[width] duration-700 ease-out",
+                "h-full transition-[width] duration-700 ease-out",
                 passed
                   ? "bg-[var(--color-gold)]"
                   : "bg-[var(--color-status-caution)]"
@@ -143,7 +143,7 @@ export function QuizEngine({
             <div
               key={i}
               className={cn(
-                "h-1 w-5 rounded-sm transition-colors",
+                "h-1 w-5 transition-colors",
                 i < currentIndex
                   ? answers[i]
                     ? "bg-[var(--color-status-operational)]"
@@ -181,7 +181,7 @@ export function QuizEngine({
               onClick={() => state === "answering" && setSelectedOption(i)}
               disabled={state === "feedback"}
               className={cn(
-                "w-full flex items-center gap-3 rounded border p-3 text-left text-sm transition-colors duration-150",
+                "w-full flex items-center gap-3 border p-3 text-left text-sm transition-colors duration-150",
                 state === "answering" &&
                   !isSelected &&
                   "border-[var(--color-border-subtle)] bg-[var(--color-surface-raised)] hover:border-[var(--color-border-default)] hover:bg-[var(--color-surface-overlay)] text-[var(--color-text-secondary)] cursor-pointer",
@@ -201,7 +201,7 @@ export function QuizEngine({
               {/* Option letter */}
               <span
                 className={cn(
-                  "flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-sm text-xs font-mono font-semibold",
+                  "flex h-6 w-6 flex-shrink-0 items-center justify-center text-xs font-mono font-semibold",
                   state === "answering" &&
                     !isSelected &&
                     "bg-[var(--color-surface-sunken)] text-[var(--color-text-muted)]",
@@ -238,7 +238,7 @@ export function QuizEngine({
       {state === "feedback" && (
         <div
           className={cn(
-            "rounded border p-3 text-sm leading-relaxed",
+            "border p-3 text-sm leading-relaxed",
             isCorrect
               ? "border-[rgba(34,197,94,0.20)] bg-[rgba(34,197,94,0.04)] text-[var(--color-status-operational)]"
               : "border-[rgba(234,179,8,0.20)] bg-[rgba(234,179,8,0.04)] text-[var(--color-status-caution)]"

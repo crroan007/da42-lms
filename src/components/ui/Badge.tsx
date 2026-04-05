@@ -26,7 +26,7 @@ export function Badge({ variant = "gold", children, className }: BadgeProps) {
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-sm border px-2 py-0.5 text-[11px] font-medium uppercase tracking-widest",
+        "inline-flex items-center border px-2 py-0.5 text-[11px] font-medium uppercase tracking-widest",
         badgeVariants[variant],
         className
       )}

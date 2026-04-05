@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useRef, useState, useEffect } from "react";
 
 interface TTSState {
   isPlaying: boolean;
@@ -8,51 +8,58 @@ interface TTSState {
   activeSection: number | null;
 }
 
-export function useTTS() {
+type AudioManifest = Record<string, { file: string; hash: string; slug: string; section: number }>;
+
+export function useTTS(moduleSlug?: string) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const abortRef = useRef(false);
-  const useApiRef = useRef(true);
+  const manifestRef = useRef<AudioManifest | null>(null);
   const [state, setState] = useState<TTSState>({
     isPlaying: false,
     isLoading: false,
     activeSection: null,
   });
 
-  const speakViaAPI = useCallback(async (text: string): Promise<boolean> => {
-    if (abortRef.current) return false;
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 15000);
+  // Load manifest once
+  useEffect(() => {
+    fetch("/audio/lessons/manifest.json")
+      .then((r) => r.ok ? r.json() : null)
+      .then((data) => { manifestRef.current = data; })
+      .catch(() => {});
+  }, []);
+
+  /** Play a pre-generated audio file. Returns true if completed successfully. */
+  const playStaticAudio = useCallback(async (sectionIndex: number): Promise<boolean> => {
+    if (abortRef.current || !manifestRef.current || !moduleSlug) return false;
+
+    const key = `${moduleSlug}_s${sectionIndex}`;
+    const entry = manifestRef.current[key];
+    if (!entry) return false;
+
+    const url = `/audio/lessons/${entry.file}`;
+
     try {
-      const res = await fetch("/api/tts", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text: text.slice(0, 10000) }),
-        signal: controller.signal,
-      });
-      clearTimeout(timeout);
-      if (!res.ok || abortRef.current) return false;
-      const blob = await res.blob();
-      if (abortRef.current || blob.size === 0) return false;
-      const url = URL.createObjectURL(blob);
       const audio = new Audio(url);
       audioRef.current = audio;
+
       return new Promise<boolean>((resolve) => {
-        audio.onended = () => { URL.revokeObjectURL(url); resolve(!abortRef.current); };
-        audio.onerror = () => { URL.revokeObjectURL(url); resolve(false); };
+        audio.onended = () => resolve(!abortRef.current);
+        audio.onerror = () => resolve(false);
         if (abortRef.current) { resolve(false); return; }
         audio.play().catch(() => resolve(false));
       });
     } catch {
-      clearTimeout(timeout);
       return false;
     }
-  }, []);
+  }, [moduleSlug]);
 
-  const speakViaBrowser = useCallback((text: string): Promise<boolean> => {
-    if (abortRef.current) return Promise.resolve(false);
-    if (!("speechSynthesis" in window)) return Promise.resolve(false);
+  /** Fallback: speak via browser Web Speech API */
+  const speakViaBrowser = useCallback((segments: string[]): Promise<boolean> => {
+    if (abortRef.current || !("speechSynthesis" in window)) return Promise.resolve(false);
+
+    const fullText = segments.join(" ");
     return new Promise<boolean>((resolve) => {
-      const utterance = new SpeechSynthesisUtterance(text);
+      const utterance = new SpeechSynthesisUtterance(fullText);
       utterance.lang = "en-GB";
       utterance.rate = 0.95;
       const voices = speechSynthesis.getVoices();
@@ -65,28 +72,12 @@ export function useTTS() {
     });
   }, []);
 
-  const speakChunk = useCallback(async (text: string): Promise<boolean> => {
-    if (abortRef.current) return false;
-    if (useApiRef.current) {
-      const ok = await speakViaAPI(text);
-      if (ok) return true;
-      if (!abortRef.current) {
-        useApiRef.current = false;
-        return speakViaBrowser(text);
-      }
-      return false;
-    }
-    return speakViaBrowser(text);
-  }, [speakViaAPI, speakViaBrowser]);
-
   /**
-   * Start narration from a section, continuing through all subsequent sections.
-   * allSections is a 2D array: allSections[sectionIndex] = segments for that section.
-   * Starts at startSection and reads through all sections until stopped.
+   * Toggle narration starting from a section, auto-advancing through all sections.
+   * Uses pre-generated static MP3 files first, falls back to browser TTS.
    */
   const toggleNarration = useCallback(
     async (startSection: number, allSections: string[][]) => {
-      // If playing this or any section, stop
       if (state.isPlaying) {
         stop();
         return;
@@ -95,25 +86,25 @@ export function useTTS() {
       stopInternal();
       abortRef.current = false;
 
-      // Read from startSection through end
       for (let secIdx = startSection; secIdx < allSections.length; secIdx++) {
         if (abortRef.current) break;
 
-        setState({ isPlaying: true, isLoading: false, activeSection: secIdx });
-        const segments = allSections[secIdx];
+        setState({ isPlaying: true, isLoading: true, activeSection: secIdx });
 
-        for (const segment of segments) {
-          if (abortRef.current) break;
-          if (!segment.trim()) continue;
+        // Try pre-generated static audio first
+        const ok = await playStaticAudio(secIdx);
 
-          setState((s) => ({ ...s, isLoading: true }));
-          const ok = await speakChunk(segment);
+        if (ok) {
           setState((s) => ({ ...s, isLoading: false }));
-
-          if (!ok || abortRef.current) break;
+          continue; // Move to next section
         }
 
-        if (abortRef.current) break;
+        // Fallback to browser TTS for this section
+        if (!abortRef.current) {
+          setState((s) => ({ ...s, isLoading: false }));
+          const browserOk = await speakViaBrowser(allSections[secIdx]);
+          if (!browserOk || abortRef.current) break;
+        }
       }
 
       if (!abortRef.current) {
@@ -121,7 +112,7 @@ export function useTTS() {
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [state.isPlaying, speakChunk]
+    [state.isPlaying, playStaticAudio, speakViaBrowser]
   );
 
   const stopInternal = useCallback(() => {

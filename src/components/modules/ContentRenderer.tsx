@@ -99,14 +99,14 @@ function BlockRenderer({ block }: { block: LessonBlock }) {
 
     case "keypoint":
       return (
-        <div className="bg-[var(--color-gold-dim)] border border-[var(--color-border-subtle)] rounded p-3">
+        <div className="bg-[var(--color-gold-dim)] border border-[var(--color-border-subtle)] p-3">
           <p className="text-sm font-medium text-[var(--color-text-primary)]">{block.content}</p>
         </div>
       );
 
     case "figure":
       return (
-        <div className="flex flex-col items-center justify-center gap-2 rounded-sm border border-[var(--color-border-default)] border-dashed bg-[var(--color-surface-sunken)] p-6">
+        <div className="flex flex-col items-center justify-center gap-2 border border-[var(--color-border-default)] border-dashed bg-[var(--color-surface-sunken)] p-6">
           <ImageIcon className="h-6 w-6 text-[var(--color-text-faint)]" />
           <p className="text-xs text-[var(--color-text-muted)] text-center">{block.caption}</p>
         </div>
@@ -188,7 +188,7 @@ function InlineCheck({ question, answer }: { question: string; answer: string })
           Reveal answer
         </button>
       ) : (
-        <p className="text-sm text-[var(--color-text-secondary)] bg-[var(--color-surface-sunken)] p-2 rounded-sm">{answer}</p>
+        <p className="text-sm text-[var(--color-text-secondary)] bg-[var(--color-surface-sunken)] p-2">{answer}</p>
       )}
     </div>
   );
@@ -207,7 +207,7 @@ function LegacyRenderer({ content, className }: { content: string; className?: s
         const figureMatch = line.match(/^\[FIGURE:\s*(.+?)\]$/);
         if (figureMatch) {
           return (
-            <div key={i} className="flex flex-col items-center justify-center gap-2 rounded-sm border border-[var(--color-border-default)] border-dashed bg-[var(--color-surface-sunken)] p-6">
+            <div key={i} className="flex flex-col items-center justify-center gap-2 border border-[var(--color-border-default)] border-dashed bg-[var(--color-surface-sunken)] p-6">
               <ImageIcon className="h-6 w-6 text-[var(--color-text-faint)]" />
               <p className="text-xs text-[var(--color-text-muted)] text-center">{figureMatch[1]}</p>
             </div>

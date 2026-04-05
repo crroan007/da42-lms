@@ -14,12 +14,13 @@ interface LessonSection {
 }
 
 interface LessonListProps {
+  moduleSlug: string;
   sections: LessonSection[];
 }
 
-export function LessonList({ sections }: LessonListProps) {
+export function LessonList({ moduleSlug, sections }: LessonListProps) {
   return (
-    <TTSProvider sections={sections}>
+    <TTSProvider moduleSlug={moduleSlug} sections={sections}>
       <div className="space-y-4">
         {sections.map((section, i) => {
           const hasBlocks = section.blocks && section.blocks.length > 0;

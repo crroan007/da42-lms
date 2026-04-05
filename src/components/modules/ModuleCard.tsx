@@ -45,7 +45,7 @@ export function ModuleCard({
     <Link href={`/modules/${slug}`} className="block">
       <div
         className={cn(
-          "panel accent-strip-top p-3 cursor-pointer transition-lift",
+          "panel accent-strip-top p-3 cursor-pointer",
           className
         )}
         data-status={statusToAccent[status]}

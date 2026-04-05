@@ -39,7 +39,7 @@ export function Sidebar() {
             collapsed && "justify-center px-2"
           )}
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded bg-gold-dim text-gold flex-shrink-0">
+          <div className="flex h-9 w-9 items-center justify-center bg-gold-dim text-gold flex-shrink-0">
             <Plane className="h-5 w-5" />
           </div>
           {!collapsed && (
@@ -68,7 +68,7 @@ export function Sidebar() {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "flex items-center gap-3 rounded px-3 py-2 text-sm font-medium transition-colors duration-150",
+                  "flex items-center gap-3 px-3 py-2 text-sm font-medium transition-colors duration-150",
                   isActive
                     ? "border-l-[3px] border-l-[var(--color-gold)] bg-[var(--color-gold-dim)] text-gold pl-2.5"
                     : "text-[var(--color-text-secondary)] hover:bg-[var(--color-surface-overlay)] hover:text-[var(--color-text-primary)]",
@@ -94,7 +94,7 @@ export function Sidebar() {
           <button
             onClick={() => setCollapsed(!collapsed)}
             aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
-            className="flex w-full items-center justify-center rounded p-2 text-[var(--color-text-muted)] hover:bg-[var(--color-surface-overlay)] hover:text-[var(--color-text-primary)] transition-colors"
+            className="flex w-full items-center justify-center p-2 text-[var(--color-text-muted)] hover:bg-[var(--color-surface-overlay)] hover:text-[var(--color-text-primary)] transition-colors"
           >
             <ChevronLeft
               className={cn(

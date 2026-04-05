@@ -38,7 +38,7 @@ export default function LoginPage() {
         <p className="text-sm text-[var(--color-text-muted)] mb-5">Access your training dashboard</p>
 
         {error && (
-          <div className="mb-4 p-3 rounded bg-[var(--color-status-warning)]/10 border border-[var(--color-status-warning)]/20 text-sm text-[var(--color-status-warning)]">
+          <div className="mb-4 p-3 bg-[var(--color-status-warning)]/10 border border-[var(--color-status-warning)]/20 text-sm text-[var(--color-status-warning)]">
             {error}
           </div>
         )}
@@ -55,7 +55,7 @@ export default function LoginPage() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="pilot@example.com"
               required
-              className="w-full px-3 py-2.5 rounded bg-[var(--color-surface-sunken)] border border-[var(--color-border-default)] text-[var(--color-text-primary)] placeholder:text-[var(--color-text-faint)] focus:outline-none focus:border-[var(--color-gold)] transition-colors text-sm"
+              className="w-full px-3 py-2.5 bg-transparent border-0 border-b border-b-[var(--color-border-default)] text-[var(--color-text-primary)] placeholder:text-[var(--color-text-faint)] focus:outline-none focus:border-b-[var(--color-gold)] transition-colors text-sm"
             />
           </div>
 
@@ -70,17 +70,14 @@ export default function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your password"
               required
-              className="w-full px-3 py-2.5 rounded bg-[var(--color-surface-sunken)] border border-[var(--color-border-default)] text-[var(--color-text-primary)] placeholder:text-[var(--color-text-faint)] focus:outline-none focus:border-[var(--color-gold)] transition-colors text-sm"
+              className="w-full px-3 py-2.5 bg-transparent border-0 border-b border-b-[var(--color-border-default)] text-[var(--color-text-primary)] placeholder:text-[var(--color-text-faint)] focus:outline-none focus:border-b-[var(--color-gold)] transition-colors text-sm"
             />
           </div>
 
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-2.5 rounded bg-[var(--color-gold)] text-[var(--color-surface-base)] font-semibold text-sm transition-opacity hover:opacity-90 disabled:opacity-50"
-            style={{
-              boxShadow: "inset 0 1px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.1)"
-            }}
+            className="w-full py-2.5 bg-[var(--color-gold)] text-[var(--color-surface-base)] font-semibold text-sm transition-opacity hover:opacity-90 disabled:opacity-50"
           >
             {loading ? "Signing in..." : "Sign In"}
           </button>

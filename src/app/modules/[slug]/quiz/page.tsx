@@ -106,7 +106,7 @@ export default function QuizPage() {
           <ChevronLeft className="h-4 w-4" /> Back to Module
         </Link>
         <div className="panel p-6 text-center">
-          <div className={`inline-flex h-16 w-16 items-center justify-center rounded mb-3 ${perfect ? "bg-status-operational/10" : "bg-status-caution/10"}`}>
+          <div className={`inline-flex h-16 w-16 items-center justify-center mb-3 ${perfect ? "bg-status-operational/10" : "bg-status-caution/10"}`}>
             {perfect ? (
               <Unlock className="h-8 w-8 text-status-operational" />
             ) : (
@@ -125,7 +125,7 @@ export default function QuizPage() {
             {!perfect && (
               <button
                 onClick={() => { scoreSavedRef.current = false; handleRestart(); }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded border border-border-default text-text-secondary hover:border-border-strong hover:text-text-primary transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 border border-border-default text-text-secondary hover:border-border-strong hover:text-text-primary transition-colors"
               >
                 <RotateCcw className="h-4 w-4" />
                 Retry Quiz
@@ -133,7 +133,7 @@ export default function QuizPage() {
             )}
             <Link
               href={perfect ? "/modules" : `/modules/${slug}`}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gold text-surface-base font-semibold hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-gold text-surface-base font-semibold hover:opacity-90 transition-opacity"
             >
               {perfect ? "Continue to Modules" : "Review Material"}
             </Link>
@@ -155,9 +155,9 @@ export default function QuizPage() {
           <span className="text-sm text-text-secondary">Question <span className="font-mono">{currentIndex + 1}</span> of <span className="font-mono">{totalQuestions}</span></span>
           <span className="text-sm text-gold font-mono font-medium">{progressPercent}%</span>
         </div>
-        <div className="h-1 rounded-sm bg-surface-overlay">
+        <div className="h-1 bg-surface-overlay">
           <div
-            className="h-full rounded-sm bg-gold transition-all duration-500"
+            className="h-full bg-gold transition-all duration-500"
             style={{ width: `${progressPercent}%` }}
           />
         </div>
@@ -194,12 +194,12 @@ export default function QuizPage() {
                 key={i}
                 onClick={() => handleSelect(i)}
                 disabled={showExplanation}
-                className={`w-full text-left p-3 rounded border ${borderClass} ${bgClass} transition-colors duration-150 ${
+                className={`w-full text-left p-3 border ${borderClass} ${bgClass} transition-colors duration-150 ${
                   !showExplanation ? "cursor-pointer" : "cursor-default"
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <span className="flex h-6 w-6 items-center justify-center rounded-sm border border-border-default text-xs font-mono font-medium text-text-muted flex-shrink-0">
+                  <span className="flex h-6 w-6 items-center justify-center border border-border-default text-xs font-mono font-medium text-text-muted flex-shrink-0">
                     {String.fromCharCode(65 + i)}
                   </span>
                   <span className="text-sm text-text-primary">{option.text}</span>
@@ -217,7 +217,7 @@ export default function QuizPage() {
 
         {/* Explanation */}
         {showExplanation && (
-          <div className="mt-4 p-3 rounded-sm surface-sunken border border-border-subtle">
+          <div className="mt-4 p-3 surface-sunken border border-border-subtle">
             <p className="text-sm text-text-secondary leading-relaxed">
               {currentQuestion.explanation}
             </p>
@@ -229,7 +229,7 @@ export default function QuizPage() {
           <div className="mt-4 flex justify-end">
             <button
               onClick={handleNext}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gold text-surface-base font-semibold hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-gold text-surface-base font-semibold hover:opacity-90 transition-opacity"
             >
               {currentIndex < totalQuestions - 1 ? "Next Question" : "See Results"}
             </button>

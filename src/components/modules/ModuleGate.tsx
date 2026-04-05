@@ -41,7 +41,7 @@ export function ModuleGate({ orderIndex, allSlugs, children }: ModuleGateProps) 
           {prevSlug && (
             <Link
               href={`/modules/${prevSlug}/quiz`}
-              className="inline-flex items-center gap-2 px-5 py-2 rounded bg-[var(--color-gold)] text-[var(--color-surface-base)] font-semibold text-sm hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 px-5 py-2 bg-[var(--color-gold)] text-[var(--color-surface-base)] font-semibold text-sm hover:opacity-90 transition-opacity"
             >
               Take Module {String(prevIndex).padStart(2, "0")} Quiz
             </Link>
