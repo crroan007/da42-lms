@@ -19,7 +19,7 @@ interface LessonListProps {
 
 export function LessonList({ sections }: LessonListProps) {
   return (
-    <TTSProvider>
+    <TTSProvider sections={sections}>
       <div className="space-y-4">
         {sections.map((section, i) => {
           const hasBlocks = section.blocks && section.blocks.length > 0;
@@ -33,12 +33,7 @@ export function LessonList({ sections }: LessonListProps) {
                   <h2 className="text-base font-semibold text-[var(--color-text-primary)] flex-1">
                     {section.title}
                   </h2>
-                  <LessonNarrationToggle
-                    sectionIndex={i}
-                    title={section.title}
-                    blocks={section.blocks}
-                    content={section.content}
-                  />
+                  <LessonNarrationToggle sectionIndex={i} />
                 </div>
                 {section.objective && (
                   <div className="flex items-center gap-1.5 ml-5 mt-1">

@@ -3,14 +3,35 @@
 import { Volume2, VolumeX, Loader2 } from "lucide-react";
 import { useTTS } from "@/hooks/useTTS";
 import type { LessonBlock } from "@/types";
-import { createContext, useContext } from "react";
+import { createContext, useContext, useMemo } from "react";
 
-/** Context so all lessons share the same TTS instance */
-const TTSContext = createContext<ReturnType<typeof useTTS> | null>(null);
+interface SectionData {
+  title: string;
+  blocks?: LessonBlock[];
+  content?: string;
+}
 
-export function TTSProvider({ children }: { children: React.ReactNode }) {
+interface TTSContextValue {
+  tts: ReturnType<typeof useTTS>;
+  allSegments: string[][];
+}
+
+const TTSContext = createContext<TTSContextValue | null>(null);
+
+/** Wrap all lessons — precomputes segments for every section so narration can flow through them */
+export function TTSProvider({ sections, children }: { sections: SectionData[]; children: React.ReactNode }) {
   const tts = useTTS();
-  return <TTSContext.Provider value={tts}>{children}</TTSContext.Provider>;
+
+  const allSegments = useMemo(
+    () => sections.map((s) => extractSegments(s.title, s.blocks, s.content)),
+    [sections]
+  );
+
+  return (
+    <TTSContext.Provider value={{ tts, allSegments }}>
+      {children}
+    </TTSContext.Provider>
+  );
 }
 
 function useTTSContext() {
@@ -21,76 +42,17 @@ function useTTSContext() {
 
 interface LessonNarrationToggleProps {
   sectionIndex: number;
-  title: string;
-  blocks?: LessonBlock[];
-  content?: string;
 }
 
-/** Extracts narration segments from lesson blocks — one segment per block for natural pacing */
-function extractSegments(title: string, blocks?: LessonBlock[], content?: string): string[] {
-  const segments: string[] = [];
-
-  if (blocks && blocks.length > 0) {
-    for (const block of blocks) {
-      switch (block.type) {
-        case "text":
-          segments.push(block.content);
-          break;
-        case "concept":
-          segments.push(`${block.title}. ${block.content}`);
-          break;
-        case "analogy":
-          segments.push(`Think of it like this. ${block.content}`);
-          break;
-        case "example":
-          segments.push(`Here's an example. ${block.title ? block.title + ". " : ""}${block.content}`);
-          break;
-        case "warning":
-          segments.push(`Important. ${block.content}`);
-          break;
-        case "keypoint":
-          segments.push(`Key point. ${block.content}`);
-          break;
-        case "formula":
-          segments.push(`${block.label}. ${block.formula}. ${block.explanation}`);
-          break;
-        case "list":
-          if (block.title) {
-            const items = block.items.map((item, i) => `${i + 1}. ${item}`).join(". ");
-            segments.push(`${block.title} ${items}`);
-          } else {
-            segments.push(block.items.join(". "));
-          }
-          break;
-        case "memorize":
-          const specs = block.items.map((item) => `${item.label}: ${item.value}`).join(". ");
-          segments.push(`Memorize these values. ${specs}`);
-          break;
-        case "check":
-          segments.push(`Quick check. ${block.question}`);
-          break;
-        case "figure":
-          segments.push(`Refer to the diagram: ${block.caption}`);
-          break;
-      }
-    }
-  } else if (content) {
-    // Split legacy content into paragraphs as segments
-    const paragraphs = content.split(/\n\n+/).filter((p) => p.trim().length > 20);
-    segments.push(...paragraphs);
-  }
-
-  return segments;
-}
-
-export function LessonNarrationToggle({ sectionIndex, title, blocks, content }: LessonNarrationToggleProps) {
-  const { toggleNarration, activeSection, isLoading, isPlaying } = useTTSContext();
+export function LessonNarrationToggle({ sectionIndex }: LessonNarrationToggleProps) {
+  const { tts, allSegments } = useTTSContext();
+  const { toggleNarration, activeSection, isLoading, isPlaying } = tts;
 
   const isActive = activeSection === sectionIndex;
-  const segments = extractSegments(title, blocks, content);
+  const isAnySectionPlaying = isPlaying;
 
   const handleClick = () => {
-    toggleNarration(sectionIndex, segments);
+    toggleNarration(sectionIndex, allSegments);
   };
 
   return (
@@ -99,7 +61,7 @@ export function LessonNarrationToggle({ sectionIndex, title, blocks, content }: 
       className={`inline-flex items-center gap-1.5 text-xs font-medium transition-opacity hover:opacity-80 flex-shrink-0 ${
         isActive ? "text-[var(--color-gold)]" : "text-[var(--color-text-muted)]"
       }`}
-      title={isActive ? "Stop narration" : `Narrate: ${title}`}
+      title={isAnySectionPlaying ? "Stop narration" : "Listen from here"}
     >
       {isActive && isLoading ? (
         <Loader2 className="h-3.5 w-3.5 animate-spin" />
@@ -108,7 +70,42 @@ export function LessonNarrationToggle({ sectionIndex, title, blocks, content }: 
       ) : (
         <Volume2 className="h-3.5 w-3.5" />
       )}
-      <span>{isActive ? "Stop" : "Listen"}</span>
+      <span>{isAnySectionPlaying && isActive ? "Stop" : "Listen"}</span>
     </button>
   );
+}
+
+/** Extracts narration segments from lesson blocks */
+function extractSegments(title: string, blocks?: LessonBlock[], content?: string): string[] {
+  const segments: string[] = [];
+
+  if (blocks && blocks.length > 0) {
+    for (const block of blocks) {
+      switch (block.type) {
+        case "text": segments.push(block.content); break;
+        case "concept": segments.push(`${block.title}. ${block.content}`); break;
+        case "analogy": segments.push(`Think of it like this. ${block.content}`); break;
+        case "example": segments.push(`Here's an example. ${block.title ? block.title + ". " : ""}${block.content}`); break;
+        case "warning": segments.push(`Important. ${block.content}`); break;
+        case "keypoint": segments.push(`Key point. ${block.content}`); break;
+        case "formula": segments.push(`${block.label}. ${block.formula}. ${block.explanation}`); break;
+        case "list":
+          if (block.title) {
+            segments.push(`${block.title} ${block.items.map((item, i) => `${i + 1}. ${item}`).join(". ")}`);
+          } else {
+            segments.push(block.items.join(". "));
+          }
+          break;
+        case "memorize":
+          segments.push(`Memorize these values. ${block.items.map((item) => `${item.label}: ${item.value}`).join(". ")}`);
+          break;
+        case "check": segments.push(`Quick check. ${block.question}`); break;
+        case "figure": segments.push(`Refer to the diagram: ${block.caption}`); break;
+      }
+    }
+  } else if (content) {
+    segments.push(...content.split(/\n\n+/).filter((p) => p.trim().length > 20));
+  }
+
+  return segments;
 }
